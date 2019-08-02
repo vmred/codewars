@@ -3,11 +3,11 @@
 # whose digits are made up of prime numbers (2, 3, 5, 7) but which are not primes themselves.
 
 # Be careful about your timing!
-import math
 
 from asserts.Asserts import assert_true
 
 
+# TODO
 def not_primes(a, b):
     def is_prime(p):
         if p == 2: return True
