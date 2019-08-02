@@ -35,11 +35,10 @@ def shortest_steps_to_num(num):
     while num > 1:
         if num % 2:
             num -= 1
-            steps += 1
-
         else:
             num /= 2
-            steps += 1
+
+        steps += 1
 
     return steps
 
