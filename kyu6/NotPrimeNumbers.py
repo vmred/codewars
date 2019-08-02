@@ -4,10 +4,10 @@
 
 # Be careful about your timing!
 
+
 from asserts.Asserts import assert_true
 
 
-# TODO
 def not_primes(a, b):
     def is_prime(p):
         if p == 2: return True
