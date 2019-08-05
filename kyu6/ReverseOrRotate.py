@@ -22,8 +22,6 @@
 from asserts.Asserts import assert_true
 
 
-# TODO
-# https://www.codewars.com/kata/reverse-or-rotate/train/python
 def revrot(strng, sz):
     if sz <= 0 or not strng:
         return ''
@@ -31,12 +29,12 @@ def revrot(strng, sz):
     chunks = [strng[i:i + sz] for i in range(0, len(strng), sz) if len(strng[i:i + sz]) == sz]
 
     for i in range(0, len(chunks)):
-        if chunks[i] == sum(int(x) ** 3 for x in chunks[i]) / 2:
-            chunks[i] = sorted(chunks[i], reverse=True)
+        if not sum(int(x) ** 3 for x in chunks[i]) % 2:
+            chunks[i] = chunks[i][::-1]
         else:
             chunks[i] = chunks[i][1:] + chunks[i][:1]
 
     return ''.join(chunks)
 
 
-assert_true(revrot("733049910872815764", 5), "330479108928157")
+assert_true(revrot("3304991787281570455176064327690480265895", 8), "1994033775182780067155464327690480265895")
