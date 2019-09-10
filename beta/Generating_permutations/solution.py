@@ -16,6 +16,7 @@
 # [2, 3, 1]
 # [3, 2, 1]
 # [3, 1, 2]
+
 from asserts.Asserts import assert_true
 
 
@@ -27,13 +28,3 @@ def permutations(l):
         for i in permutations(l[1:]):
             for j in range(elements_len):
                 yield i[:j] + l[0:1] + i[j:]
-
-
-def test():
-    results = set([tuple(p) for p in permutations([1, 2, 3])])
-    expected_results = set([(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 2, 1), (3, 1, 2)])
-    assert_true(expected_results, results)
-
-
-if __name__ == "__main__":
-    test()
