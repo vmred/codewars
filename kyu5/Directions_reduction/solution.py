@@ -1,3 +1,6 @@
+# Direction reduction
+
+
 def dirReduc(arr):
     result = ['default']
     arr = arr
@@ -23,12 +26,3 @@ def dirReduc(arr):
             arr = arr[1:]
 
     return result[1:]
-
-
-a = dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"])
-e = ['WEST']
-assert (a == e), '--> actual: %s, expected %s' % (a, e)
-
-a = dirReduc(["NORTH", "WEST", "SOUTH", "EAST"])
-e = ["NORTH", "WEST", "SOUTH", "EAST"]
-assert (a == e), '--> actual: %s, expected %s' % (a, e)

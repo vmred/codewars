@@ -1,5 +1,5 @@
+# First N prime numbers
 # A prime number is an integer greater than 1 that is only evenly divisible by itself and 1.
-
 # Write your own Primes class with class method Primes.first(n) that returns an array of the first n prime numbers.
 
 # For example:
@@ -14,7 +14,6 @@
 
 # Primes.first(20).last(5)
 # => [53, 59, 61, 67, 71]
-from asserts.Asserts import assert_true
 
 
 def is_prime(n):
@@ -47,7 +46,3 @@ class Primes:
                 result.append(i)
             i += 1
         return result
-
-
-assert_true(Primes.first(1), [2])
-assert_true(Primes.first(20)[-5:], [53, 59, 61, 67, 71])

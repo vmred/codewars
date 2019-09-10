@@ -1,3 +1,4 @@
+# Only-readable-once list
 # Attention Agent.
 # The White House is currently developing a mobile app that it can use to issue instructions to its undercover agents.
 
@@ -22,7 +23,6 @@
 
 # To complete this kata you need to be able to define a class that implements __getitem__(), __str__(), __repr__(),
 # and possibly __len__().
-from asserts.Asserts import assert_true
 
 
 class SecureList:
@@ -47,14 +47,3 @@ class SecureList:
 
         else:
             raise Exception
-
-
-base = [1, 2, 3, 4]
-a = SecureList(base)
-assert_true(a[0], base[0])
-assert_true(a[0], base[1])
-assert_true(len(a), 2)
-assert_true(len(a), 0)
-
-a = SecureList(base)
-assert_true(len(a), 0)

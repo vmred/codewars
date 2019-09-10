@@ -1,3 +1,4 @@
+# Vector_class
 # Create a Vector object that supports addition, subtraction, dot products, and norms.
 # So, for example:
 # a = Vector([1, 2, 3])
@@ -16,7 +17,6 @@
 # a.toString() === '(1,2,3)' (in Python, this is a __str__ method, so that str(a) == '(1,2,3)')
 # an equals method, to check that two vectors that have the same components are equal
 # Note: the test cases will utilize the user-provided equals method.
-from asserts.Asserts import assert_true
 
 
 class Vector:
@@ -47,12 +47,3 @@ class Vector:
 
     def norm(self):
         return sum([x ** 2 for x in self.vector]) ** 0.5
-
-
-a = Vector([1, 2])
-b = Vector([3, 4])
-
-assert_true(Vector([1, 2, 3]).__str__(), '(1,2,3)')
-assert_true(a.add(b).equals(Vector([4, 6])), True)
-a = Vector([1, 2, 3])
-assert_true(a.norm(), 14 ** 0.5)
