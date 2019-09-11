@@ -11,4 +11,4 @@ import re
 
 
 def validate_pin(pin):
-    return bool(re.match('^\d{4}(?:\d{2})?$', pin))
+    return bool(re.match(r'\A(\d{4}|\d{6})\Z', pin))
