@@ -3,6 +3,12 @@ from asserts.Asserts import assert_true
 
 class TestSolution:
 
+    def test_categorize_new_member(self):
+        from kyu7.Categorize_new_member.solution import openOrSenior
+        assert_true(openOrSenior([[45, 12], [55, 21], [19, -2], [104, 20]]),
+                    ['Open', 'Senior', 'Open', 'Senior'])
+        assert_true(openOrSenior([[16, 23], [73, 1], [56, 20], [1, -1]]), ['Open', 'Open', 'Senior', 'Open'])
+
     def test_binary_addition(self):
         from kyu7.Binary_Addition.solution import add_binary
         assert_true(add_binary(1, 1), "10")
