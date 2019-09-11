@@ -3,6 +3,14 @@ from asserts.Asserts import assert_true
 
 class TestSolution:
 
+    def test_binary_addition(self):
+        from kyu7.Binary_Addition.solution import add_binary
+        assert_true(add_binary(1, 1), "10")
+        assert_true(add_binary(0, 1), "1")
+        assert_true(add_binary(1, 0), "1")
+        assert_true(add_binary(2, 2), "100")
+        assert_true(add_binary(51, 12), "111111")
+
     def test_regex_validate_pin_code(self):
         from kyu7.Regex_validate_PIN_code.solution import validate_pin
         assert_true(validate_pin("1"), False)
