@@ -1,9 +1,11 @@
 from asserts.Asserts import assert_true
+import importlib
+
+count_sheeps = importlib.import_module('kyu8.Count sheep.solution').count_sheeps
 
 
 class TestSolutions:
     def test_count_sheep(self):
-        from kyu8.Count_sheep.solution import count_sheeps
         array1 = [True, True, True, False,
                   True, True, True, True,
                   True, False, True, False,

@@ -10,6 +10,3 @@ from asserts.Asserts import assert_true
 
 def make_negative(number):
     return -number if number > 0 else number
-
-
-assert_true(make_negative(42), -42)
