@@ -17,14 +17,12 @@
 # [3, 2, 1]
 # [3, 1, 2]
 
-import importlib
 
-permutations = importlib.import_module('beta.Generating permutations.solution').permutations
-from asserts.Asserts import assert_true
-
-
-class TestSolution:
-    def test_generating_permutations(self):
-        results = set([tuple(p) for p in permutations([1, 2, 3])])
-        expected_results = set([(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 2, 1), (3, 1, 2)])
-        assert_true(expected_results, results)
+def permutations(l):
+    elements_len = len(l)
+    if elements_len <= 1:
+        yield l
+    else:
+        for i in permutations(l[1:]):
+            for j in range(elements_len):
+                yield i[:j] + l[0:1] + i[j:]
