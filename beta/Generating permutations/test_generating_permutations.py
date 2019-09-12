@@ -28,3 +28,10 @@ def permutations(l):
         for i in permutations(l[1:]):
             for j in range(elements_len):
                 yield i[:j] + l[0:1] + i[j:]
+
+
+class TestSolution:
+    def test_generating_permutations(self):
+        results = set([tuple(p) for p in permutations([1, 2, 3])])
+        expected_results = set([(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 2, 1), (3, 1, 2)])
+        assert_true(expected_results, results)
