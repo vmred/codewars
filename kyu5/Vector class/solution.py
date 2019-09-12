@@ -1,4 +1,4 @@
-# Vector_class
+# Vector class
 # Create a Vector object that supports addition, subtraction, dot products, and norms.
 # So, for example:
 # a = Vector([1, 2, 3])
