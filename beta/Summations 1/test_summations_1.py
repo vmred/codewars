@@ -2,7 +2,7 @@ import importlib
 
 from asserts.Asserts import assert_true
 
-summation = importlib.import_module('beta.Summations: 1.solution').summation
+summation = importlib.import_module('beta.Summations 1.solution').summation
 
 
 class TestSolution:

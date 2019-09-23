@@ -2,7 +2,7 @@ import importlib
 
 from asserts.Asserts import assert_true
 
-tug_o_war = importlib.import_module('beta.Tug-o\'-War.solution').tug_o_war
+tug_o_war = importlib.import_module('beta.Tug-o-War.solution').tug_o_war
 
 
 class TestSolution:

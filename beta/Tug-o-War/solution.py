@@ -1,4 +1,4 @@
-# In this Kata we will play a classic game of Tug-o'-War!
+# In this Kata we will play a classic game of Tug-o-War!
 
 # Two teams of 5 members will face off, the strongest of which will prevail.
 # Each team member will be assigned a strength rating (1-9), with the most powerful members having a rating of 9.
