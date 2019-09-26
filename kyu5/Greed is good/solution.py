@@ -24,45 +24,23 @@
 
 
 def score(dice):
-    # dice = str(dice)
     dice = ''.join(list(map(str, dice)))
-    print('--> dice:', dice)
-    rules = {
-        '1': 100,
-        '5': 50,
-        '1, 1, 1': 1000,
-        '6, 6, 6': 600,
-        '5, 5, 5': 500,
-        '4, 4, 4': 400,
-        '3, 3, 3': 200,
-        '2, 2, 2': 200
-    }
-    #
-    # result = 0
-    # for k, v in rules.items():
-    #     # if k == '4, 4, 4':
-    #     #     print('---> 4, 4, 4 in dice:', k in dice)
-    #     if k in dice:
-    #         # print('--> k in dice, k: {}'.format(k))
-    #         result += v
-    #         dice.replace(k, '')
-    #         # print('--> dice after replacing:', dice)
+    r = 0
+    values = [0, 0, 0, 0, 0, 0, 0]
 
-    result = 0
+    for i in dice:
+        values[int(i)] += 1
 
-    while dice != '':
-        if '1' in dice:
-            count = dice.count('1')
-            print('--> count:', count)
+    r += values[1] * 100 if values[1] < 3 else 1000 + 100 * (values[1] - 3)
 
-            if count == 1:
-                result += 50
-                dice.replace('1', '')
+    r += values[5] * 50 if values[5] < 3 else 500 + 50 * (values[5] - 3)
 
-            if count == 3:
-                result += 1000
-                dice.replace('111', '')
+    r += 0 if values[6] < 3 else 600
 
-            print('---> dice after replacing:', dice)
+    r += 0 if values[4] < 3 else 400
 
-    return result
+    r += 0 if values[3] < 3 else 300
+
+    r += 0 if values[2] < 3 else 200
+
+    return r
