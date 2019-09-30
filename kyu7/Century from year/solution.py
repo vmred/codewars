@@ -12,12 +12,7 @@
 # Hope you enjoy it .. Awaiting for Best Practice Codes
 
 # Enjoy Learning !!!
-from asserts.Asserts import assert_true
 
 
 def century(year):
     return (year - 1) // 100 + 1
-
-
-assert_true(century(1705), 18)
-assert_true(century(2000), 20)

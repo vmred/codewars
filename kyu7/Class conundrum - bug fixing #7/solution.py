@@ -6,7 +6,6 @@
 # ```javascript myList.add(0).add(1) ```
 # ```python my_list.add(0).add(1) ```
 # ```ruby my_list.add(0).add(1) ```
-from asserts.Asserts import assert_true
 
 
 class List:
@@ -21,7 +20,3 @@ class List:
         self.items.append(item)
         self.count += 1
         return self
-
-
-my_list = List(str)
-assert_true(my_list.add('Hello').count, 1)

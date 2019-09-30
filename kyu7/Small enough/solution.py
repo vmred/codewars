@@ -5,6 +5,3 @@
 
 def small_enough(array, limit):
     return False if any(i > limit for i in array) else True
-
-
-print(small_enough([78, 117, 110, 99, 104, 117, 107, 115], 100))

@@ -4,11 +4,7 @@
 # Examples:
 # solution('abc', 'bc') # returns true
 # solution('abc', 'd') # returns false
-from asserts.Asserts import assert_true
 
 
 def solution(string, ending):
     return string.endswith(ending)
-
-
-assert_true(solution('abcde', 'abc'), False)

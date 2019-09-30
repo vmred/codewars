@@ -19,14 +19,6 @@
 # strong_num(1) ==> return 'STRONG!!!!'
 from math import factorial
 
-from asserts.Asserts import assert_true
-
 
 def strong_num(number):
     return 'STRONG!!!!' if number == sum(factorial(int(i)) for i in str(number)) else 'Not Strong !!'
-
-
-assert_true(strong_num(1), 'STRONG!!!!')
-assert_true(strong_num(145), 'STRONG!!!!')
-assert_true(strong_num(7), 'Not Strong !!')
-assert_true(strong_num(185), "Not Strong !!")
