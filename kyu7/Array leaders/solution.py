@@ -14,12 +14,7 @@
 
 # Input >> Output Examples
 # arrayLeaders ({1, 2, 3, 4, 0}) ==> return {4}
-from asserts.Asserts import assert_true
 
 
 def array_leaders(numbers):
     return [numbers[x] for x in range(0, len(numbers)) if numbers[x] > sum(numbers[x + 1:])]
-
-
-assert_true(array_leaders([1, 2, 3, 4, 0]), [4])
-assert_true(array_leaders([16, 17, 4, 3, 5, 2]), [17, 5, 2])

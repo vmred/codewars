@@ -9,11 +9,7 @@
 
 # a = "abcdefghijklmnopqrstuvwxyz"
 # longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
-from asserts.Asserts import assert_true
 
 
 def longest(s1, s2):
     return ''.join(sorted(set(s1 + s2)))
-
-
-assert_true(longest("aretheyhere", "yestheyarehere"), "aehrsty")

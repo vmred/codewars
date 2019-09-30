@@ -19,7 +19,6 @@
 #     def __str__(self): return "Fighter({}, {}, {})".format(self.name, self.health, self.damage_per_attack)
 
 # __repr__ = __str__
-from asserts.Asserts import assert_true
 
 
 class Fighter(object):
@@ -45,6 +44,3 @@ def declare_winner(fighter1, fighter2, first_attacker):
 
         if first_attacker.health <= 0:
             return second_attacker.name
-
-
-assert_true(declare_winner(Fighter("Lew", 10, 2), Fighter("Harry", 5, 4), "Lew"), "Lew")

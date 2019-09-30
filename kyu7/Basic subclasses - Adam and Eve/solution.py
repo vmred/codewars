@@ -6,7 +6,6 @@
 # The second should be an instance of the class Woman.
 #  Both objects have to be subclasses of Human.
 # Your job is to implement the Human, Man and Woman classes.
-from asserts.Asserts import assert_true
 
 
 class Human:
@@ -23,7 +22,3 @@ class Woman(Human):
 
 def God():
     return [Man(), Woman()]
-
-
-paradise = God()
-assert_true(isinstance(paradise[0], Man), True)

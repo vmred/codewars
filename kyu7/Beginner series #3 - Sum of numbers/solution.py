@@ -3,7 +3,6 @@
 # If the two numbers are equal return a or b.
 
 # Note: a and b are not ordered!
-from asserts.Asserts import assert_true
 
 
 def get_sum(a, b):
@@ -11,7 +10,3 @@ def get_sum(a, b):
         a, b = b, a
 
     return sum(i for i in range(a, b + 1))
-
-
-assert_true(get_sum(0, -1), -1)
-assert_true(get_sum(0, 1), 1)

@@ -16,18 +16,9 @@
 # Since , The sum of all digits to the left of the middle digit (0)\
 # and the sum of all digits to the right of the middle digit (0) are equal , then It's Balanced
 # balancedNum (295591) ==> return "Not Balanced"
-from asserts.Asserts import assert_true
 
 
 def balanced_num(number):
     number = [int(x) for x in str(number)]
     middle = [len(number) // 2] if len(number) % 2 else [len(number) // 2 - 1, len(number) // 2]
     return ['Not Balanced', 'Balanced'][len(number) < 3 or sum(number[:min(middle)]) == sum(number[max(middle) + 1:])]
-
-
-assert_true(balanced_num(7), "Balanced")
-assert_true(balanced_num(959), "Balanced")
-assert_true(balanced_num(13), "Balanced")
-assert_true(balanced_num(432), "Not Balanced")
-assert_true(balanced_num(424), "Balanced")
-assert_true(balanced_num(56239814), 'Balanced')

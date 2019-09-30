@@ -16,15 +16,7 @@
 # Though not correct in a mathematical sense
 # we will consider that there are no rotations of strng == ""
 # and for any array arr: contain_all_rots("", arr) --> true
-from asserts.Asserts import assert_true
 
 
 def contain_all_rots(strng, arr):
     return all(strng[i:] + strng[:i] in arr for i in range(len(strng)))
-
-
-# assert_true(contain_all_rots('', []), True)
-# assert_true(contain_all_rots("bsjq", ["bsjq", "qbsj", "sjqb", "twZNsslC", "jqbs"]), True)
-assert_true(contain_all_rots('ZmzTmUpEmsI',
-                             ['IZmzTmUpEms', 'sIZmzTmUpEm', 'zTmUpEmsIZm', 'mUpEmsIZmzT', 'EmsIZmzTmUp', 'pEmsIZmzTmU',
-                              'ZmzTmUpEmsI', 'mzTmUpEmsIZ', 'UpEmsIZmzTm', 'msIZmzTmUpE', 'TmUpEmsIZmz']), False)

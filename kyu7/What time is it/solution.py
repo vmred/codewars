@@ -7,9 +7,6 @@
 # Try not to use built in DateTime libraries.
 
 # For more information on military time, check the wiki https://en.wikipedia.org/wiki/24-hour_clock
-import re
-
-from asserts.Asserts import assert_true
 
 
 def get_military_time(time):
@@ -25,8 +22,3 @@ def get_military_time(time):
             time = time.replace(hour, str(int(hour) + 12))
 
     return time
-
-
-assert_true(get_military_time('12:00:01AM'), '00:00:01')
-assert_true(get_military_time('11:46:47PM'), '23:46:47')
-assert_true(get_military_time('12:24:25PM'), '12:24:25')

@@ -23,18 +23,9 @@
 # isSquare(26) returns  false
 import math
 
-from asserts.Asserts import assert_true
-
 
 def is_square(n):
     if n < 0:
         return False
 
     return math.sqrt(n) - int(math.sqrt(n)) == 0
-
-
-assert_true(is_square(-1), False)
-assert_true(is_square(0), True)
-assert_true(is_square(3), False)
-assert_true(is_square(4), True)
-assert_true(is_square(25), True)
