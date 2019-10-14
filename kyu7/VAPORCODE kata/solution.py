@@ -11,4 +11,4 @@
 
 
 def vaporcode(s):
-    return '  '.join(i.upper() for i in list(s.replace(' ', '')))
+    return '  '.join(s.replace(' ', '').upper())
