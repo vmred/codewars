@@ -8,4 +8,4 @@
 
 
 def bingo(array):
-    return ['LOSE', 'WIN'][all(x in [chr(i + 96) for i in array] for x in ['b', 'i', 'n', 'g', 'o'])]
+    return ['LOSE', 'WIN'][all(x in array for x in [2, 9, 14, 7, 15])]
