@@ -13,7 +13,7 @@
 # (just consider upper- and lowercase letters as different entities)
 # and can be pretty long (keep an eye on performances!).
 
-
+# TODO
 def has_subpattern(string):
     len_string = len(string)
     if len_string < 2:
