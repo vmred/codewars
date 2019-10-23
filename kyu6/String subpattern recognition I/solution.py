@@ -13,25 +13,16 @@
 # (just consider upper- and lowercase letters as different entities)
 # and can be pretty long (keep an eye on performances!).
 
-# TODO
-def has_subpattern(string):
-    len_string = len(string)
-    if len_string < 2:
-        return False
 
-    string_set = ''.join(sorted(set(string)))
-    len_string_set = len(string_set)
-
-    if string_set == string:
-        return False
-
-    for x in range(len(string[:len_string_set]), len_string):
-        string_set = string[:x]
-        len_string_set = len(string_set)
-        for i in range(1, len_string_set + 1):
-            pattern = string_set[:i]
-            if pattern == string_set:
-                if string.count(pattern) * len(pattern) == len_string:
-                    return True
-
+def has_subpattern(text):
+    for i in range(1, len(text) // 2 + 2):
+        if len(text) % i == 0:
+            subtext = text[:i]
+            num_subtext = text.count(subtext)
+            if num_subtext > 1 and num_subtext * len(subtext) == len(text):
+                return True
     return False
+    # one more solution:
+    # return bool(re.search(r'^(\w+)\1+$', s))
+    # and one more:
+    # return (string * 2).find(string, 1) != len(string)
