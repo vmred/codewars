@@ -5,8 +5,6 @@
 # If two words score the same, return the word that appears earliest in the original string.
 # All letters will be lowercase and all inputs will be valid.
 
-from asserts.Asserts import assert_true
-
 
 def high(x):
     x = x.split()
@@ -20,6 +18,3 @@ def high(x):
             word = i
 
     return word
-
-
-assert_true(high('man i need a taxi up to ubud'), 'taxi')

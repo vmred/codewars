@@ -27,7 +27,6 @@
 # Is there an integer k such as : (a ^ p + b ^ (p+1) + c ^(p+2) + d ^ (p+3) + ...) = n * k
 # If it is the case we will return k, if not return -1.
 # Note: n and p will always be given as strictly positive integers.
-from asserts.Asserts import assert_true
 
 
 def dig_pow(n, p):
@@ -39,6 +38,3 @@ def dig_pow(n, p):
         p += 1
 
     return power / n if not power % n else -1
-
-
-assert_true(dig_pow(46288, 3), 51)

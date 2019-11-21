@@ -13,7 +13,6 @@
 # 1.2.3.4.5
 # 123.456.78.90
 # 123.045.067.089
-from asserts.Asserts import assert_true
 
 
 def is_valid_IP(strng):
@@ -41,9 +40,3 @@ def is_valid_IP(strng):
     return True
 
     # return s.count('.') == 3 and all(o.isdigit() and 0 <= int(o) <= 255 and str(int(o)) == o for o in s.split('.'))
-
-
-assert_true(is_valid_IP('12.255.56.1'), True)
-assert_true(is_valid_IP(''), False)
-assert_true(is_valid_IP('abc.def.ghi.jkl'), False)
-assert_true(is_valid_IP('12.34.56 .1'), False)

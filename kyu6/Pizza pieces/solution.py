@@ -13,7 +13,6 @@
 # max_pizza(0) == 1
 # max_pizza(1) == 2
 # max_pizza(3) == 7
-from asserts.Asserts import assert_true
 
 
 def max_pizza(cut):
@@ -21,7 +20,3 @@ def max_pizza(cut):
         return -1
     else:
         return (cut * cut + cut + 2) // 2
-
-
-assert_true(max_pizza(3), 7)
-assert_true(max_pizza(4), 11)

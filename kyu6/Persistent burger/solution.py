@@ -19,8 +19,6 @@
 # persistence(4)  # returns 0, because 4 is already a one-digit number
 from functools import reduce
 
-from asserts.Asserts import assert_true
-
 
 def persistence(n):
     n = list(str(n))
@@ -31,6 +29,3 @@ def persistence(n):
         count += 1
 
     return count
-
-
-assert_true(persistence(39), 3)

@@ -11,6 +11,3 @@
 def iq_test(numbers):
     e = [int(i) % 2 for i in numbers.split()]
     return e.index(1) + 1 if e.count(1) == 1 else e.index(0) + 1
-
-
-print(iq_test("2 4 7 8 10"))

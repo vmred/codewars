@@ -12,12 +12,7 @@
 #   100000  ->     "100,000"
 #  1000000  ->   "1,000,000"
 # 35235235  ->  "35,235,235"
-from asserts.Asserts import assert_true
 
 
 def group_by_commas(n):
     return '{:,}'.format(n)
-
-
-assert_true(group_by_commas(35235235), '35,235,235')
-assert_true(group_by_commas(1000000), '1,000,000')
