@@ -19,7 +19,6 @@
 # revrot("", 8) --> ""
 # revrot("123456779", 0) --> ""
 # revrot("563000655734469485", 4) --> "0365065073456944"
-from asserts.Asserts import assert_true
 
 
 def revrot(strng, sz):
@@ -35,6 +34,3 @@ def revrot(strng, sz):
             chunks[i] = chunks[i][1:] + chunks[i][:1]
 
     return ''.join(chunks)
-
-
-assert_true(revrot("3304991787281570455176064327690480265895", 8), "1994033775182780067155464327690480265895")

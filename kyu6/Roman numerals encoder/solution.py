@@ -19,16 +19,3 @@ def solution(n):
             n -= k
 
     return r
-
-
-a = solution(22)
-e = 'XXII'
-assert (a == e), '--> actual: %s, expected %s' % (a, e)
-
-a = solution(89)
-e = 'LXXXIX'
-assert (a == e), '--> actual: %s, expected %s' % (a, e)
-
-a = solution(1989)
-e = 'MCMLXXXIX'
-assert (a == e), '--> actual: %s, expected %s' % (a, e)

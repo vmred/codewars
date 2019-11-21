@@ -11,5 +11,4 @@ def solve(st):
 
 def flatten(inp):
     return re.sub('([a-z]+)?(\d+)?(\([a-z]+\))',
-                  lambda s: (s.group(1) or '') + int(s.group(2) or '1') * s.group(3).strip('()')
-                  , inp)
+                  lambda s: (s.group(1) or '') + int(s.group(2) or '1') * s.group(3).strip('()'), inp)

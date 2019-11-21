@@ -27,7 +27,6 @@
 # 6 -- x2 --> 12:       4 steps
 
 # 4 steps
-from asserts.Asserts import assert_true
 
 
 def shortest_steps_to_num(num):
@@ -41,7 +40,3 @@ def shortest_steps_to_num(num):
         steps += 1
 
     return steps
-
-
-assert_true(shortest_steps_to_num(16), 4)
-assert_true(shortest_steps_to_num(71), 9)
