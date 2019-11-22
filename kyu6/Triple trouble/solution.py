@@ -14,13 +14,7 @@
 
 # triple_double(12345, 12345) == 0
 # triple_double(666789, 12345667) == 1
-from asserts.Asserts import assert_true
 
 
 def triple_double(num1, num2):
     return any([i * 3 in str(num1) and i * 2 in str(num2) for i in '0123456789'])
-
-
-assert_true(triple_double(451999277, 41177722899), 1)
-assert_true(triple_double(1112, 122), 0)
-assert_true(triple_double(10560002, 100), 1)

@@ -33,7 +33,6 @@
 
 # Contains all of the correct letters in 'Allison', in order,
 # but not enough of all of them (missing an 'l').
-from asserts.Asserts import assert_true
 
 
 def name_in_str(s, name):
@@ -66,8 +65,3 @@ def name_in_str(s, name):
 
     # if array is ascending sorted, return true
     return r_i == sorted(r_i)
-
-
-assert_true(name_in_str("Across the rivers", "chris"), True)
-assert_true(name_in_str("A crew that boards the ship", "chris"), False)
-assert_true(name_in_str("Next to a lake", "chris"), False)

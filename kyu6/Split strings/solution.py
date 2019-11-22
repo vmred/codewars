@@ -6,7 +6,6 @@
 
 # solution('abc')  # should return ['ab', 'c_']
 # solution('abcdef')  # should return ['ab', 'cd', 'ef']
-from asserts.Asserts import assert_true
 
 
 def solution(s):
@@ -19,7 +18,3 @@ def solution(s):
         r.append('{}_'.format(s[-1]))
 
     return r
-
-
-assert_true(solution('asdfadsf'), ['as', 'df', 'ad', 'sf'])
-assert_true(solution("asdfads"), ['as', 'df', 'ad', 's_'])

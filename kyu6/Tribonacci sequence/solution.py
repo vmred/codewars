@@ -17,16 +17,10 @@
 # Well, you may have guessed it by now, but to be clear:
 # you need to create a fibonacci function that given a signature array/list,
 # returns the first n elements - signature included of the so seeded sequence.
-from asserts.Asserts import assert_true
 
 
 def tribonacci(signature, n):
     while len(signature) < n:
         signature.append(sum(signature[-3:]))
-        print('-->', signature)
 
     return signature[:n]
-
-
-assert_true(tribonacci([1, 1, 1], 10), [1, 1, 1, 3, 5, 9, 17, 31, 57, 105])
-assert_true(tribonacci([1, 1, 1], 1), [1])

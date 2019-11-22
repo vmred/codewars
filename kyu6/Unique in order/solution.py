@@ -16,10 +16,3 @@ def unique_in_order(iterable):
             result.append(char)
             prev = char
     return result
-
-
-print(unique_in_order('AAAABBBCCDAABBB'))
-print(unique_in_order([1,2,2,3,3]))
-print(unique_in_order('A'))
-print(unique_in_order('AA'))
-print(unique_in_order(''))

@@ -16,7 +16,3 @@ def parts_sums(ls):
     sum_arr.append(0)
 
     return sum_arr
-
-
-print(parts_sums([]))
-print(parts_sums([0, 1, 3, 6, 10]))
