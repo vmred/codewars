@@ -71,7 +71,7 @@
 #   "....O....C.......R......"  // 10
 # ]
 
-# TODO
+
 def traffic_lights(road, n):
     road = list(road)
     start = 0
@@ -82,7 +82,7 @@ def traffic_lights(road, n):
 
     r = [''.join(road)]
 
-    for i in range(1, len(road)):
+    for i in range(1, len(road) + 1):
 
         if not i % 5:
             if 'R' in road:
@@ -116,6 +116,3 @@ def traffic_lights(road, n):
 
         if start == n - 1:
             return r
-
-
-print(traffic_lights('C...R............G......', 10))
