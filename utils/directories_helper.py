@@ -13,7 +13,7 @@ class DirectoryHelper:
         name = ''.join([i for i in name.lower() if i.isalnum() or i.isspace()])
         return '_'.join(name.split())
 
-    def prepare_for_kata(self, kyu, directory_name):
+    def prepare_for_kata(self, kyu, directory_name, test_func_name='f'):
         kata_dir = '{}/{}/{}'.format(self.get_root_dir(), kyu, directory_name)
         # creating directory for kata
         os.mkdir(kata_dir, 0o755)
@@ -27,12 +27,12 @@ class DirectoryHelper:
         f.write('''
             from asserts.Asserts import assert_true
             import importlib
-            f = importlib.import_module('{}.{}.solution').f
+            {} = importlib.import_module('{}.{}.solution').{}
             
             class TestSolution:
                 def {}(self):
-                    pass'''.format(kyu, directory_name, test_name))
+                    pass'''.format(test_func_name, kyu, directory_name, test_func_name, test_name))
         f.close()
 
 
-DirectoryHelper().prepare_for_kata('kyu8', 'Aaa #1 Kata')
+DirectoryHelper().prepare_for_kata('kyu6', 'Validate credit card number')
