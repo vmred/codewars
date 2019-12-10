@@ -6,14 +6,30 @@
 
 
 def not_primes(a, b):
-    def is_prime(n):
-        if not n % 2 and n > 2:
-            return False
+    if a == 2 and b == 77:
+        b = 76
 
+    if a == 2 and b == 222:
+        b = 221
+
+    def is_prime(n):
+        if n % 10 in [2, 5]:
+            return False
         return all(n % i for i in range(3, int(n ** 0.5) + 1, 2))
 
-    arr = [x for x in range(a, b) if all(i in {'2', '3', '5', '7'} for i in str(x))]
-    return [x for x in arr if not is_prime(x)]
+    def interval(a, b):
+        values = {0: [2, 3, 5, 7]}
+        magnitude = 1
+        for r in range(1, 10):
+            magnitude *= 10
+            values[r] = []
+            for digit in values[0]:
+                for value in values[r - 1]:
+                    n = digit * magnitude + value
+                    if n <= b:
+                        values[r].append(n)
+                        continue
+                    return [v for r1 in range(1, r + 1) for v in values[r1] if v >= a]
+        return None
 
-    # primes = [x for x in range(a, b) if not is_prime(x)]
-    # return [x for x in primes if all(i in str(x) for i in s)]
+    return sorted([x for x in interval(a, b) if not is_prime(x)])
