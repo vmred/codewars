@@ -14,25 +14,25 @@ class DirectoryHelper:
         return '_'.join(name.split())
 
     def prepare_for_kata(self, kyu, directory_name, test_func_name='f'):
-        kata_dir = '{}/{}/{}'.format(self.get_root_dir(), kyu, directory_name)
+        kata_dir = f'{self.get_root_dir()}/{kyu}/{directory_name}'
         # creating directory for kata
         os.mkdir(kata_dir, 0o755)
 
         # creating solution.py
-        open('{}/solution.py'.format(kata_dir), 'w+').close()
+        open(f'{kata_dir}/solution.py', 'w+').close()
 
         # creating tests.py
-        test_name = 'test_{}'.format(self.preformat_name(directory_name))
-        f = open('{}/{}.py'.format(kata_dir, test_name), 'w+')
-        f.write('''
+        test_name = f'test_{self.preformat_name(directory_name)}'
+        f = open(f'{kata_dir}/{test_name}.py', 'w+')
+        f.write(f'''
             from asserts.Asserts import assert_true
             import importlib
-            {} = importlib.import_module('{}.{}.solution').{}
+            {test_func_name} = importlib.import_module('{kyu}.{directory_name}.solution').{test_func_name}
             
             class TestSolution:
-                def {}(self):
-                    pass'''.format(test_func_name, kyu, directory_name, test_func_name, test_name))
+                def {test_name}(self):
+                    assert_true('', '')''')
         f.close()
 
 
-DirectoryHelper().prepare_for_kata('kyu6', 'Validate credit card number')
+DirectoryHelper().prepare_for_kata('kyu6', 'Make the Deadfish swim', 'parse')
