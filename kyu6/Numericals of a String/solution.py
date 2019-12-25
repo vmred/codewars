@@ -18,10 +18,7 @@ def numericals(s):
     seen = {}
     r = ''
     for i in s:
-        if i in seen.keys():
-            seen[i] += 1
-        else:
-            seen[i] = 1
+        seen[i] = seen.get(i, 0) + 1
         r += str(seen[i])
 
     return r
