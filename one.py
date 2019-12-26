@@ -3,29 +3,30 @@ import requests
 hostname = 'https://google.com'
 
 
-class RequestDecorator:
-    def __init__(self, function):
-        self.function = function
+def log_call(func):
+    def wrapper(*args, **kwargs):
+        print(kwargs)
+        print(args)
+        args, args[1] = list(args), f'{hostname}{args[1]}'
+        args = tuple(args)
+        print(args)
+        result = func(*args, **kwargs)
+        print(result.url)
+        return result
 
-    def __call__(self, *args, **kwargs):
-        print(self.function.__name__.upper())
-        response = self.function(*args, **kwargs)(f'{hostname}{args[0]}', *args, **kwargs)
-        print(response.url)
-        print(response)
-        return response
+    return wrapper
 
 
 class A:
     def __init__(self):
         pass
 
-    @RequestDecorator
-    def get1(self):
-        return requests.get
+    @log_call
+    def get1(self, *args, **kwargs):
+        return requests.get(*args, **kwargs)
 
 
 a = A()
-r = a.get1(
-    '/search?sxsrf=ACYBGNT_JcVuYPHESDHw_aCpyWYosO4_Wg%3A1577359977825&source=hp&ei=aZoEXsmLMOOyrgTdi4j4Bg&q=e&oq=e&gs_l=psy-ab.3..35i39j0j0i131j0l2j0i131l2j0j0i10i1j0i131.4650.6033..6438...6.0..0.89.174.2......0....1..gws-wiz.....10..35i362i39j0i67j0i20i263.AjqszVBS4qw&ved=0ahUKEwiJ5KLpm9PmAhVjmYsKHd0FAm8Q4dUDCAY&uact=5')
+r = a.get1('', headers={})
 print(r.status_code)
 print(r.content)
