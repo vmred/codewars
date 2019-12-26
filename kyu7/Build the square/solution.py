@@ -9,5 +9,5 @@
 
 
 def generateShape(v):
-    return '\n'.join(['+' * v for _ in range(v)])
+    return '\n'.join(['+' * v] * v)
 
