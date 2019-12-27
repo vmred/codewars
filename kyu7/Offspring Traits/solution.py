@@ -17,17 +17,11 @@
 
 
 def bear_fur(bears):
-    rules = {
-        'black': ['black', 'black'],
-        'brown': ['brown', 'brown'],
-        'white': ['white', 'white'],
-        'dark brown': ['black', 'brown'],
-        'grey': ['black', 'white'],
-        'light brown': ['brown', 'white'],
-    }
-
-    for k, v in rules.items():
-        if sorted(bears) == sorted(v):
-            return k
-
-    return 'unknown'
+    return {
+        ('black', 'black'): 'black',
+        ('brown', 'brown'): 'brown',
+        ('white', 'white'): 'white',
+        ('black', 'brown'): 'dark brown',
+        ('black', 'white'): 'grey',
+        ('brown', 'white'): 'light brown'
+    }.get(tuple(sorted((bears))), 'unknown')
