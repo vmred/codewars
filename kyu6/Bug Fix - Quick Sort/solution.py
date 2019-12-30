@@ -9,6 +9,4 @@ def quicksort(arr):
         return arr  # base case
     else:
         p = arr[0]
-        less = [i for i in arr[1:] if i <= p]
-        more = [i for i in arr[1:] if i > p]
-        return quicksort(less) + [p] + quicksort(more)
+        return quicksort([i for i in arr[1:] if i <= p]) + [p] + quicksort([i for i in arr[1:] if i > p])
