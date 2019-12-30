@@ -26,25 +26,19 @@
 class Dinglemouse(object):
 
     def __init__(self):
-        self.name = None
-        self.sex = None
-        self.age = None
-        self.hello_message = {'base': 'Hello'}
+        self.hello_message = {'base': 'Hello.'}
 
     def setAge(self, age):
-        self.age = age
-        self.hello_message['age'] = f'I am {self.age}'
+        self.hello_message['age'] = f' I am {age}.'
         return self
 
     def setSex(self, sex):
-        self.sex = ['female', 'male'][sex.upper() == 'M']
-        self.hello_message['sex'] = f'I am {self.sex}'
+        self.hello_message['sex'] = f' I am {["female", "male"][sex.upper() == "M"]}.'
         return self
 
     def setName(self, name):
-        self.name = name
-        self.hello_message['name'] = f'My name is {self.name}'
+        self.hello_message['name'] = f' My name is {name}.'
         return self
 
     def hello(self):
-        return '. '.join(list(self.hello_message.values())) + '.'
+        return ''.join(list(self.hello_message.values()))
