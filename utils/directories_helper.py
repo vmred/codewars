@@ -9,9 +9,11 @@ class DirectoryHelper:
         return self.root_dir
 
     @staticmethod
-    def preformat_name(name):
-        name = ''.join([i for i in name.lower() if i.isalnum() or i.isspace()])
-        return '_'.join(name.split())
+    def preformat_name(name, is_test=False):
+        name = ''.join(filter(lambda x: x.isalnum() or x.isspace(), name))
+        if is_test:
+            return '_'.join(name.lower().split())
+        return name
 
     def prepare_for_kata(self, kyu, directory_name, test_func_name='f'):
         kata_dir = f'{self.get_root_dir()}/{kyu}/{directory_name}'
@@ -22,7 +24,7 @@ class DirectoryHelper:
         open(f'{kata_dir}/solution.py', 'w+').close()
 
         # creating tests.py
-        test_name = f'test_{self.preformat_name(directory_name)}'
+        test_name = f'test_{self.preformat_name(directory_name, True)}'
         f = open(f'{kata_dir}/{test_name}.py', 'w+')
         f.write(f'''
             from asserts.Asserts import assert_true
