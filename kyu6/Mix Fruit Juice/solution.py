@@ -30,5 +30,4 @@ def mix_fruit(arr):
         'mango': 7
     }
 
-    arr = [fruits[i.lower()] if i.lower() in fruits.keys() else 9 for i in arr]
-    return round(sum(arr) / len(arr))
+    return round(sum(fruits.get(i.lower(), 9) for i in arr) / len(arr))
