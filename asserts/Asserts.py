@@ -1,6 +1,9 @@
 from pytest import fail
 
 
-def assert_true(actual, expected):
+def assert_true(actual, expected, message=''):
     if actual != expected:
-        fail('--> {} not equal to {}'.format(actual, expected))
+        reason = f'{actual} not equal to {expected}'
+        if message:
+            reason = f'{reason}, message: {message}'
+        fail(reason)
