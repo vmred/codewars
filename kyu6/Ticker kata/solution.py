@@ -21,7 +21,6 @@
 
 
 def ticker(text, width, tick):
-    print(len(text))
     r = ' ' * width
     pos = 1
 
@@ -40,6 +39,5 @@ def ticker(text, width, tick):
             r += ' ' * (width - len(r))
 
         pos += 1
-        # print(i, f'({r})', len(r))
 
     return r
