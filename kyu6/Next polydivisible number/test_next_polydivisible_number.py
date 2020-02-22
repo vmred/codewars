@@ -11,3 +11,6 @@ class TestSolution:
         assert_true(next_num(11), 12)
         assert_true(next_num(1234), 1236)
         assert_true(next_num(123220), 123252)
+        assert_true(next_num(1234567890), 1236004020)
+        assert_true(next_num(8375699373040516261617982), None)
+        assert_true(next_num(3608528850368400786036725), None)
