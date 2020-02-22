@@ -10,6 +10,7 @@
 # For reference, the first two numbers in the Fibonacci sequence are 0 and 1,
 # and each subsequent number is the sum of the previous two.
 
+
 def nth_fib(n):
     n = n - 1
     return ((1 + 5 ** 0.5) ** n - (1 - 5 ** 0.5) ** n) / (5 ** 0.5 * 2 ** n) // 1
