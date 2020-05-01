@@ -25,4 +25,4 @@
 
 
 def regex_contains_all(st):
-    return r"(?i)" + ''.join(["(?=.*{})".format(x) for x in st])
+    return ''.join(f"(?=.*{x})" for x in st)
