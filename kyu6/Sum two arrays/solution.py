@@ -23,13 +23,9 @@ def sum_arrays(array1, array2):
     array1 = 0 if not array1 else int(''.join(list(map(str, array1))))
     array2 = 0 if not array2 else int(''.join(list(map(str, array2))))
     s = array1 + array2
-    if not s:
-        return [0]
 
-    if '-' in str(s):
-        s = [int(x) for x in str(s)[1:]]
-        s[0] *= -1
+    lst = list(map(int, str(abs(s))))
+    if s < 0:
+        lst[0] = -lst[0]
 
-        return s
-
-    return [int(x) for x in str(s)]
+    return lst
