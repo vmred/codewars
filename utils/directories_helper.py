@@ -30,8 +30,8 @@ import importlib
 
 class TestSolution:
     def {test_name}(self, test_case):
-        assert_true('', '')''')
+        test_case.verify('', '')''')
     f.close()
 
 
-prepare_for_kata('kyu6', '"com", "gov", "org" first', 'order_by_domain')
+prepare_for_kata('kyu6', 'Sequence of squared digits', 'squared_digits_series')
