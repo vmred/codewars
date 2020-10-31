@@ -22,16 +22,16 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):
     test_name = f'test_{preformat_name(directory_name, True)}'
     f = open(f'{kata_dir}/{test_name}.py', 'w+')
     f.write(
-        f'''from asserts.Asserts import assert_true
+        f'''
 import importlib
 
 {test_func_name} = importlib.import_module('{kyu}.{directory_name}.solution').{test_func_name}
 
 
 class TestSolution:
-    def {test_name}(self):
+    def {test_name}(self, test_case):
         assert_true('', '')''')
     f.close()
 
 
-prepare_for_kata('kyu4', 'Make the Deadfish swim', 'parse')
+prepare_for_kata('kyu6', '"com", "gov", "org" first', 'order_by_domain')
