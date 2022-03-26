@@ -21,17 +21,19 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):
     # creating tests.py
     test_name = f'test_{preformat_name(directory_name, True)}'
     f = open(f'{kata_dir}/{test_name}.py', 'w+')
-    f.write(
-        f'''
+    f.write(f'''
+from asserts.Asserts import assert_true
 import importlib
 
 {test_func_name} = importlib.import_module('{kyu}.{directory_name}.solution').{test_func_name}
 
 
 class TestSolution:
-    def {test_name}(self, test_case):
-        test_case.verify('', '')''')
+    def {test_name}(self):
+        assert_true('', '')
+''')
+
     f.close()
 
 
-prepare_for_kata('kyu6', 'Sequence of squared digits', 'squared_digits_series')
+prepare_for_kata('kyu5', '123', '123')
