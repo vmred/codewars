@@ -5,14 +5,16 @@ SecureList = importlib.import_module('kyu5.Only readable once list.solution').Se
 
 
 class TestSolution:
+    base = [1, 2, 3, 4]
 
     def test_only_readable_once_list(self):
-        base = [1, 2, 3, 4]
-        a = SecureList(base)
-        assert_true(a[0], base[0])
-        assert_true(a[0], base[1])
+        a = SecureList(self.base)
+        assert_true(a[0], self.base[0])
+        assert_true(a[0], self.base[1])
         assert_true(len(a), 2)
-        assert_true(len(a), 0)
 
-        a = SecureList(base)
+
+    def test_print_len(self):
+        a = SecureList(self.base)
+        print(a)
         assert_true(len(a), 0)

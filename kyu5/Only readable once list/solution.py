@@ -25,25 +25,18 @@
 # and possibly __len__().
 
 
-class SecureList:
-    def __init__(self, value):
-        self.secure_list = list(tuple(value))
+class SecureList(list):
+    def __str__(self):
+        s = super(SecureList, self).__str__()
+        self.clear()
+        return s
 
     def __repr__(self):
-        if self.secure_list:
-            return self.secure_list
-        return []
-
-    def __len__(self):
-        l = len(self.secure_list)
-        self.secure_list = []
-        return l
+        s = super(SecureList, self).__repr__()
+        self.clear()
+        return s
 
     def __getitem__(self, index):
-        if index < len(self.secure_list):
-            value = self.secure_list[index]
-            self.secure_list.pop(index)
-            return value
-
-        else:
-            raise Exception
+        val = super(SecureList, self).__getitem__(index)
+        del self[index]
+        return val
