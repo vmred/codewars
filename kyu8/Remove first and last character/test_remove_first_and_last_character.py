@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 remove_char = importlib.import_module('kyu8.Remove first and last character.solution').remove_char

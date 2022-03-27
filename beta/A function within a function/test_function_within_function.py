@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 always = importlib.import_module('beta.A function within a function.solution').always
 

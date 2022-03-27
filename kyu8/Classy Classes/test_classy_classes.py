@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 Person = importlib.import_module('kyu8.Classy Classes.solution').Person

@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 likes = importlib.import_module('kyu6.Who likes it.solution').likes

@@ -4,7 +4,7 @@
 
 import math
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 
 def nearest_sq(n):

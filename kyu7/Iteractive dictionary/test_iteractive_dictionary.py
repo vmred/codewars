@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 Dictionary = importlib.import_module('kyu7.Iteractive dictionary.solution').Dictionary

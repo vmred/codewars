@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 pig_it = importlib.import_module('kyu5.Simple pig latin.solution').pig_it

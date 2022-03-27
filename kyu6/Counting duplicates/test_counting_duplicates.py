@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 duplicate_count = importlib.import_module('kyu6.Counting duplicates.solution').duplicate_count

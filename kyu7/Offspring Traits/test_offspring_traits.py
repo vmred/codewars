@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 bear_fur = importlib.import_module('kyu7.Offspring Traits.solution').bear_fur

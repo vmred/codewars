@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 List = importlib.import_module('kyu7.Remove all the marked elements of a list.solution').List

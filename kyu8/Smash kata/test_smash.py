@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 smash = importlib.import_module('kyu8.Smash kata.solution').smash
 

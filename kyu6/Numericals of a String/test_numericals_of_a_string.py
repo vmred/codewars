@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 numericals = importlib.import_module('kyu6.Numericals of a String.solution').numericals

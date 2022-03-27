@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 playerRankUp = importlib.import_module('kyu8.Online RPG.solution').playerRankUp

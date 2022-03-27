@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 unique_in_order = importlib.import_module('kyu6.Unique in order.solution').unique_in_order

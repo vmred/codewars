@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 traffic_lights = importlib.import_module('kyu6.Traffic lights.solution').traffic_lights

@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 sum_all = importlib.import_module('beta.Sum of all arguments.solution').sum_all
 

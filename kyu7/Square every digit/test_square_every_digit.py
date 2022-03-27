@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 square_digits = importlib.import_module('kyu7.Square every digit.solution').square_digits

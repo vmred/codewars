@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 valid_parentheses = importlib.import_module('kyu5.Valid Parentheses.solution').valid_parentheses
 

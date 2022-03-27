@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 validate = importlib.import_module('kyu6.Validate credit card number.solution').validate

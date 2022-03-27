@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 encrypt = importlib.import_module('kyu6.Simple encryption 1.solution').encrypt

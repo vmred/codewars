@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 has_subpattern = importlib.import_module('kyu6.String subpattern recognition I.solution').has_subpattern

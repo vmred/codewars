@@ -9,7 +9,7 @@
 # In that case, we return,
 # 'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.'.
 # Otherwise return, False/false (according to the language n use).
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 
 def playerRankUp(pts):

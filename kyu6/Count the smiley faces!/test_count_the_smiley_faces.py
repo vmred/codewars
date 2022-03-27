@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 count_smileys = importlib.import_module('kyu6.Count the smiley faces!.solution').count_smileys
 

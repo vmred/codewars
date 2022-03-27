@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 max_pizza = importlib.import_module('kyu6.Pizza pieces.solution').max_pizza

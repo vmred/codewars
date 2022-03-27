@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 shortest_steps_to_num = importlib.import_module('kyu6.Shortest steps to a number.solution').shortest_steps_to_num

@@ -7,7 +7,7 @@
 # For example:
 # bubba = Python('Bubba')
 # bubba.name # should return 'Bubba'
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 
 class Python:

@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 letter_frequency = importlib.import_module('kyu6.Character frequency.solution').letter_frequency
 

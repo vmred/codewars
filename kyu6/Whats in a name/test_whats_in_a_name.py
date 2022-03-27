@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 name_in_str = importlib.import_module('kyu6.Whats in a name.solution').name_in_str

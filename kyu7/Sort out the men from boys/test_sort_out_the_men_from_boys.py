@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 men_from_boys = importlib.import_module('kyu7.Sort out the men from boys.solution').men_from_boys

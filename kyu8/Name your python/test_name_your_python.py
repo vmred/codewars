@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 Python = importlib.import_module('kyu8.Name your python.solution').Python
 

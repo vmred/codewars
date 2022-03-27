@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 flatten_and_sort = importlib.import_module('kyu7.Flatten and sort array.solution').flatten_and_sort
 

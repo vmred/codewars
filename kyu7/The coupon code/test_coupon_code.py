@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 check_coupon = importlib.import_module('kyu7.The coupon code.solution').check_coupon

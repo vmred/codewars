@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 array_diff = importlib.import_module('kyu6.Array diff.solution').array_diff

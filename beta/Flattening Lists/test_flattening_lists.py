@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 flatten = importlib.import_module('beta.Flattening Lists.solution').flatten
 

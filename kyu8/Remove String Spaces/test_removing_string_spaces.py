@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 no_space = importlib.import_module('kyu8.Remove String Spaces.solution').no_space
 

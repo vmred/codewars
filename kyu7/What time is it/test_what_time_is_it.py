@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 get_military_time = importlib.import_module('kyu7.What time is it.solution').get_military_time

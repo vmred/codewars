@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 tower_builder = importlib.import_module('kyu6.Build the tower.solution').tower_builder

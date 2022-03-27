@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 generate_hashtag = importlib.import_module('kyu5.The hashtag generator.solution').generate_hashtag
 

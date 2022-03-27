@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 expanded_form = importlib.import_module('kyu6.Write Number in Expanded Form.solution').expanded_form
 

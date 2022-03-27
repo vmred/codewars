@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 duplicate_encode = importlib.import_module('kyu6.Duplicate encoder.solution').duplicate_encode

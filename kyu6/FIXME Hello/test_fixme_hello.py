@@ -1,7 +1,7 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
-Dinglemouse = importlib.import_module('kyu6.FIXME: Hello.solution').Dinglemouse
+Dinglemouse = importlib.import_module('kyu6.FIXME Hello.solution').Dinglemouse
 
 
 class TestSolution:

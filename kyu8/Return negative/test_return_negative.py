@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 make_negative = importlib.import_module('kyu8.Return negative.solution').make_negative

@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 strong_num = importlib.import_module('kyu7.STRONG strong number.solution').strong_num

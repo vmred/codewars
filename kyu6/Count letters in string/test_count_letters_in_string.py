@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 letter_count = importlib.import_module('kyu6.Count letters in string.solution').letter_count

@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 encode = importlib.import_module('kyu6.Error correction #1 - Hamming Code.solution').encode

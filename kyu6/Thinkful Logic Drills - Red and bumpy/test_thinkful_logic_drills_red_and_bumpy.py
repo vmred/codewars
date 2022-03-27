@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 color_probability = importlib.import_module('kyu6.Thinkful Logic Drills - Red and bumpy.solution').color_probability

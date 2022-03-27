@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 product_array = importlib.import_module('kyu7.Product array.solution').product_array

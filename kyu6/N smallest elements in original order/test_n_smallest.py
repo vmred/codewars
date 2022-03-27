@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 first_n_smallest = importlib.import_module('kyu6.N smallest elements in original order.solution').first_n_smallest

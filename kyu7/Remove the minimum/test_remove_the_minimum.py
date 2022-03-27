@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 remove_smallest = importlib.import_module('kyu7.Remove the minimum.solution').remove_smallest
 

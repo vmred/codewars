@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 is_palindrome = importlib.import_module('beta.Palindrome checker.solution').is_palindrome
 

@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 to_weird_case = importlib.import_module('kyu6.Weird string case.solution').to_weird_case
 

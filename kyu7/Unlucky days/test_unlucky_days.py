@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 unlucky_days = importlib.import_module('kyu7.Unlucky days.solution').unlucky_days

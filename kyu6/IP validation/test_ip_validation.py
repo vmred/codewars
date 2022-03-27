@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 is_valid_IP = importlib.import_module('kyu6.IP validation.solution').is_valid_IP

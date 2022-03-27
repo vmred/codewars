@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 zeros = importlib.import_module('kyu5.Number of trailing zeros of n factorial.solution').zeros

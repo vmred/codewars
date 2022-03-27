@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 domain_name = importlib.import_module('kyu5.Extract the domain name from a URL.solution').domain_name
 

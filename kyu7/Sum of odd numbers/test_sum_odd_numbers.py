@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 row_summ_odd_numbers = importlib.import_module('kyu7.Sum of odd numbers.solution').row_summ_odd_numbers

@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 class_name_changer = importlib.import_module('kyu7.Python dynamic classes #1.solution').class_name_changer

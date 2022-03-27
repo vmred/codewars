@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 sum_of_a_beach = importlib.import_module('kyu7.Sum of a beach.solution').sum_of_a_beach

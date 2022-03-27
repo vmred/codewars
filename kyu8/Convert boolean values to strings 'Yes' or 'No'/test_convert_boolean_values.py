@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 bool_to_word = importlib.import_module('kyu8.Convert boolean values to strings \'Yes\' or \'No\'.solution').bool_to_word

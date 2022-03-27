@@ -6,7 +6,7 @@
 
 # Also we got a problem with negative values. Correct the code so negative values will be switched to positive ones!
 # The constructor taking no arguments should assign 0 to Cube's Side property.
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 
 class Cube(object):

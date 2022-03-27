@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 dont_give_me_five = importlib.import_module('kyu7.Dont give me five!.solution').dont_give_me_five

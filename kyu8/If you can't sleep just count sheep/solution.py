@@ -3,7 +3,7 @@
 # Input will always be valid, i.e. no negative integers.
 
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 
 def count_sheep(n):

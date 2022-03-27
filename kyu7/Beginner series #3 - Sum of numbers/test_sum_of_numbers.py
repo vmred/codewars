@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 get_sum = importlib.import_module('kyu7.Beginner series #3 - Sum of numbers.solution').get_sum

@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 group_by_commas = importlib.import_module('kyu6.Grouped by commas.solution').group_by_commas

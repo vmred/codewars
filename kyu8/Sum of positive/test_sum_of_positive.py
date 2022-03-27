@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 positive_sum = importlib.import_module('kyu8.Sum of positive.solution').positive_sum

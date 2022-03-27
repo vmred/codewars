@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 Vector = importlib.import_module('kyu5.Vector class #1.solution').Vector

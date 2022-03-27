@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 divisors = importlib.import_module('kyu7.Find the divisors!.solution').divisors
 

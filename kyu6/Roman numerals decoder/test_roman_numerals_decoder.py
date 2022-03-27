@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 solution = importlib.import_module('kyu6.Roman numerals decoder.solution').solution
 

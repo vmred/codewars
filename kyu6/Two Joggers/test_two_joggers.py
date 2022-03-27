@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 nbr_of_laps = importlib.import_module('kyu6.Two Joggers.solution').nbr_of_laps

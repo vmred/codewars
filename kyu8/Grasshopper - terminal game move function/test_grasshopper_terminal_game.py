@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 move = importlib.import_module('kyu8.Grasshopper - terminal game move function.solution').move

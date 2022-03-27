@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 decodeMorse = importlib.import_module('kyu6.Decode the morse code.solution').decodeMorse

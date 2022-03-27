@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 camel_case = importlib.import_module('kyu6.Camel case method.solution').camel_case

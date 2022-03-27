@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 tribonacci = importlib.import_module('kyu6.Tribonacci sequence.solution').tribonacci

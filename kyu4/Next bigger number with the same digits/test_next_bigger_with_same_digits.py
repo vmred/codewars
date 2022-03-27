@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 next_bigger = importlib.import_module('kyu4.Next bigger number with the same digits.solution').next_bigger
 

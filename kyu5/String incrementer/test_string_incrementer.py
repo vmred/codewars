@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 increment_string = importlib.import_module('kyu5.String incrementer.solution').increment_string
 

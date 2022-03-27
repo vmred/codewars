@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 quicksort = importlib.import_module('kyu6.Bug Fix - Quick Sort.solution').quicksort

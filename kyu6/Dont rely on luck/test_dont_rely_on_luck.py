@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 randint = importlib.import_module('kyu6.Dont rely on luck.solution').randint

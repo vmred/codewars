@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 josephus_survivor = importlib.import_module('kyu5.Josephus survivor.solution').josephus_survivor

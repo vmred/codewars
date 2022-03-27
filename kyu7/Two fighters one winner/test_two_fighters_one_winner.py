@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 declare_winner = importlib.import_module('kyu7.Two fighters one winner.solution').declare_winner

@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 exp_sum = importlib.import_module('kyu4.Explosive sum.solution').exp_sum
 

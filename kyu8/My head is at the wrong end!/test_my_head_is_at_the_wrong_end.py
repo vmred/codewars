@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 fix_the_meerkat = importlib.import_module('kyu8.My head is at the wrong end!.solution').fix_the_meerkat

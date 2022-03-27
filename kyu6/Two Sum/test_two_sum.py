@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 two_sum = importlib.import_module('kyu6.Two Sum.solution').two_sum

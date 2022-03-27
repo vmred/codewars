@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 basic_op = importlib.import_module('kyu8.Basic mathematical operations.solution').basic_op
 

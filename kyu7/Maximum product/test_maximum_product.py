@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 adjacent_element_product = importlib.import_module('kyu7.Maximum product.solution').adjacent_element_product

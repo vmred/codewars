@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 nth_smallest = importlib.import_module('kyu7.Nth smallest element.solution').nth_smallest

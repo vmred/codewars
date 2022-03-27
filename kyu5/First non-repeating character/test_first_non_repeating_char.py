@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 first_non_repeating_letter = importlib.import_module(
     'kyu5.First non-repeating character.solution').first_non_repeating_letter

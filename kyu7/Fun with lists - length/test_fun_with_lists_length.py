@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 length = importlib.import_module('kyu7.Fun with lists - length.solution').length

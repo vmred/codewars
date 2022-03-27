@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 next_smaller = importlib.import_module('kyu4.Next smaller number with the same digits.solution').next_smaller
 

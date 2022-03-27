@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 invite_more_women = importlib.import_module('kyu7.Simple Fun #152 - Invite More Women.solution').invite_more_women

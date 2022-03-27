@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 mix_fruit = importlib.import_module('kyu6.Mix Fruit Juice.solution').mix_fruit

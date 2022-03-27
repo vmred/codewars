@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 is_pangram = importlib.import_module('kyu6.Detect pangram.solution').is_pangram

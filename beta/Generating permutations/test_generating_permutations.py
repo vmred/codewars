@@ -20,7 +20,7 @@
 import importlib
 
 permutations = importlib.import_module('beta.Generating permutations.solution').permutations
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 
 class TestSolution:

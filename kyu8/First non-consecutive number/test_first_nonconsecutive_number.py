@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 first_non_consecutive = importlib.import_module('kyu8.First non-consecutive number.solution').first_non_consecutive

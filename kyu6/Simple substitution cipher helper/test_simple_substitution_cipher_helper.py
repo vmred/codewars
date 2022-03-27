@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 Cipher = importlib.import_module('kyu6.Simple substitution cipher helper.solution').Cipher

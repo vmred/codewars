@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 clean_string = importlib.import_module('kyu6.Backspaces in string.solution').clean_string

@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 nearest_sq = importlib.import_module('kyu8.Find the nearest square number.solution').nearest_sq

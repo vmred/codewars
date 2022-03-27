@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 min_value = importlib.import_module('kyu7.From the minimum.solution').min_value

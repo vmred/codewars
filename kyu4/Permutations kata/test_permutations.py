@@ -1,8 +1,8 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
-permutations = importlib.import_module('kyu4.Permutations.solution').permutations
+permutations = importlib.import_module('kyu4.Permutations kata.solution').permutations
 
 
 class TestSolution:

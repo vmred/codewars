@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 toJadenCase = importlib.import_module('kyu7.Jaden casing string.solution').toJadenCase

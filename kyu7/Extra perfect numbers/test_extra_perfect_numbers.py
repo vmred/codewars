@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 extra_perfect = importlib.import_module('kyu7.Extra perfect numbers.solution').extra_perfect

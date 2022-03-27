@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 next_happy_year = importlib.import_module('kyu7.See your next happy year.solution').next_happy_year

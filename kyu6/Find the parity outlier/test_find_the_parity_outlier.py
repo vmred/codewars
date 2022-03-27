@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 find_outlier = importlib.import_module('kyu6.Find the parity outlier.solution').find_outlier

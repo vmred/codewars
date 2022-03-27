@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 iq_test = importlib.import_module('kyu6.IQ test.solution').iq_test

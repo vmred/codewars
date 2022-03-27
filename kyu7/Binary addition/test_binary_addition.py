@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 add_binary = importlib.import_module('kyu7.Binary addition.solution').add_binary

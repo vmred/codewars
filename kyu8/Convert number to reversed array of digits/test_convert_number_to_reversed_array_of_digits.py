@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 digitize = importlib.import_module('kyu8.Convert number to reversed array of digits.solution').digitize

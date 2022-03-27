@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 rgb = importlib.import_module('kyu5.RGB To Hex Conversion.solution').rgb
 

@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 zero = importlib.import_module('kyu5.Calculating with functions.solution').zero
 one = importlib.import_module('kyu5.Calculating with functions.solution').one

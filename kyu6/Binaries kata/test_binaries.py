@@ -1,6 +1,6 @@
 import importlib
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 code = importlib.import_module('kyu6.Binaries kata.solution').code
 decode = importlib.import_module('kyu6.Binaries kata.solution').decode

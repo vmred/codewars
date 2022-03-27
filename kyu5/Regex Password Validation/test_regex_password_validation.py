@@ -1,7 +1,7 @@
 import importlib
 from re import search
 
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 
 regex = importlib.import_module('kyu5.Regex Password Validation.solution').regex
 

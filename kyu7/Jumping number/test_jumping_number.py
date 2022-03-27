@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 jumping_number = importlib.import_module('kyu7.Jumping number.solution').jumping_number

@@ -1,4 +1,4 @@
-from asserts.Asserts import assert_true
+from asserts.asserts import assert_true
 import importlib
 
 sum_arrays = importlib.import_module('kyu6.Sum two arrays.solution').sum_arrays
