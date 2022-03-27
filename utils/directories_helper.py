@@ -36,4 +36,4 @@ class TestSolution:
     f.close()
 
 
-prepare_for_kata('kyu5', '123', '123')
+prepare_for_kata('kyu6', '123', 'solution')
