@@ -34,7 +34,7 @@ tests = [
 
 class TestSolution:
 
-    @pytest.mark.parametrize('tests', tests, ids=[f'{{test.test_data}} for test in tests])
+    @pytest.mark.parametrize('tests', tests, ids=[f'{{test.test_data}}' for test in tests])
     def {test_name}(self, tests):
         assert_true(solution(tests.test_data), tests.test_output)
 ''')
@@ -42,4 +42,4 @@ class TestSolution:
     f.close()
 
 
-prepare_for_kata('kyu7', 'Find the index of the second occurrence of a letter in a string', 'solution')
+prepare_for_kata('kyu7', 'Remove words from the sentence if it contains one exclamation mark', 'solution')
