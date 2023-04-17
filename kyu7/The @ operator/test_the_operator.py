@@ -1,19 +1,11 @@
-from dataclasses import dataclass
-from typing import Union
-
 import pytest
 
 from asserts.asserts import assert_true
 import importlib
 
+from utils.utils import Test
+
 solution = importlib.import_module('kyu7.The @ operator.solution').evaluate
-
-
-@dataclass
-class Test:
-    test_data: str
-    test_output: Union[int, None]
-
 
 tests = [
     Test('0 @ 1', 0),

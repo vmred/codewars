@@ -22,13 +22,19 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):
     test_name = f'test_{preformat_name(directory_name, True)}'
     f = open(f'{kata_dir}/{test_name}.py', 'w+')
     f.write(f'''
+import pytest
 from asserts.asserts import assert_true
 import importlib
+from utils.utils import Test
 
 {test_func_name} = importlib.import_module('{kyu}.{directory_name}.solution').{test_func_name}
 
+tests = [
+]
 
 class TestSolution:
+
+    @pytest.mark.parametrize('tests', tests, ids=[test.test_data for test in tests])
     def {test_name}(self):
         assert_true('', '')
 ''')
@@ -36,4 +42,4 @@ class TestSolution:
     f.close()
 
 
-prepare_for_kata('kyu7', 'The @ operator', 'solution')
+prepare_for_kata('kyu7', 'Find the index of the second occurrence of a letter in a string', 'solution')
