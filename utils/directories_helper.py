@@ -35,8 +35,8 @@ tests = [
 class TestSolution:
 
     @pytest.mark.parametrize('tests', tests, ids=[test.test_data for test in tests])
-    def {test_name}(self):
-        assert_true('', '')
+    def {test_name}(self, tests):
+        assert_true(solution(tests.test_data), tests.test_output)
 ''')
 
     f.close()
