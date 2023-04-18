@@ -1,9 +1,6 @@
 # Someone was hacking the score.
 # Each student's record is given as an array
 # The objects in the array are given again as an array of scores for each name and total score. ex>
-from dataclasses import dataclass
-from typing import List
-
 
 # array = [
 # ["name1", 445, ["B", "A", "A", "C", "A", "A"]],
@@ -22,30 +19,17 @@ from typing import List
 
 # Returns the name of the hacked name as an array when scoring with this rule.
 
-@dataclass
-class Student:
-    name: str
-    total_score: int
-    scores: List[str]
+
+scores_map = {'A': 30, 'B': 20, 'C': 10, 'D': 5}
+max_score, bonus = 200, 20
+apply_bonus = set('AB')
 
 
-scores = {'A': 30, 'B': 20, 'C': 10, 'D': 5}
-
-
-def calculate_score(values: List[str]):
-    score = 0
-    if len(values) >= 5 and sorted(set(values)) in [['A', 'B'], ['A'], ['B']]:
-        score += 20
-    score += sum(scores.get(k, 0) for k in values)
-    return score
+def calculate_score(values):
+    return min(
+        max_score, sum(scores_map.get(k, 0) for k in values) + bonus * (len(values) > 4 and set(values) <= apply_bonus)
+    )
 
 
 def find_hack(arr):
-    hackers = []
-    for student in [Student(a[0], a[1], a[2]) for a in arr]:
-        calculated_score = calculate_score(student.scores)
-        calculated_score = calculated_score > 200 and 200 or calculated_score
-        if calculated_score != student.total_score:
-            hackers.append(student.name)
-
-    return hackers
+    return [name for name, total_score, scores in arr if total_score != calculate_score(scores)]
