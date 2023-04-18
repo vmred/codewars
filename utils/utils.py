@@ -3,6 +3,6 @@ from typing import Any
 
 
 @dataclass
-class Test:
+class TestCase:
     test_data: Any
     test_output: Any

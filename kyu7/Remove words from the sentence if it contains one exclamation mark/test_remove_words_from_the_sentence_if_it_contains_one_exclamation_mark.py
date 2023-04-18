@@ -1,15 +1,15 @@
 import pytest
 from asserts.asserts import assert_true
 import importlib
-from utils.utils import Test
+from utils.utils import TestCase
 
 solution = importlib.import_module(
     'kyu7.Remove words from the sentence if it contains one exclamation mark.solution').remove
 
 tests = [
-    Test('Hi!', ''),
-    Test('!!!Hi !!hi!!! !hi', '!!!Hi !!hi!!!'),
-    Test('!Hi! ! !Hi!', '!Hi! !Hi!')
+    TestCase('Hi!', ''),
+    TestCase('!!!Hi !!hi!!! !hi', '!!!Hi !!hi!!!'),
+    TestCase('!Hi! ! !Hi!', '!Hi! !Hi!')
 ]
 
 

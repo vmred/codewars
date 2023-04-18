@@ -1,12 +1,12 @@
 import pytest
 from asserts.asserts import assert_true
 import importlib
-from utils.utils import Test
+from utils.utils import TestCase
 
 solution = importlib.import_module('kyu6.Find Cracker.solution').find_hack
 
 tests = [
-    Test([
+    TestCase([
         ["name1", 150, ["B", "A", "A", "C", "A", "A"]],
         ["name2", 120, ["B", "A", "A", "A"]],
         ["name3", 160, ["B", "A", "A", "A", "A"]],

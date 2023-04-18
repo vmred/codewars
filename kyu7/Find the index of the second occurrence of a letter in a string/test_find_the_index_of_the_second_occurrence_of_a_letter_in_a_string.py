@@ -3,14 +3,14 @@ import pytest
 from asserts.asserts import assert_true
 import importlib
 
-from utils.utils import Test
+from utils.utils import TestCase
 
 solution = importlib.import_module(
     'kyu7.Find the index of the second occurrence of a letter in a string.solution').second_symbol
 
 tests = [
-    Test(['Hello world!!!', 'l'], 3),
-    Test(['', 'q'], -1)
+    TestCase(['Hello world!!!', 'l'], 3),
+    TestCase(['', 'q'], -1)
 ]
 
 
