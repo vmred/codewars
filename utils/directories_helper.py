@@ -29,17 +29,17 @@ from utils.utils import Test
 
 {test_func_name} = importlib.import_module('{kyu}.{directory_name}.solution').{test_func_name}
 
-tests = [
+cases = [
 ]
 
 class TestSolution:
 
-    @pytest.mark.parametrize('tests', tests, ids=[f'{{test.test_data}}' for test in tests])
-    def {test_name}(self, tests):
-        assert_true(solution(tests.test_data), tests.test_output)
+    @pytest.mark.parametrize('test', cases, ids=[f'{{test.test_data}}' for test in cases])
+    def {test_name}(self, test):
+        assert_true(solution(test.test_data), test.test_output)
 ''')
 
     f.close()
 
 
-prepare_for_kata('kyu7', 'Remove words from the sentence if it contains one exclamation mark', 'solution')
+prepare_for_kata('<kyu level>', '<kata name>', 'solution')
