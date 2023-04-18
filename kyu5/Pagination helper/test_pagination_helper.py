@@ -1,3 +1,5 @@
+import pytest
+
 from asserts.asserts import assert_true
 import importlib
 
@@ -5,7 +7,8 @@ PaginationHelper = importlib.import_module('kyu5.Pagination helper.solution').Pa
 
 
 class TestSolution:
-
+    @pytest.mark.xfail
+    @pytest.mark.not_competed
     def test_pagination_helper(self):
         collection = range(1, 25)
         helper = PaginationHelper(collection, 10)

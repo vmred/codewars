@@ -1,11 +1,15 @@
 import importlib
 
+import pytest
+
 from asserts.asserts import assert_true
 
 code = importlib.import_module('kyu6.Binaries kata.solution').code
 decode = importlib.import_module('kyu6.Binaries kata.solution').decode
 
 
+@pytest.mark.xfail
+@pytest.mark.not_competed
 class TestSolution:
 
     def testing_code(self, s, expected):

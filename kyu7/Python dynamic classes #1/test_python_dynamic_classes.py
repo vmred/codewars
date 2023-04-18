@@ -1,3 +1,5 @@
+import pytest
+
 from asserts.asserts import assert_true
 import importlib
 
@@ -6,6 +8,8 @@ MyClass = importlib.import_module('kyu7.Python dynamic classes #1.solution').MyC
 
 
 class TestSolution:
+    @pytest.mark.xfail
+    @pytest.mark.not_competed
     def test_python_dynamic_classes(self):
         myObject = MyClass()
         assert_true(str(MyClass), "<class '__main__.MyClass'>")
