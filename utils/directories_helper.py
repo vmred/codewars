@@ -25,11 +25,12 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):
 import pytest
 from asserts.asserts import assert_true
 import importlib
-from utils.utils import Test
+from utils.utils import TestCase
 
 {test_func_name} = importlib.import_module('{kyu}.{directory_name}.solution').{test_func_name}
 
 cases = [
+    TestCase()
 ]
 
 class TestSolution:
