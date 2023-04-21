@@ -11,7 +11,7 @@ def preformat_name(name, is_test=False):
 
 
 def prepare_for_kata(kyu, directory_name, test_func_name='f'):
-    kata_dir = f'{root_dir}/{kyu}/{preformat_name(directory_name)}'
+    kata_dir = f'{root_dir}/katas/{kyu}/{preformat_name(directory_name)}'
     # creating directory for kata
     os.mkdir(kata_dir, 0o755)
 
