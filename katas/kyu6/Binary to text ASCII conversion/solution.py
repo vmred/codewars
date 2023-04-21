@@ -5,6 +5,4 @@
 # Note: In the case of an empty binary string your function should return an empty string.
 
 def binary_to_string(binary):
-    if not binary: return ''
-    n = int(binary, 2)
-    return n.to_bytes((n.bit_length() + 7) // 8, 'big').decode()
+    return binary and int(binary, 2).to_bytes(len(binary) // 8, 'big').decode() or binary
