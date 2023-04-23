@@ -43,4 +43,5 @@ class TestSolution:
     f.close()
 
 
-prepare_for_kata('<kyu level>', '<kata name>', 'solution')
+if __name__ == '__main__':
+    prepare_for_kata('<kyu level>', '<kata name>', 'solution')
