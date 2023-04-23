@@ -10,7 +10,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Classy Extenstions](katas/8kyu/Classy%20Extensions/solution.py) - [codewars](https://www.codewars.com/kata/55a14aa4817efe41c20000bc)
 * [Convert boolean values to strings \'Yes\' or \'No\'](katas/8kyu/Convert%20boolean%20values%20to%20strings%20'Yes'%20or%20'No'/solution.py) - [codewars](https://www.codewars.com/kata/53369039d7ab3ac506000467)
 * [Convert number to reversed array of digits](katas/8kyu/Convert%20number%20to%20reversed%20array%20of%20digits/solution.py) - [codewars](https://www.codewars.com/kata/53369039d7ab3ac506000467)
-* [Count odd numbers below N](katas/8kyu/Count odd numbers below N/solution.py) - [codewars](https://www.codewars.com/kata/59342039eb450e39970000a6)
+* [Count odd numbers below N](katas/8kyu/Count%20odd%20numbers%20below%20N/solution.py) - [codewars](https://www.codewars.com/kata/59342039eb450e39970000a6)
 * [Counting sheep](katas/8kyu/Count%20sheep/solution.py) - [codewars](https://www.codewars.com/kata/54edbc7200b811e956000556)
 * [Even or odd](katas/8kyu/Even%20or%20odd/solution.py) - [codewars](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe)
 * [Find the nearest square number](katas/8kyu/Find%20the%20nearest%20square%20number/solution.py) - [codewars](https://www.codewars.com/kata/5a805d8cafa10f8b930005ba)
