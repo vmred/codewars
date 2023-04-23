@@ -1,7 +1,7 @@
 from asserts.asserts import assert_true
 import importlib
 
-incrementer = importlib.import_module('katas.7kyu.Increment kata.solution').incrementer
+incrementer = importlib.import_module('katas.7kyu.Incrementer.solution').incrementer
 
 
 class TestSolution:
