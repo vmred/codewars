@@ -21,4 +21,8 @@ def update_readme(kyu: str, kata_name: str, kata_url: str, kata_solution_path=No
 
 
 if __name__ == '__main__':
-    update_readme(kyu='<kuy>', kata_name='<name>', kata_url='<url>')
+    update_readme(
+        kyu='kyu', kata_name='name',
+        kata_url='url'
+    )
+

@@ -1,7 +1,7 @@
 from asserts.asserts import assert_true
 import importlib
 
-is_isogram = importlib.import_module('katas.7kyu.Isograms kata.solution').is_isogram
+is_isogram = importlib.import_module('katas.7kyu.Isograms.solution').is_isogram
 
 
 class TestSolution:
