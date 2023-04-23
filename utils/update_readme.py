@@ -10,6 +10,7 @@ section_template = '#### <a name="{}">'
 
 def update_readme(kyu: str, kata_name: str, kata_url: str, kata_solution_path=None):
     kata_solution_path = kata_solution_path or kata_solution_path_template.format(kyu, kata_name)
+    kata_solution_path = kata_solution_path.replace(' ', '%20')
     new_entry = new_entry_template.format(kata_name, kata_solution_path, kata_url)
     with fileinput.FileInput(os.path.join(root_dir, 'README.md'), inplace=1) as f:
         for line in f:
@@ -20,4 +21,4 @@ def update_readme(kyu: str, kata_name: str, kata_url: str, kata_solution_path=No
 
 
 if __name__ == '__main__':
-    update_readme(kyu='8kyu', kata_name='<name>', kata_url='<url>')
+    update_readme(kyu='<kuy>', kata_name='<name>', kata_url='<url>')
