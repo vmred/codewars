@@ -5,6 +5,13 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 [beta](#beta) | [1 kyu](#1kyu) | [2 kyu](#2kyu) | [3 kyu](#3kyu) | [4 kyu](#4kyu) | [5 kyu](#5kyu) | [6 kyu](#6kyu) | [7 kyu](#7kyu) | [8 kyu](#8kyu)
 
 #### <a name="beta">beta</a>
+* [Tug-o-War](katas/beta/Tug-o-War/solution.py) - [codewars](https://www.codewars.com/kata/547fb94931cce5f5de00024f)
+* [Summations 1](katas/beta/Summations%201/solution.py) - [codewars](https://www.codewars.com/kata/55c02535bf0974404b0000f9)
+* [Sum of all arguments](katas/beta/Sum%20of%20all%20arguments/solution.py) - [codewars](https://www.codewars.com/kata/540c33513b6532cd58000259)
+* [Palindrome checker](katas/beta/Palindrome%20checker/solution.py) - [codewars](https://www.codewars.com/kata/549ae731a051e877fc000a86)
+* [Generating permutations](katas/beta/Generating%20permutations/solution.py) - [codewars](https://www.codewars.com/kata/53e91a041d70d3a63300025a)
+* [Flattening Lists](katas/beta/Flattening%20Lists/solution.py) - [codewars](https://www.codewars.com/kata/54474afb46324f45190000a5)
+* [A function within a function](katas/beta/A%20function%20within%20a%20function/solution.py) - [codewars](https://www.codewars.com/kata/53844152aa6fc137d8000589)
 
 #### <a name="4kyu">4 kyu</a>
 * [The observed PIN](katas/4kyu/The%20observed%20PIN/solution.py) - [codewars](https://www.codewars.com/kata/5263c6999e0f40dee200059d)
