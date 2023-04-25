@@ -2,7 +2,7 @@ import importlib
 
 from asserts.asserts import assert_true
 
-rot13 = importlib.import_module('katas.5kyu.Rot13 kata.solution').rot13
+rot13 = importlib.import_module('katas.5kyu.Rot13.solution').rot13
 
 
 class TestSolution:
