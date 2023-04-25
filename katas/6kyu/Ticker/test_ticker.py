@@ -1,7 +1,7 @@
 from asserts.asserts import assert_true
 import importlib
 
-ticker = importlib.import_module('katas.6kyu.Ticker kata.solution').ticker
+ticker = importlib.import_module('katas.6kyu.Ticker.solution').ticker
 
 
 class TestSolution:
