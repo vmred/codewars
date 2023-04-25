@@ -1,7 +1,7 @@
 from asserts.asserts import assert_true
 import importlib
 
-flatten = importlib.import_module('katas.5kyu.flatten() kata.solution').flatten
+flatten = importlib.import_module('katas.5kyu.flatten().solution').flatten
 
 
 class TestSolution:
