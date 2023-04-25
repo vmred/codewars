@@ -1,7 +1,7 @@
 from asserts.asserts import assert_true
 import importlib
 
-song_decoder = importlib.import_module('katas.6kyu.Dubstep kata.solution').song_decoder
+song_decoder = importlib.import_module('katas.6kyu.Dubstep.solution').song_decoder
 
 
 class TestSolution:

@@ -4,8 +4,8 @@ import pytest
 
 from asserts.asserts import assert_true
 
-code = importlib.import_module('katas.6kyu.Binaries kata.solution').code
-decode = importlib.import_module('katas.6kyu.Binaries kata.solution').decode
+code = importlib.import_module('katas.6kyu.Binaries.solution').code
+decode = importlib.import_module('katas.6kyu.Binaries.solution').decode
 
 
 @pytest.mark.xfail
