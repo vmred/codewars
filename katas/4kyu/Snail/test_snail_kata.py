@@ -1,7 +1,7 @@
 from asserts.asserts import assert_true
 import importlib
 
-snail = importlib.import_module('katas.4kyu.Snail kata.solution').snail
+snail = importlib.import_module('katas.4kyu.Snail.solution').snail
 
 
 class TestSolution:
