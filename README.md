@@ -7,6 +7,14 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 #### <a name="beta">beta</a>
 
 #### <a name="4kyu">4 kyu</a>
+* [The observed PIN](katas/4kyu/The%20observed%20PIN/solution.py) - [codewars](https://www.codewars.com/kata/5263c6999e0f40dee200059d)
+* [Strip comments](katas/4kyu/Strip%20comments/solution.py) - [codewars](https://www.codewars.com/kata/51c8e37cee245da6b40000bd)
+* [Snail](katas/4kyu/Snail/solution.py) - [codewars](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1)
+* [Permutations kata](katas/4kyu/Permutations%20kata/solution.py) - [codewars](https://www.codewars.com/collections/permutations)
+* [Next smaller number with the same digits](katas/4kyu/Next%20smaller%20number%20with%20the%20same%20digits/solution.py) - [codewars](https://www.codewars.com/kata/5659c6d896bc135c4c00021e)
+* [Next bigger number with the same digits](katas/4kyu/Next%20bigger%20number%20with%20the%20same%20digits/solution.py) - [codewars](https://www.codewars.com/kata/55983863da40caa2c900004e)
+* [Human readable duration format](katas/4kyu/Human%20readable%20duration%20format/solution.py) - [codewars](https://www.codewars.com/kata/52742f58faf5485cae000b9a)
+* [Explosive sum](katas/4kyu/Explosive%20sum/solution.py) - [codewars](https://www.codewars.com/kata/52ec24228a515e620b0005ef)
 
 #### <a name="5kyu">5 kyu</a>
 * [Where my anagrams at](katas/5kyu/Where%20my%20anagrams%20at/solution.py) - [codewars](https://www.codewars.com/kata/523a86aa4230ebb5420001e1)
@@ -17,7 +25,6 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [The hashtag generator](katas/5kyu/The%20hashtag%20generator/solution.py) - [codewars](https://www.codewars.com/kata/52449b062fb80683ec000024)
 * [String incrementer](katas/5kyu/String%20incrementer/solution.py) - [codewars](https://www.codewars.com/kata/54a91a4883a7de5d7800009c)
 * [Square Matrix Multiplication](katas/5kyu/Square%20Matrix%20Multiplication/solution.py) - [codewars](https://www.codewars.com/kata/5263a84ffcadb968b6000513)
-* [Simple pig latin](katas/5kyu/Simple%20pig%20latin/solution.py) - [codewars](https://www.codewars.com/kata/520b9d2ad5c005041100000f)
 * [Simple pig latin](katas/5kyu/Simple%20pig%20latin/solution.py) - [codewars](https://www.codewars.com/kata/520b9d2ad5c005041100000f)
 * [Rot13](katas/5kyu/Rot13/solution.py) - [codewars](https://www.codewars.com/kata/530e15517bc88ac656000716)
 * [RGB To Hex Conversion](katas/5kyu/RGB%20To%20Hex%20Conversion/solution.py) - [codewars](https://www.codewars.com/kata/513e08acc600c94f01000001)
