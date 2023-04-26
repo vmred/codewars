@@ -16,7 +16,10 @@ class TestSolution:
         assert_true(generate_hashtag('CodeWars is nice'), '#CodewarsIsNice')
         assert_true(generate_hashtag('c i n'), '#CIN')
         assert_true(generate_hashtag('codewars  is  nice'), '#CodewarsIsNice')
-        assert_true(generate_hashtag(
-            'Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'
-            'oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'),
-            False)
+        assert_true(
+            generate_hashtag(
+                'Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'
+                'oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat'
+            ),
+            False,
+        )

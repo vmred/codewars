@@ -28,18 +28,9 @@
 
 def color_probability(color, texture):
     marbles = {
-        'red': {
-            'smooth': 1,
-            'bumpy': 4
-        },
-        'yellow': {
-            'smooth': 1,
-            'bumpy': 2
-        },
-        'green': {
-            'smooth': 1,
-            'bumpy': 1
-        }
+        'red': {'smooth': 1, 'bumpy': 4},
+        'yellow': {'smooth': 1, 'bumpy': 2},
+        'green': {'smooth': 1, 'bumpy': 1},
     }
 
     return str(marbles[color][texture] / sum(i[texture] for i in marbles.values()))[:4]

@@ -23,5 +23,5 @@ def bear_fur(bears):
         ('white', 'white'): 'white',
         ('black', 'brown'): 'dark brown',
         ('black', 'white'): 'grey',
-        ('brown', 'white'): 'light brown'
+        ('brown', 'white'): 'light brown',
     }.get(tuple(sorted((bears))), 'unknown')

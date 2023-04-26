@@ -25,7 +25,7 @@ def revrot(strng, sz):
     if sz <= 0 or not strng:
         return ''
 
-    chunks = [strng[i:i + sz] for i in range(0, len(strng), sz) if len(strng[i:i + sz]) == sz]
+    chunks = [strng[i : i + sz] for i in range(0, len(strng), sz) if len(strng[i : i + sz]) == sz]
 
     for i in range(0, len(chunks)):
         if not sum(int(x) ** 3 for x in chunks[i]) % 2:

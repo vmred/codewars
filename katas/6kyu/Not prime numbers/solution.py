@@ -15,7 +15,7 @@ def not_primes(a, b):
     def is_prime(n):
         if n % 10 in [2, 5]:
             return False
-        return all(n % i for i in range(3, int(n ** 0.5) + 1, 2))
+        return all(n % i for i in range(3, int(n**0.5) + 1, 2))
 
     def interval(a, b):
         values = {0: [2, 3, 5, 7]}

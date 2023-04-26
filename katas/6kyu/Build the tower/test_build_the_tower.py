@@ -6,5 +6,10 @@ tower_builder = importlib.import_module('katas.6kyu.Build the tower.solution').t
 
 class TestSolution:
     def test_build_the_tower(self):
-        assert_true(tower_builder(1), ['*', ])
+        assert_true(
+            tower_builder(1),
+            [
+                '*',
+            ],
+        )
         assert_true(tower_builder(3), ['  *  ', ' *** ', '*****'])

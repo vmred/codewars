@@ -22,5 +22,5 @@ def next_bigger(num):
     while pivot >= digits[swap_idx]:
         swap_idx -= 1
     digits[swap_idx], digits[idx - 1] = digits[idx - 1], digits[swap_idx]
-    digits[idx:] = digits[:idx - 1:-1]
+    digits[idx:] = digits[: idx - 1 : -1]
     return int(''.join(str(x) for x in digits))

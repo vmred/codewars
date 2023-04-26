@@ -83,7 +83,6 @@ def traffic_lights(road, n):
     r = [''.join(road)]
 
     for i in range(1, len(road) + 1):
-
         if not i % 5:
             if 'R' in road:
                 road[road.index('R')] = 'O'

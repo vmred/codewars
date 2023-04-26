@@ -6,12 +6,15 @@ from asserts.testcase import TestCase
 solution = importlib.import_module('katas.6kyu.Find Cracker.solution').find_hack
 
 tests = [
-    TestCase([
-        ["name1", 150, ["B", "A", "A", "C", "A", "A"]],
-        ["name2", 120, ["B", "A", "A", "A"]],
-        ["name3", 160, ["B", "A", "A", "A", "A"]],
-        ["name4", 140, ["B", "A", "A", "C", "A"]]
-    ], ['name2', 'name4'])
+    TestCase(
+        [
+            ["name1", 150, ["B", "A", "A", "C", "A", "A"]],
+            ["name2", 120, ["B", "A", "A", "A"]],
+            ["name3", 160, ["B", "A", "A", "A", "A"]],
+            ["name4", 140, ["B", "A", "A", "C", "A"]],
+        ],
+        ['name2', 'name4'],
+    )
 ]
 
 

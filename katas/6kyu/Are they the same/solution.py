@@ -32,4 +32,4 @@
 
 
 def comp(array1, array2):
-    return sorted(array1) == sorted([i ** .5 for i in array2])
+    return sorted(array1) == sorted([i**0.5 for i in array2])

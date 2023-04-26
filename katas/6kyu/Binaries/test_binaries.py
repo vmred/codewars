@@ -11,7 +11,6 @@ decode = importlib.import_module('katas.6kyu.Binaries.solution').decode
 @pytest.mark.xfail
 @pytest.mark.not_competed
 class TestSolution:
-
     def testing_code(self, s, expected):
         actual = code(s)
         assert_true(actual, expected)

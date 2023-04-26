@@ -1,7 +1,9 @@
 from asserts.asserts import assert_true
 import importlib
 
-color_probability = importlib.import_module('katas.6kyu.Thinkful Logic Drills - Red and bumpy.solution').color_probability
+color_probability = importlib.import_module(
+    'katas.6kyu.Thinkful Logic Drills - Red and bumpy.solution'
+).color_probability
 
 
 class TestSolution:

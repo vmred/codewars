@@ -16,32 +16,33 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):
     os.mkdir(kata_dir, 0o755)
 
     # creating solution.py
-    open(f'{kata_dir}/solution.py', 'w+').close()
+    with open(f'{kata_dir}/solution.py', 'w+', encoding='utf-8') as _:
+        pass
 
     # creating tests.py
     test_name = f'test_{preformat_name(directory_name, True)}'
-    f = open(f'{kata_dir}/{test_name}.py', 'w+')
-    f.write(f'''
-import pytest
-from asserts.asserts import assert_true
-import importlib
-from asserts.testcase import TestCase
-
-{test_func_name} = importlib.import_module('katas.{kyu}.{directory_name}.solution').{test_func_name}
-
-cases = [
-    TestCase()
-]
-
-class TestSolution:
-
-    @pytest.mark.parametrize('test', cases, ids=[f'{{test.test_data}}' for test in cases])
-    def {test_name}(self, test):
-        assert_true(solution(test.test_data), test.test_output)
-''')
-
-    f.close()
+    with open(f'{kata_dir}/{test_name}.py', 'w+', encoding='utf-8') as f:
+        f.write(
+            f'''
+    import pytest
+    from asserts.asserts import assert_true
+    import importlib
+    from asserts.testcase import TestCase
+    
+    {test_func_name} = importlib.import_module('katas.{kyu}.{directory_name}.solution').{test_func_name}
+    
+    cases = [
+        TestCase()
+    ]
+    
+    class TestSolution:
+    
+        @pytest.mark.parametrize('test', cases, ids=[f'{{test.test_data}}' for test in cases])
+        def {test_name}(self, test):
+            assert_true(solution(test.test_data), test.test_output)
+    '''
+        )
 
 
 if __name__ == '__main__':
-    prepare_for_kata('<kyu level>', '<kata name>', 'solution')
+    prepare_for_kata('kyu', 'name', 'solution')

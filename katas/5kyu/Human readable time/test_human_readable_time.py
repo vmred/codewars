@@ -5,7 +5,6 @@ make_readable = importlib.import_module('katas.5kyu.Human readable time.solution
 
 
 class TestSolution:
-
     def test_human_readable_time(self):
         assert_true(make_readable(0), "00:00:00")
         assert_true(make_readable(86399), "23:59:59")

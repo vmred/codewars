@@ -1,7 +1,9 @@
 from asserts.asserts import assert_true
 import importlib
 
-first_non_consecutive = importlib.import_module('katas.8kyu.First non-consecutive number.solution').first_non_consecutive
+first_non_consecutive = importlib.import_module(
+    'katas.8kyu.First non-consecutive number.solution'
+).first_non_consecutive
 
 
 class TestSolution:

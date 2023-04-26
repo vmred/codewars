@@ -13,9 +13,9 @@
 
 
 def find_next_square(sq):
-    s = sq ** 0.5
+    s = sq**0.5
 
-    if s.__divmod__(1.)[1] != 0.0:
+    if s.__divmod__(1.0)[1] != 0.0:
         return -1
 
     return (int(s) + 1) ** 2

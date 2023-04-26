@@ -6,11 +6,7 @@ Vector = importlib.import_module('katas.5kyu.Vector class #1.solution').Vector
 
 class TestSolution:
     def test_vector_class_1(self):
-        examples = [
-            [1, 2, 3],
-            [4, 5, 6],
-            [7, 8, 9]
-        ]
+        examples = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
         assert_true(Vector(examples[0]), Vector(*examples[0]))
         v = Vector(examples[1])

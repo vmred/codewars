@@ -5,7 +5,6 @@ Primes = importlib.import_module('katas.5kyu.First N prime numbers.solution').Pr
 
 
 class TestSolution:
-
     def test_first_n_prime_numbers(self):
         assert_true(Primes.first(1), [2])
         assert_true(Primes.first(20)[-5:], [53, 59, 61, 67, 71])

@@ -30,7 +30,7 @@ def ticker(text, width, tick):
 
         r = ' ' * (width - pos) + text[:pos]
         if pos > width:
-            r = r[pos - width:]
+            r = r[pos - width :]
 
             if len(r) < width:
                 r += ' ' * (width - len(r))

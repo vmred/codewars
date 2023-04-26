@@ -1,7 +1,9 @@
 from asserts.asserts import assert_true
 import importlib
 
-find_missing = importlib.import_module('katas.6kyu.Find the missing term in an Arithmetic Progression.solution').find_missing
+find_missing = importlib.import_module(
+    'katas.6kyu.Find the missing term in an Arithmetic Progression.solution'
+).find_missing
 
 
 class TestSolution:
