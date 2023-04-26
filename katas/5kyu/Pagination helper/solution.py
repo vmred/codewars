@@ -57,6 +57,6 @@ class PaginationHelper:
     # this method should return -1 for item_index values that are out of range
     def page_index(self, item_index):
         if self.item_count() > item_index >= 0:
-            return item_index / self._items_per_page
+            return int(item_index / self._items_per_page)
 
         return -1

@@ -6,3 +6,4 @@ from typing import Any
 class TestCase:
     test_data: Any
     test_output: Any
+    test_function: Any
