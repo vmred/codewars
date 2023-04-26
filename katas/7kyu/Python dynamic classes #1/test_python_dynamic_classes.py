@@ -8,8 +8,7 @@ MyClass = importlib.import_module('katas.7kyu.Python dynamic classes #1.solution
 
 
 class TestSolution:
-    @pytest.mark.xfail
-    @pytest.mark.not_competed
+    @pytest.mark.xfail(reason='Tests not applicable for running under pytest, kata completed')
     def test_python_dynamic_classes(self):
         myObject = MyClass()
         assert_true(str(MyClass), "<class '__main__.MyClass'>")
