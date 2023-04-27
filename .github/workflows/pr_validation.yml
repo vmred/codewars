@@ -15,7 +15,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 'Check black'
-        run: ./utils/linters/indent.sh
+        run: ./utils/linters/check.sh
 
       - name: 'Run tests'
         run: python -m pytest -s -v
