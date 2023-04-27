@@ -46,4 +46,4 @@ class Vector:
         return sum([x * y for x, y in zip(self.vector, obj.vector)])
 
     def norm(self):
-        return sum([x ** 2 for x in self.vector]) ** 0.5
+        return sum([x**2 for x in self.vector]) ** 0.5

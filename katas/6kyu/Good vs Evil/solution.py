@@ -48,27 +48,12 @@ def goodVsEvil(good, evil):
     r = [
         'Battle Result: Evil eradicates all trace of Good',
         'Battle Result: Good triumphs over Evil',
-        'Battle Result: No victor on this battle field'
+        'Battle Result: No victor on this battle field',
     ]
 
-    good_points = {
-        0: 1,
-        1: 2,
-        2: 3,
-        3: 3,
-        4: 4,
-        5: 10
-    }
+    good_points = {0: 1, 1: 2, 2: 3, 3: 3, 4: 4, 5: 10}
 
-    evil_points = {
-        0: 1,
-        1: 2,
-        2: 2,
-        3: 2,
-        4: 3,
-        5: 5,
-        6: 10
-    }
+    evil_points = {0: 1, 1: 2, 2: 2, 3: 2, 4: 3, 5: 5, 6: 10}
 
     good = list(map(int, good.split(' ')))
     evil = list(map(int, evil.split(' ')))

@@ -4,5 +4,6 @@
 # Characters can be in the range from "00000000" to "11111111" (inclusive)
 # Note: In the case of an empty binary string your function should return an empty string.
 
+
 def binary_to_string(binary):
     return binary and int(binary, 2).to_bytes(len(binary) // 8, 'big').decode() or binary

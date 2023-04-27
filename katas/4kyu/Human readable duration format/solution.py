@@ -35,11 +35,7 @@
 # Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
 
 
-times = [("year", 365 * 24 * 60 * 60),
-         ("day", 24 * 60 * 60),
-         ("hour", 60 * 60),
-         ("minute", 60),
-         ("second", 1)]
+times = [("year", 365 * 24 * 60 * 60), ("day", 24 * 60 * 60), ("hour", 60 * 60), ("minute", 60), ("second", 1)]
 
 
 def format_duration(seconds):

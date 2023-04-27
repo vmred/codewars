@@ -5,6 +5,6 @@
 # "identifier"   =>  "identifier"
 # ""             =>  ""
 
-def solution(value):
-    return ''.join(x if x.islower() else f" {x.upper()}"  for x in value)
 
+def solution(value):
+    return ''.join(x if x.islower() else f" {x.upper()}" for x in value)

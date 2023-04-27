@@ -5,7 +5,6 @@ zeros = importlib.import_module('katas.5kyu.Number of trailing zeros of n factor
 
 
 class TestSolution:
-
     def test_numer_of_trailing_zeros_of_n_factorial(self):
         assert_true(zeros(0), 0)
         assert_true(zeros(6), 1)

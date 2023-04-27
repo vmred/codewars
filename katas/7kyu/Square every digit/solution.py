@@ -5,4 +5,4 @@
 
 def square_digits(num):
     num = list(map(int, str(num)))
-    return int(''.join(str(i ** 2) for i in num))
+    return int(''.join(str(i**2) for i in num))

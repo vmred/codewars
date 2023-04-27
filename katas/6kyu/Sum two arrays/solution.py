@@ -16,6 +16,7 @@
 
 # [3,2,6,6],[-7,2,2,8] --> [-3,9,6,2] # 3266 + (-7228) = -3962
 
+
 def sum_arrays(array1, array2):
     if not array1 + array2:
         return []

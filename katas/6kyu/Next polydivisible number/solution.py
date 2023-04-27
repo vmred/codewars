@@ -27,6 +27,7 @@ def find_polydivisible(base=10):
 
 def next_num(n):
     polydivisible = find_polydivisible()
-    if n >= polydivisible[-1]: return None
+    if n >= polydivisible[-1]:
+        return None
     a = polydivisible[min(range(len(polydivisible)), key=lambda i: abs(polydivisible[i] - n))]
     return a if a > n else polydivisible[polydivisible.index(a) + 1]

@@ -5,5 +5,6 @@
 # "This is an example!" ==> "sihT si na !elpmaxe"
 # "double  spaces"      ==> "elbuod  secaps"
 
+
 def reverse_words(text):
     return ' '.join([i[::-1] for i in text.split(' ')])

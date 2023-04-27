@@ -21,4 +21,4 @@
 def balanced_num(number):
     number = [int(x) for x in str(number)]
     middle = [len(number) // 2] if len(number) % 2 else [len(number) // 2 - 1, len(number) // 2]
-    return ['Not Balanced', 'Balanced'][len(number) < 3 or sum(number[:min(middle)]) == sum(number[max(middle) + 1:])]
+    return ['Not Balanced', 'Balanced'][len(number) < 3 or sum(number[: min(middle)]) == sum(number[max(middle) + 1 :])]

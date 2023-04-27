@@ -3,8 +3,9 @@ import re
 from asserts.asserts import assert_true
 import importlib
 
-regex_contains_all = \
-    importlib.import_module('katas.6kyu.regex pattern to check if string has all characters.solution').regex_contains_all
+regex_contains_all = importlib.import_module(
+    'katas.6kyu.regex pattern to check if string has all characters.solution'
+).regex_contains_all
 
 
 class TestSolution:

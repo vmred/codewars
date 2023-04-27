@@ -11,4 +11,4 @@ def find_smallest_int(arr):
     return min(arr)
 
 
-assert_true(find_smallest_int([0, 1 - 2 ** 64, 2 ** 64]), 1 - 2 ** 64)
+assert_true(find_smallest_int([0, 1 - 2**64, 2**64]), 1 - 2**64)

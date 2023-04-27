@@ -21,4 +21,4 @@ def remove_smallest(numbers):
 
     smallest_index = numbers.index(min(numbers))
 
-    return numbers[:smallest_index] + numbers[smallest_index + 1:]
+    return numbers[:smallest_index] + numbers[smallest_index + 1 :]

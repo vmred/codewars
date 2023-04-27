@@ -17,10 +17,8 @@ cases = [
 
 
 class TestSolution:
-
     @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
     def test_remove_the_parentheses(self, test):
         assert_true(
-            test.test_data != 'no args' and test.test_function(test.test_data) or test.test_function(),
-            test.test_output
+            test.test_data != 'no args' and test.test_function(test.test_data) or test.test_function(), test.test_output
         )

@@ -34,7 +34,7 @@ def dig_pow(n, p):
     power = 0
 
     for i in digits:
-        power += i ** p
+        power += i**p
         p += 1
 
     return power / n if not power % n else -1

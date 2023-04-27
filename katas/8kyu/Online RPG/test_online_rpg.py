@@ -7,5 +7,7 @@ playerRankUp = importlib.import_module('katas.8kyu.Online RPG.solution').playerR
 class TestSolution:
     def test_online_rpg(self):
         assert_true(playerRankUp(64), False)
-        assert_true(playerRankUp(180),
-                    'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.')
+        assert_true(
+            playerRankUp(180),
+            'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.',
+        )

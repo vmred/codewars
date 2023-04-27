@@ -19,7 +19,6 @@ items += [Item('Conjured Goblin Axe +1', 4, 16)]
 def update_quality():
     for i in range(len(items)):
         if 'Sulfuras' not in items[i].name:
-
             items[i].sell_in -= 1
 
             if 'Backstage' in items[i].name:

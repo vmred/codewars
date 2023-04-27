@@ -2,8 +2,10 @@
 
 from textwrap import wrap
 
+
 def encode(string):
     return ''.join([bin(ord(x))[2:].zfill(8) for x in string]).replace('0', '000').replace('1', '111')
+
 
 def decode(bits):
     bits = int(''.join(''.join(['1' if x.count('1') > x.count('0') else '0' for x in wrap(bits, 3)])), 2)

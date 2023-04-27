@@ -61,7 +61,8 @@ def name_in_str(s, name):
 
         else:
             r_i.append(
-                find_betweens_value(r_i[i - 1], indexes[i], indexes[i + 1] if i < len(indexes) - 1 else indexes[i]))
+                find_betweens_value(r_i[i - 1], indexes[i], indexes[i + 1] if i < len(indexes) - 1 else indexes[i])
+            )
 
     # if array is ascending sorted, return true
     return r_i == sorted(r_i)

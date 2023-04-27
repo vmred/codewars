@@ -28,8 +28,8 @@ def next_smaller(number):
         while index_2 > index_1:
             if digit[index_2] < digit[index_1]:
                 digit[index_2], digit[index_1] = digit[index_1], digit[index_2]
-                _first = digit[0:index_1 + 1]
-                _second = digit[index_1 + 1:]
+                _first = digit[0 : index_1 + 1]
+                _second = digit[index_1 + 1 :]
                 _second.sort(reverse=True)
                 digit = _first + _second
                 print('-->', digit)

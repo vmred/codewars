@@ -17,4 +17,4 @@
 
 
 def array_leaders(numbers):
-    return [numbers[x] for x in range(0, len(numbers)) if numbers[x] > sum(numbers[x + 1:])]
+    return [numbers[x] for x in range(0, len(numbers)) if numbers[x] > sum(numbers[x + 1 :])]

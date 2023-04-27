@@ -24,7 +24,6 @@
 
 
 class Dinglemouse(object):
-
     def __init__(self):
         self.hello_message = {'base': 'Hello.'}
 

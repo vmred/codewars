@@ -17,4 +17,4 @@ from functools import reduce
 
 
 def product_array(numbers):
-    return [reduce((lambda x, y: x * y), numbers[:i] + numbers[i + 1:]) for i in range(0, len(numbers))]
+    return [reduce((lambda x, y: x * y), numbers[:i] + numbers[i + 1 :]) for i in range(0, len(numbers))]

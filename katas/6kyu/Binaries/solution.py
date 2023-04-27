@@ -34,13 +34,13 @@ def decode(strng):
     # getting stripped values of step a and b
     while len(strng) > 0:
         index_one = strng.index('1')
-        s = len(strng[:index_one + 1]) + 1
-        v = strng[:index_one + s]
+        s = len(strng[: index_one + 1]) + 1
+        v = strng[: index_one + s]
 
         l_v = len(v)
         l_v = int(l_v / 2)
         r.append((''.join(v[:l_v]), ''.join(v[l_v:])))
 
-        strng = strng[index_one + s:]
+        strng = strng[index_one + s :]
 
     return ''.join([str(int(i[1], 2)) for i in r])

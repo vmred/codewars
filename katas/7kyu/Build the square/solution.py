@@ -10,4 +10,3 @@
 
 def generateShape(v):
     return '\n'.join(['+' * v] * v)
-

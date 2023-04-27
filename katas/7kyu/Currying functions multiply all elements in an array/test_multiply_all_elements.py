@@ -2,7 +2,8 @@ from asserts.asserts import assert_true
 import importlib
 
 solution = importlib.import_module(
-    'katas.7kyu.Currying functions multiply all elements in an array.solution').multiply_all
+    'katas.7kyu.Currying functions multiply all elements in an array.solution'
+).multiply_all
 
 
 class TestSolution:

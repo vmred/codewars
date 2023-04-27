@@ -6,12 +6,10 @@ import importlib
 from asserts.testcase import TestCase
 
 solution = importlib.import_module(
-    'katas.7kyu.Find the index of the second occurrence of a letter in a string.solution').second_symbol
+    'katas.7kyu.Find the index of the second occurrence of a letter in a string.solution'
+).second_symbol
 
-tests = [
-    TestCase(['Hello world!!!', 'l'], 3),
-    TestCase(['', 'q'], -1)
-]
+tests = [TestCase(['Hello world!!!', 'l'], 3), TestCase(['', 'q'], -1)]
 
 
 class TestSolution:

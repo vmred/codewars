@@ -17,7 +17,7 @@ def longest_consec(strng, k):
     r = ''
 
     for i in range(0, n):
-        s = ''.join(strng[i:i + k])
+        s = ''.join(strng[i : i + k])
         if len(s) > len(r):
             r = s
 

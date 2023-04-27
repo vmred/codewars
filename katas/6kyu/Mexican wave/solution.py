@@ -12,4 +12,4 @@
 
 
 def wave(str):
-    return [str[0:i] + str[i].upper() + str[i+1:] for i in range(0, len(str)) if str[i] != ' ']
+    return [str[0:i] + str[i].upper() + str[i + 1 :] for i in range(0, len(str)) if str[i] != ' ']

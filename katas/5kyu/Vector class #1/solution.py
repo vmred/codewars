@@ -22,7 +22,7 @@ class Vector:
     def __init__(self, *args):
         self.vector = list(args[0]) if len(args) == 1 else list(args)
         self.x, self.y, self.z = self.vector
-        self.magnitude = sum(i ** 2 for i in self.vector) ** 0.5
+        self.magnitude = sum(i**2 for i in self.vector) ** 0.5
 
     def __str__(self):
         return '<{}>'.format(', '.join(map(str, self.vector)))

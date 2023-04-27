@@ -13,7 +13,6 @@ class TestSolution:
         assert_true(a[0], self.base[1])
         assert_true(len(a), 2)
 
-
     def test_print_len(self):
         a = SecureList(self.base)
         print(a)

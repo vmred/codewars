@@ -40,7 +40,7 @@ def solve(s):
         'w': 23,
         'x': 24,
         'y': 25,
-        'z': 26
+        'z': 26,
     }
 
     exceptions = ['a', 'e', 'i', 'o', 'u']
