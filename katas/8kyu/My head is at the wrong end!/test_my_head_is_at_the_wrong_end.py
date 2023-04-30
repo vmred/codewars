@@ -1,13 +1,20 @@
-from asserts.asserts import assert_true
 import importlib
+import pytest
 
-fix_the_meerkat = importlib.import_module('katas.8kyu.My head is at the wrong end!.solution').fix_the_meerkat
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.8kyu.My head is at the wrong end!.solution').fix_the_meerkat
+
+cases = [
+    TestCase(["tail", "body", "head"], ["head", "body", "tail"]),
+    TestCase(["bottom", "middle", "top"], ["top", "middle", "bottom"]),
+    TestCase(["lower legs", "torso", "upper legs"], ["upper legs", "torso", "lower legs"]),
+    TestCase(["ground", "rainbow", "sky"], ["sky", "rainbow", "ground"]),
+]
 
 
 class TestSolution:
-    def test_my_head_is_at_the_wrong_end(self):
-        assert_true(fix_the_meerkat(["tail", "body", "head"]), ["head", "body", "tail"])
-        assert_true(fix_the_meerkat(["tails", "body", "heads"]), ["heads", "body", "tails"])
-        assert_true(fix_the_meerkat(["bottom", "middle", "top"]), ["top", "middle", "bottom"])
-        assert_true(fix_the_meerkat(["lower legs", "torso", "upper legs"]), ["upper legs", "torso", "lower legs"])
-        assert_true(fix_the_meerkat(["ground", "rainbow", "sky"]), ["sky", "rainbow", "ground"])
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_my_head_is_at_the_wrong_end(self, test):
+        assert_true(solution(test.test_data), test.test_output)

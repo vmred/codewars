@@ -1,13 +1,19 @@
-from asserts.asserts import assert_true
 import importlib
 
-playerRankUp = importlib.import_module('katas.8kyu.Online RPG.solution').playerRankUp
+import pytest
+
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.8kyu.Online RPG.solution').playerRankUp
+
+cases = [
+    TestCase(64, False),
+    TestCase(180, 'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.'),
+]
 
 
 class TestSolution:
-    def test_online_rpg(self):
-        assert_true(playerRankUp(64), False)
-        assert_true(
-            playerRankUp(180),
-            'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.',
-        )
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_online_rpg(self, test):
+        assert_true(solution(test.test_data), test.test_output)

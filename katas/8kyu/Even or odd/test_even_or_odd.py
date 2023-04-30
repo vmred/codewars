@@ -1,9 +1,18 @@
-from asserts.asserts import assert_true
 import importlib
 
-even_or_odd = importlib.import_module('katas.8kyu.Even or odd.solution').even_or_odd
+import pytest
+
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.8kyu.Even or odd.solution').even_or_odd
+
+cases = [
+    TestCase(2, "Even"),
+]
 
 
 class TestSolution:
-    def test_even_or_odd(self):
-        assert_true(even_or_odd(2), "Even")
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_even_or_odd(self, test):
+        assert_true(solution(test.test_data), test.test_output)

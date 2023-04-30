@@ -13,5 +13,5 @@
 # The correct answer would be 17.
 
 
-def count_sheeps(arrayOfSheeps):
-    return arrayOfSheeps.count(True)
+def count_sheeps(value):
+    return value.count(True)
