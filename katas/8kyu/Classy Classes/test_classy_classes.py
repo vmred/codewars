@@ -1,10 +1,18 @@
-from asserts.asserts import assert_true
 import importlib
+
+import pytest
+
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
 
 Person = importlib.import_module('katas.8kyu.Classy Classes.solution').Person
 
+cases = [
+    TestCase(['Alex', 16], 'Alexs age is 16'),
+]
+
 
 class TestSolution:
-    def test_classy_classes(self):
-        person = Person('Alex', 16)
-        assert_true(person.info, 'Alexs age is 16')
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_classy_classes(self, test):
+        assert_true(Person(*test.test_data).info, test.test_output)

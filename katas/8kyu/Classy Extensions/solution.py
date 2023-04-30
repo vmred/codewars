@@ -8,11 +8,10 @@
 # 'Mr Whiskers meows.'
 # The name attribute is passed with this.name (JS), @name (Ruby) or self.name (Python).
 
-# class Animal:
-#     def __init__(self, name):
-#         self.name = name
-#
-#
+
+class Animal:
+    def __init__(self, name):
+        self.name = name
 
 
 class Cat(Animal):

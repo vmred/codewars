@@ -1,15 +1,24 @@
-from asserts.asserts import assert_true
 import importlib
 
-litres = importlib.import_module('katas.8kyu.Keep Hydrated!.solution').litres
+import pytest
+
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.8kyu.Keep Hydrated!.solution').litres
+
+cases = [
+    TestCase(2, 1),
+    TestCase(1.4, 0),
+    TestCase(12.3, 6),
+    TestCase(0.82, 0),
+    TestCase(11.8, 5),
+    TestCase(1787, 893),
+    TestCase(0, 0),
+]
 
 
 class TestSolution:
-    def test_keep_hydrated(self):
-        assert_true(litres(2), 1)
-        assert_true(litres(1.4), 0)
-        assert_true(litres(12.3), 6)
-        assert_true(litres(0.82), 0)
-        assert_true(litres(11.8), 5)
-        assert_true(litres(1787), 893)
-        assert_true(litres(0), 0)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_keep_hydrated(self, test):
+        assert_true(solution(test.test_data), test.test_output)

@@ -6,10 +6,9 @@
 
 # Also we got a problem with negative values. Correct the code so negative values will be switched to positive ones!
 # The constructor taking no arguments should assign 0 to Cube's Side property.
-from asserts.asserts import assert_true
 
 
-class Cube(object):
+class Cube:
     # This cube needs help
     # Define a constructor which takes one integer, or handles no args
     def __init__(self, value=0):
@@ -22,9 +21,3 @@ class Cube(object):
     def set_side(self, new_side):
         """Set the value of the Cube's side."""
         self._side = abs(new_side)
-
-
-c = Cube(10)
-assert_true(c.get_side(), 10)
-c = Cube()
-assert_true(c.get_side(), 0)
