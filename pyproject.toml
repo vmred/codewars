@@ -3,3 +3,28 @@ include = '\.py$'
 line-length = 120
 skip-string-normalization = true
 
+[tool.pylint.main]
+disable = [
+    'invalid-name',
+    'invalid-envvar-default',
+    'line-too-long',
+    'too-many-public-methods',
+    'too-few-public-methods',
+]
+good-names = ['f', 's', 'x', 'n', 'i', 'j', 'k', 'ex', 'Run', '_']
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint.variables]
+init-import = 'no'
+
+[tool.pylint.design]
+max-branches = 1000
+max-statements = 500
+
+#[tool.pylint.'messages control']
+#disable = [
+#    'missing-docstring',
+#    'empty-docstring'
+#]

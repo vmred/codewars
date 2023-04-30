@@ -18,5 +18,9 @@ jobs:
       - name: 'Check black'
         run: ./utils/linters/check.sh
 
+      - name: 'Check pylint'
+        run: ./utils/linters/pylint.sh
+        continue-on-error: true
+
       - name: 'Run tests'
         run: python -m pytest -s -v
