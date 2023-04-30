@@ -8,6 +8,8 @@ jobs:
     name: 'validate job'
     runs-on: ubuntu-latest
     steps:
+      - name: Install zsh
+        run: sudo apt-get update; sudo apt-get install zsh
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v4
         with:
