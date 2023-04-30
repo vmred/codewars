@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/zsh
 
 pylint **/*.py
