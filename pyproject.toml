@@ -4,12 +4,16 @@ line-length = 120
 skip-string-normalization = true
 
 [tool.pylint.main]
+init-hook='import sys; sys.path.append(".")'
 disable = [
     'invalid-name',
     'invalid-envvar-default',
     'line-too-long',
     'too-many-public-methods',
     'too-few-public-methods',
+]
+ignore-paths=[
+    '^venv/.*$',
 ]
 good-names = ['f', 's', 'x', 'n', 'i', 'j', 'k', 'ex', 'Run', '_']
 
@@ -23,8 +27,8 @@ init-import = 'no'
 max-branches = 1000
 max-statements = 500
 
-#[tool.pylint.'messages control']
-#disable = [
-#    'missing-docstring',
-#    'empty-docstring'
-#]
+[tool.pylint.'messages control']
+disable = [
+    'missing-docstring',
+    'empty-docstring'
+]

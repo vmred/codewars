@@ -1,4 +1,3 @@
-#!/bin/sh
+#!/bin/zsh
 
-pylint *.py **/*.py
-#pylint **/*.py
+pylint **/*.py

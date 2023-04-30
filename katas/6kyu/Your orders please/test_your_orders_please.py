@@ -1,5 +1,6 @@
-from asserts.asserts import assert_true
 import importlib
+
+from asserts.asserts import assert_true
 
 order = importlib.import_module('katas.6kyu.Your orders please.solution').order
 
