@@ -16,15 +16,14 @@
 # [2, 3, 1]
 # [3, 2, 1]
 # [3, 1, 2]
-
 import importlib
+from asserts.asserts import assert_true
 
 permutations = importlib.import_module('katas.beta.Generating permutations.solution').permutations
-from asserts.asserts import assert_true
 
 
 class TestSolution:
     def test_generating_permutations(self):
-        results = set([tuple(p) for p in permutations([1, 2, 3])])
-        expected_results = set([(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 2, 1), (3, 1, 2)])
+        results = set(tuple(p) for p in permutations([1, 2, 3]))
+        expected_results = {(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 2, 1), (3, 1, 2)}
         assert_true(expected_results, results)

@@ -1,16 +1,17 @@
+# pylint: disable=missing-module-docstring
 import os
 
 root_dir = os.path.abspath(os.pardir)
 
 
-def preformat_name(name, is_test=False):
+def preformat_name(name, is_test=False):  # pylint: disable=missing-function-docstring
     name = ''.join(filter(lambda x: x.isalnum() or x.isspace(), name))
     if is_test:
         return '_'.join(name.lower().split())
     return name
 
 
-def prepare_for_kata(kyu, directory_name, test_func_name='f'):
+def prepare_for_kata(kyu, directory_name, test_func_name='f'):  # pylint: disable=missing-function-docstring
     kata_dir = f'{root_dir}/katas/{kyu}/{preformat_name(directory_name)}'
     # creating directory for kata
     os.mkdir(kata_dir, 0o755)
@@ -24,9 +25,9 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):
     with open(f'{kata_dir}/{test_name}.py', 'w+', encoding='utf-8') as f:
         f.write(
             f'''
+    import importlib
     import pytest
     from asserts.asserts import assert_true
-    import importlib
     from asserts.testcase import TestCase
     
     {test_func_name} = importlib.import_module('katas.{kyu}.{directory_name}.solution').{test_func_name}

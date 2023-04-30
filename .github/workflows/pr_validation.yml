@@ -8,6 +8,8 @@ jobs:
     name: 'validate job'
     runs-on: ubuntu-latest
     steps:
+      - name: Install zsh
+        run: sudo apt-get update; sudo apt-get install zsh
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v4
         with:
@@ -17,6 +19,11 @@ jobs:
 
       - name: 'Check black'
         run: ./utils/linters/check.sh
+
+      - name: 'Check pylint'
+        run: ./utils/linters/pylint.sh
+        shell: zsh {0}
+        continue-on-error: true
 
       - name: 'Run tests'
         run: python -m pytest -s -v
