@@ -24,6 +24,6 @@ permutations = importlib.import_module('katas.beta.Generating permutations.solut
 
 class TestSolution:
     def test_generating_permutations(self):
-        results = {[tuple(p) for p in permutations([1, 2, 3])]}
+        results = set(tuple(p) for p in permutations([1, 2, 3]))
         expected_results = {(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 2, 1), (3, 1, 2)}
         assert_true(expected_results, results)
