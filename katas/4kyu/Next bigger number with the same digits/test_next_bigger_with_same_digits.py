@@ -1,14 +1,22 @@
 import importlib
 
-from asserts.asserts import assert_true
+import pytest
 
-next_bigger = importlib.import_module('katas.4kyu.Next bigger number with the same digits.solution').next_bigger
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.4kyu.Next bigger number with the same digits.solution').next_bigger
+
+cases = [
+    TestCase(12, 21),
+    TestCase(513, 531),
+    TestCase(2017, 2071),
+    TestCase(414, 441),
+    TestCase(144, 414),
+]
 
 
 class TestSolution:
-    def test_nex_smaller_with_same_digits(self):
-        assert_true(next_bigger(12), 21)
-        assert_true(next_bigger(513), 531)
-        assert_true(next_bigger(2017), 2071)
-        assert_true(next_bigger(414), 441)
-        assert_true(next_bigger(144), 414)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_nex_bigger_with_same_digits(self, test):
+        assert_true(solution(test.test_data), test.test_output)

@@ -9,4 +9,4 @@ import itertools
 
 
 def permutations(string):
-    return list(''.join(i) for i in set(itertools.permutations(string)))
+    return sorted(''.join(i) for i in set(itertools.permutations(string)))
