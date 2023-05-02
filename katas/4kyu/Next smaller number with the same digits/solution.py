@@ -39,8 +39,7 @@ def next_smaller(number):
 
                 return int(new_number)
 
-            else:
-                index_2 -= 1
+            index_2 -= 1
 
         index_1 -= 1
 
