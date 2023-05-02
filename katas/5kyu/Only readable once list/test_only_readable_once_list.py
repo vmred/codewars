@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 SecureList = importlib.import_module('katas.5kyu.Only readable once list.solution').SecureList
 

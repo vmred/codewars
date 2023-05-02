@@ -27,16 +27,16 @@
 
 class SecureList(list):
     def __str__(self):
-        s = super(SecureList, self).__str__()
+        s = super().__str__()
         self.clear()
         return s
 
     def __repr__(self):
-        s = super(SecureList, self).__repr__()
+        s = super().__repr__()
         self.clear()
         return s
 
     def __getitem__(self, index):
-        val = super(SecureList, self).__getitem__(index)
+        val = super().__getitem__(index)
         del self[index]
         return val

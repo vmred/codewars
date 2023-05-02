@@ -1,13 +1,23 @@
-from asserts.asserts import assert_true
 import importlib
+import pytest
 
-score = importlib.import_module('katas.5kyu.Greed is good.solution').score
+from asserts.asserts import assert_true
+
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.5kyu.Greed is good.solution').score
+
+cases = [
+    TestCase([2, 3, 4, 6, 2], 0),
+    TestCase([4, 4, 4, 3, 3], 400),
+    TestCase([2, 4, 4, 5, 4], 450),
+    TestCase([1, 1, 1, 1], 1100),
+    TestCase([1, 1, 1, 1], 1100),
+    TestCase([1, 1, 1, 3, 3], 1000),
+]
 
 
 class TestSolution:
-    def test_greed_is_good(self):
-        assert_true(score([2, 3, 4, 6, 2]), 0)
-        assert_true(score([4, 4, 4, 3, 3]), 400)
-        assert_true(score([2, 4, 4, 5, 4]), 450)
-        assert_true(score([1, 1, 1, 1]), 1100)
-        assert_true(score([1, 1, 1, 3, 3]), 1000)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_greed_is_good(self, test):
+        assert_true(solution(test.test_data), test.test_output)
