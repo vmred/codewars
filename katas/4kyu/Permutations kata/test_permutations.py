@@ -1,12 +1,20 @@
 import importlib
 
+import pytest
+
 from asserts.asserts import assert_true
+from asserts.testcase import TestCase
 
 permutations = importlib.import_module('katas.4kyu.Permutations kata.solution').permutations
 
+cases = [
+    TestCase('ab', ['ab', 'ba']),
+    TestCase('a', ['a']),
+    TestCase('aabb', ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']),
+]
+
 
 class TestSolution:
-    def test_permutations(self):
-        assert_true(sorted(permutations('a')), ['a'])
-        assert_true(sorted(permutations('ab')), ['ab', 'ba'])
-        assert_true(sorted(permutations('aabb')), ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa'])
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_permutations(self, test):
+        assert_true(permutations(test.test_data), test.test_output)
