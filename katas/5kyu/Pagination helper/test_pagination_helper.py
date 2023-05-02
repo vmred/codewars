@@ -1,7 +1,7 @@
+import importlib
 import pytest
 
 from asserts.asserts import assert_true
-import importlib
 
 PaginationHelper = importlib.import_module('katas.5kyu.Pagination helper.solution').PaginationHelper
 

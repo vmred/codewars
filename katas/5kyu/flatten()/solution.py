@@ -15,7 +15,7 @@ def flatten(*args):
 
     def flat(arr):
         for x in arr:
-            if type(x) is list:
+            if isinstance(x, list):
                 flat(x)
             else:
                 r.append(x)

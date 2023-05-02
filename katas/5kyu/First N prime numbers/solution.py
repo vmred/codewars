@@ -19,7 +19,7 @@
 def is_prime(n):
     if n < 2:
         return False
-    elif n == 2:
+    if n == 2:
         return True
     elif n % 2 == 0:
         return False
@@ -30,7 +30,7 @@ def is_prime(n):
 
 
 class Primes:
-    d = dict()
+    d = {}
 
     @staticmethod
     def first(n):
