@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 snail = importlib.import_module('katas.4kyu.Snail.solution').snail
 
