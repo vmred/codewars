@@ -3,7 +3,6 @@
 
 def dirReduc(arr):
     result = ['default']
-    arr = arr
     while len(arr) != 0:
         end = result[len(result) - 1]
         coming = arr[0]
