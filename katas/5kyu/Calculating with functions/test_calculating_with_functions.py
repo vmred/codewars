@@ -1,6 +1,9 @@
 import importlib
 
+import pytest
+
 from asserts.asserts import assert_true
+from asserts.testcase import TestCase
 
 zero = importlib.import_module('katas.5kyu.Calculating with functions.solution').zero
 one = importlib.import_module('katas.5kyu.Calculating with functions.solution').one
@@ -17,10 +20,15 @@ minus = importlib.import_module('katas.5kyu.Calculating with functions.solution'
 divided_by = importlib.import_module('katas.5kyu.Calculating with functions.solution').divided_by
 times = importlib.import_module('katas.5kyu.Calculating with functions.solution').times
 
+cases = [
+    TestCase('seven(times(five()))', 35),
+    TestCase('four(plus(nine()))', 13),
+    TestCase('eight(minus(three()))', 5),
+    TestCase('six(divided_by(two()))', 3),
+]
+
 
 class TestSolution:
-    def test_calculating_with_functions(self):
-        assert_true(seven(times(five())), 35)
-        assert_true(four(plus(nine())), 13)
-        assert_true(eight(minus(three())), 5)
-        assert_true(six(divided_by(two())), 3)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_calculating_with_functions(self, test):
+        assert_true(eval(f'{test.test_data}'), test.test_output)  # pylint: disable=eval-used
