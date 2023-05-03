@@ -46,4 +46,5 @@ def phone(s, num):
             line = sub(fr"<{name}>|\+{num}", "", line)
             address = " ".join(sub("[^a-zA-Z0-9.-]", " ", line).split())
             return f"Phone => {num}, Name => {name}, Address => {address}"
-        return ''
+
+    return ''
