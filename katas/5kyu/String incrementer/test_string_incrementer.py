@@ -1,16 +1,22 @@
 import importlib
+import pytest
 
 from asserts.asserts import assert_true
+from asserts.testcase import TestCase
 
-increment_string = importlib.import_module('katas.5kyu.String incrementer.solution').increment_string
+solution = importlib.import_module('katas.5kyu.String incrementer.solution').increment_string
+
+cases = [
+    TestCase("foo", "foo1"),
+    TestCase("foobar001", "foobar002"),
+    TestCase("foobar1", "foobar2"),
+    TestCase("", "1"),
+    TestCase("foobar99", "foobar100"),
+    TestCase("foobar00", "foobar01"),
+]
 
 
 class TestSolution:
-    def test_string_incrementer(self):
-        assert_true(increment_string("foo"), "foo1")
-        assert_true(increment_string("foobar001"), "foobar002")
-        assert_true(increment_string("foobar1"), "foobar2")
-        assert_true(increment_string("foobar00"), "foobar01")
-        assert_true(increment_string("foobar99"), "foobar100")
-        assert_true(increment_string("foobar099"), "foobar100")
-        assert_true(increment_string(""), "1")
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_string_incrementer(self, test):
+        assert_true(solution(test.test_data), test.test_output)

@@ -8,5 +8,4 @@
 
 
 def pig_it(text):
-    text = text.split()
-    return ' '.join(['{}{}{}'.format(i[1:], i[:1], 'ay') if i.isalpha() else i for i in text])
+    return ' '.join([f"{i[1:]}{i[:1]}{'ay'}" if i.isalpha() else i for i in text.split()])

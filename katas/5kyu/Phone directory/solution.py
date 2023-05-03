@@ -33,16 +33,17 @@
 from re import sub
 
 
-def phone(strng, num):
-    if strng.count("+" + num) == 0:
+def phone(s, num):
+    if s.count("+" + num) == 0:
         return "Error => Not found: " + num
 
-    if strng.count("+" + num) > 1:
+    if s.count("+" + num) > 1:
         return "Error => Too many people: " + num
 
-    for line in strng.splitlines():
+    for line in s.splitlines():
         if "+" + num in line:
-            name = sub(".*<(.*)>.*", "\g<1>", line)
-            line = sub("<" + name + ">|\+" + num, "", line)
+            name = sub(".*<(.*)>.*", r"\g<1>", line)
+            line = sub(fr"<{name}>|\+{num}", "", line)
             address = " ".join(sub("[^a-zA-Z0-9.-]", " ", line).split())
-            return "Phone => %s, Name => %s, Address => %s" % (num, name, address)
+            return f"Phone => {num}, Name => {name}, Address => {address}"
+        return ''

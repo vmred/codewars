@@ -23,7 +23,7 @@ def make_readable(seconds):
     if seconds < 10:
         seconds = f'0{seconds}'
 
-    return '{}:{}:{}'.format(hours, minutes, seconds)
+    return f'{hours}:{minutes}:{seconds}'
 
     # one line solution
     # return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
