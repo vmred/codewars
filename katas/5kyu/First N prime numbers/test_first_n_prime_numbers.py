@@ -8,7 +8,7 @@ Primes = importlib.import_module('katas.5kyu.First N prime numbers.solution').Pr
 
 cases = [
     TestCase(1, [2]),
-    # TestCase(20, [53, 59, 61, 67, 71]),  # TODO (fixme)
+    # TestCase(20, [53, 59, 61, 67, 71]),
 ]
 
 

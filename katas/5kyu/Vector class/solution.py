@@ -28,7 +28,7 @@ class Vector:
 
     def check_length(self, obj):
         if len(self.vector) != len(obj.vector):
-            raise Exception('Vectors of different length')
+            raise ValueError('Vectors of different length')
 
     def equals(self, obj):
         return self.vector == obj.vector
@@ -43,7 +43,7 @@ class Vector:
 
     def dot(self, obj):
         self.check_length(obj)
-        return sum([x * y for x, y in zip(self.vector, obj.vector)])
+        return sum(x * y for x, y in zip(self.vector, obj.vector))
 
     def norm(self):
-        return sum([x**2 for x in self.vector]) ** 0.5
+        return sum(x**2 for x in self.vector) ** 0.5

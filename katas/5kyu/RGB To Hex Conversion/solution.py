@@ -10,6 +10,10 @@
 # rgb(148, 0, 211) # returns 9400D3
 
 
+def round_to_value(x):
+    return max(0, min(x, 255))
+
+
 def rgb(r, g, b):
-    round_to_valid_value = lambda x: max(0, min(x, 255))
-    return "{:02X}{:02X}{:02X}".format(round_to_valid_value(r), round_to_valid_value(g), round_to_valid_value(b))
+    # pylint: disable=consider-using-f-string
+    return "{:02X}{:02X}{:02X}".format(round_to_value(r), round_to_value(g), round_to_value(b))

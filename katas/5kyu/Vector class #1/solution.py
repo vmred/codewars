@@ -21,11 +21,16 @@
 class Vector:
     def __init__(self, *args):
         self.vector = list(args[0]) if len(args) == 1 else list(args)
-        self.x, self.y, self.z = self.vector
-        self.magnitude = sum(i**2 for i in self.vector) ** 0.5
+        if len(self.vector) != 3:
+            raise ValueError('Invalid init args passed, expects iterable of len() = 3')
+        self.x, self.y, self.z = self.vector  # pylint: disable=unbalanced-tuple-unpacking
+
+    @property
+    def magnitude(self):
+        return sum(i**2 for i in self.vector) ** 0.5
 
     def __str__(self):
-        return '<{}>'.format(', '.join(map(str, self.vector)))
+        return f"<{', '.join(map(str, self.vector))}>"
 
     def __add__(self, vector):
         return Vector([i + j for i, j in zip(self.vector, vector.vector)])

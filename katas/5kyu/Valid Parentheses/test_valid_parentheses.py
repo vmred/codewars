@@ -1,14 +1,22 @@
 import importlib
 
-from asserts.asserts import assert_true
+import pytest
 
-valid_parentheses = importlib.import_module('katas.5kyu.Valid Parentheses.solution').valid_parentheses
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.5kyu.Valid Parentheses.solution').valid_parentheses
+
+cases = [
+    TestCase("  (", False),
+    TestCase(")test", False),
+    TestCase("", True),
+    TestCase("hi())(", False),
+    TestCase("hi(hi)()", True),
+]
 
 
 class TestSolution:
-    def test_valid_parentheses(self):
-        assert_true(valid_parentheses("  ("), False, "should work for '  ('")
-        assert_true(valid_parentheses(")test"), False, "should work for ')test'")
-        assert_true(valid_parentheses(""), True, "should work for ''")
-        assert_true(valid_parentheses("hi())("), False, "should work for 'hi())('")
-        assert_true(valid_parentheses("hi(hi)()"), True, "should work for 'hi(hi)()'")
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_valid_parentheses(self, test):
+        assert_true(solution(test.test_data), test.test_output)

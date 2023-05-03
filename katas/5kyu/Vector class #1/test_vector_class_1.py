@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 Vector = importlib.import_module('katas.5kyu.Vector class #1.solution').Vector
 

@@ -17,16 +17,4 @@
 
 
 def anagrams(word, words):
-    word = sorted(word)
-    l = len(word)
-    anagrams = []
-
-    for i in words:
-        if l == len(i):
-            if sorted(i) == word:
-                anagrams.append(i)
-
-    return anagrams
-
-    # one line solution
-    # return [x for x in words if sorted(word) == sorted(x)]
+    return [x for x in words if sorted(word) == sorted(x)]

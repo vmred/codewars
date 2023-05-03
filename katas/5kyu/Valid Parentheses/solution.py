@@ -23,8 +23,6 @@ def valid_parentheses(value):
         if i == ')':
             if not stack:
                 return False
-            elif stack.pop() != pair[i]:
+            if stack.pop() != pair[i]:
                 return False
-            else:
-                continue
     return not stack
