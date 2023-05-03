@@ -1,6 +1,6 @@
 My completed python katas on [codewars.com](https://www.codewars.com/).
 
-[![Profile badge](https://www.codewars.com/users/vmred/badges/small?theme=light)](https://www.codewars.com/users/vmred)
+[![Profile badge](https://www.codewars.com/users/vmred/badges/large?theme=light)](https://www.codewars.com/users/vmred)
 
 [beta](#beta) | [1 kyu](#1kyu) | [2 kyu](#2kyu) | [3 kyu](#3kyu) | [4 kyu](#4kyu) | [5 kyu](#5kyu) | [6 kyu](#6kyu) | [7 kyu](#7kyu) | [8 kyu](#8kyu)
 
