@@ -27,7 +27,7 @@ class Vector:
 
     @property
     def magnitude(self):
-        return sum(i ** 2 for i in self.vector) ** 0.5
+        return sum(i**2 for i in self.vector) ** 0.5
 
     def __str__(self):
         return f"<{', '.join(map(str, self.vector))}>"
