@@ -9,6 +9,7 @@
 # rgb(0,0,0) # returns 000000
 # rgb(148, 0, 211) # returns 9400D3
 
+
 def round_to_value(x):
     return max(0, min(x, 255))
 
