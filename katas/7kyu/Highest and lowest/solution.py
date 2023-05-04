@@ -11,4 +11,4 @@
 def high_and_low(numbers):
     numbers = sorted(list(int(i) for i in numbers.split()))
 
-    return '{} {}'.format(numbers[-1], numbers[0])
+    return f'{numbers[-1]} {numbers[0]}'

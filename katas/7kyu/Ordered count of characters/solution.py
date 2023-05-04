@@ -4,9 +4,9 @@
 # ordered_count("abracadabra") == [('a', 5), ('b', 2), ('r', 2), ('c', 1), ('d', 1)]
 
 
-def ordered_count(input):
+def ordered_count(value):
     v = []
-    for i in input:
+    for i in value:
         if i not in v:
             v.append(i)
-    return [(i, input.count(i)) for i in v]
+    return [(i, value.count(i)) for i in v]

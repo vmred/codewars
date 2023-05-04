@@ -22,10 +22,10 @@ def row_weights(array):
 
     s1 = 0
     s2 = 0
-    for i in range(0, len(array)):
+    for i, v in enumerate(array):
         if not i % 2:
-            s1 += array[i]
+            s1 += v
         else:
-            s2 += array[i]
+            s2 += v
 
     return s1, s2

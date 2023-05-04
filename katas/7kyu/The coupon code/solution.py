@@ -18,6 +18,7 @@ from datetime import datetime
 
 
 def check_coupon(entered_code, correct_code, current_date, expiration_date):
+    # pylint: disable=unidiomatic-typecheck
     if type(entered_code) != type(correct_code) or entered_code != correct_code:
         return False
 

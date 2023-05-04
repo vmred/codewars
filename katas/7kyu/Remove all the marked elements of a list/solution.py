@@ -16,6 +16,6 @@
 # l.remove_(integer_list, values_list) == [8, 7, 6, 5, 1]
 
 
-class List(object):
+class List:
     def remove_(self, integer_list, values_list):
         return [i for i in integer_list if i not in values_list]

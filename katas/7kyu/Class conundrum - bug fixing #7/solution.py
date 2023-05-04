@@ -9,14 +9,14 @@
 
 
 class List:
-    def __init__(self, type):
-        self.type = type
+    def __init__(self, kind):
+        self.kind = kind
         self.items = []
         self.count = 0
 
     def add(self, item):
-        if type(item) != self.type:
-            return 'This item is not of type: {}'.format(self.type.__name__)
+        if type(item) != self.kind:  # pylint:disable=unidiomatic-typecheck
+            return f'This item is not of type: {self.kind.__name__}'
         self.items.append(item)
         self.count += 1
         return self

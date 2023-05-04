@@ -4,4 +4,4 @@
 
 
 def small_enough(array, limit):
-    return False if any(i > limit for i in array) else True
+    return not any(i > limit for i in array)

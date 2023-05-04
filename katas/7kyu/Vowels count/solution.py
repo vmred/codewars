@@ -5,7 +5,7 @@
 
 def getCount(strng):
     def is_vowel(ch):
-        return True if ch in ['a', 'e', 'i', 'o', 'u'] else False
+        return ch in ['a', 'e', 'i', 'o', 'u']
 
     count = 0
 

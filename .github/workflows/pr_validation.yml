@@ -23,7 +23,6 @@ jobs:
       - name: 'Check pylint'
         run: ./utils/linters/pylint.sh
         shell: zsh {0}
-        continue-on-error: true
 
       - name: 'Run tests'
         run: python -m pytest -s -v

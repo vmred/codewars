@@ -21,7 +21,7 @@
 # __repr__ = __str__
 
 
-class Fighter(object):
+class Fighter:
     def __init__(self, name, health, damage_per_attack):
         self.name = name
         self.health = health

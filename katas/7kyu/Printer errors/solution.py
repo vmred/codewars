@@ -24,4 +24,4 @@
 
 
 def printer_error(s):
-    return '{}/{}'.format(len([i for i in s if ord(i) > 109]), len(s))
+    return f'{len([i for i in s if ord(i) > 109])}/{len(s)}'
