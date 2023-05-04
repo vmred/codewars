@@ -30,7 +30,7 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):  # pylint: disabl
     from asserts.asserts import assert_true
     from asserts.testcase import TestCase
     
-    {test_func_name} = importlib.import_module('katas.{kyu}.{directory_name}.solution').{test_func_name}
+    solution = importlib.import_module('katas.{kyu}.{directory_name}.solution').{test_func_name}
     
     cases = [
         TestCase()
