@@ -1,5 +1,4 @@
 # Given the string representations of two integers, return the string representation of the sum of those integers.
-import os
 
 # For example:
 
@@ -9,7 +8,7 @@ import os
 # I have removed the use of BigInteger and BigDecimal in java
 
 # Python: your solution need to work with huge numbers (about a milion digits), converting to int will not work.
-from gmpy2 import mpz
+from gmpy2 import mpz  # pylint: disable=no-name-in-module
 
 
 def sum_strings(x, y):
