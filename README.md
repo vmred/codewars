@@ -14,6 +14,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [A function within a function](katas/beta/A%20function%20within%20a%20function/solution.py) - [codewars](https://www.codewars.com/kata/53844152aa6fc137d8000589)
 
 #### <a name="4kyu">4 kyu</a>
+* [Sum Strings as Numbers](katas/4kyu/Sum%20Strings%20as%20Numbers/solution.py) - [codewars](https://www.codewars.com/kata/5324945e2ece5e1f32000370)
 * [Counting Change Combinations](katas/4kyu/Counting%20Change%20Combinations/solution.py) - [codewars](https://www.codewars.com/kata/541af676b589989aed0009e7)
 * [Sum of Intervals](katas/4kyu/Sum%20of%20Intervals/solution.py) - [codewars](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)
 * [The observed PIN](katas/4kyu/The%20observed%20PIN/solution.py) - [codewars](https://www.codewars.com/kata/5263c6999e0f40dee200059d)
