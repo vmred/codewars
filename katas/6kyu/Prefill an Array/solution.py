@@ -23,5 +23,5 @@
 def prefill(n, v=None):
     try:
         return [v] * int(n)
-    except:
-        raise TypeError('{} is invalid'.format(n))
+    except Exception as exc:
+        raise TypeError(f'{n} is invalid') from exc

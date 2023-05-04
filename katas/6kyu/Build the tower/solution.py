@@ -23,8 +23,8 @@ def tower_builder(n_floors):
 
     max_floor = len(result[-1])
 
-    for i in range(0, len(result)):
+    for i, _ in enumerate(result):
         while len(result[i]) < max_floor:
-            result[i] = ' {} '.format(result[i])
+            result[i] = f' {result[i]} '
 
     return result

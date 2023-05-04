@@ -1,7 +1,7 @@
 from decimal import Decimal
 
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 round_by_2_decimal_places = importlib.import_module('katas.6kyu.Round and Round.solution').round_by_2_decimal_places
 

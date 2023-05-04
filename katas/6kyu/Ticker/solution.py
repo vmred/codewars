@@ -24,7 +24,7 @@ def ticker(text, width, tick):
     r = ' ' * width
     pos = 1
 
-    for i in range(1, tick + 1):
+    for _ in range(1, tick + 1):
         if r == ' ' * width and pos > len(text):
             pos = 1
 

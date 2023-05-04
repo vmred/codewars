@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 find_even_index = importlib.import_module('katas.6kyu.Equal sides of an array.solution').find_even_index
 

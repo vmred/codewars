@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 dig_pow = importlib.import_module('katas.6kyu.Playing with digits.solution').dig_pow
 

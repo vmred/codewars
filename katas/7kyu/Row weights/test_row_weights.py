@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 row_weights = importlib.import_module('katas.7kyu.Row weights.solution').row_weights
 

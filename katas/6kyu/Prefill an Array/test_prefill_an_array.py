@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 prefill = importlib.import_module('katas.6kyu.Prefill an Array.solution').prefill
 

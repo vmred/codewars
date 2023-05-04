@@ -19,13 +19,15 @@ def likes(names):
         return 'no one likes this'
 
     if l == 1:
-        return '{} likes this'.format(names[0])
+        return f'{names[0]} likes this'
 
     if l == 2:
-        return '{} and {} like this'.format(names[0], names[1])
+        return f'{names[0]} and {names[1]} like this'
 
     if l == 3:
-        return '{}, {} and {} like this'.format(names[0], names[1], names[2])
+        return f'{names[0]}, {names[1]} and {names[2]} like this'
 
     if l > 3:
-        return '{}, {} and {} others like this'.format(names[0], names[1], l - 2)
+        return f'{names[0]}, {names[1]} and {l - 2} others like this'
+
+    return None

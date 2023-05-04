@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 square_digits = importlib.import_module('katas.7kyu.Square every digit.solution').square_digits
 

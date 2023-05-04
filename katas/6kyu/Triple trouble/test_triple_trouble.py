@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 triple_double = importlib.import_module('katas.6kyu.Triple trouble.solution').triple_double
 

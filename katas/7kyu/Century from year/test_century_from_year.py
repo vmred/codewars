@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 century = importlib.import_module('katas.7kyu.Century from year.solution').century
 

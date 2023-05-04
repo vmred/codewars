@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 accum = importlib.import_module('katas.7kyu.Mumbling.solution').accum
 

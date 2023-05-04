@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 song_decoder = importlib.import_module('katas.6kyu.Dubstep.solution').song_decoder
 

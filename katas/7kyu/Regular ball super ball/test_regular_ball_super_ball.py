@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 Ball = importlib.import_module('katas.7kyu.Regular ball super ball.solution').Ball
 

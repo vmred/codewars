@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 length = importlib.import_module('katas.7kyu.Fun with lists - length.solution').length
 Node = importlib.import_module('katas.7kyu.Fun with lists - length.solution').Node

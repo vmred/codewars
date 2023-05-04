@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 small_enough = importlib.import_module('katas.7kyu.Small enough.solution').small_enough
 

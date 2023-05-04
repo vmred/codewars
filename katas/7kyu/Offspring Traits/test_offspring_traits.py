@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 bear_fur = importlib.import_module('katas.7kyu.Offspring Traits.solution').bear_fur
 

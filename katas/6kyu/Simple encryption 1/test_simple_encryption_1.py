@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 encrypt = importlib.import_module('katas.6kyu.Simple encryption 1.solution').encrypt
 decrypt = importlib.import_module('katas.6kyu.Simple encryption 1.solution').decrypt

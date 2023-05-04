@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 title_case = importlib.import_module('katas.6kyu.Title Case.solution').title_case
 

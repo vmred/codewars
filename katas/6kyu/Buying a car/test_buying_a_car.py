@@ -1,10 +1,18 @@
-from asserts.asserts import assert_true
 import importlib
+import pytest
 
-nbMonths = importlib.import_module('katas.6kyu.Buying a car.solution').nbMonths
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
+
+solution = importlib.import_module('katas.6kyu.Buying a car.solution').nbMonths
+
+cases = [
+    TestCase([2000, 8000, 1000, 1.5], [6, 766]),
+    TestCase([12000, 8000, 1000, 1.5], [0, 4000]),
+]
 
 
 class TestSolution:
-    def test_buying_a_car(self):
-        assert_true(nbMonths(2000, 8000, 1000, 1.5), [6, 766])
-        assert_true(nbMonths(12000, 8000, 1000, 1.5), [0, 4000])
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_buying_a_car(self, test):
+        assert_true(solution(*test.test_data), test.test_output)

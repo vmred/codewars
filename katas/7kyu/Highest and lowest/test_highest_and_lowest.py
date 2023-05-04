@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 high_and_low = importlib.import_module('katas.7kyu.Highest and lowest.solution').high_and_low
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 find_missing_number = importlib.import_module('katas.6kyu.Number Zoo Patrol.solution').find_missing_number
 

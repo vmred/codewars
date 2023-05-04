@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 max_pizza = importlib.import_module('katas.6kyu.Pizza pieces.solution').max_pizza
 

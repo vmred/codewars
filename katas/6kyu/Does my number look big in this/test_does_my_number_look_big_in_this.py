@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 narcissistic = importlib.import_module('katas.6kyu.Does my number look big in this.solution').narcissistic
 

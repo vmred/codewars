@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 longest_consec = importlib.import_module('katas.6kyu.Consecutive strings.solution').longest_consec
 

@@ -15,4 +15,4 @@
 
 
 def group_by_commas(n):
-    return '{:,}'.format(n)
+    return '{:,}'.format(n)  # pylint: disable=consider-using-f-string

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 letter_count = importlib.import_module('katas.6kyu.Count letters in string.solution').letter_count
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 next_happy_year = importlib.import_module('katas.7kyu.See your next happy year.solution').next_happy_year
 

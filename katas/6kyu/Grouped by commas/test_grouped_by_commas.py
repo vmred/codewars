@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 group_by_commas = importlib.import_module('katas.6kyu.Grouped by commas.solution').group_by_commas
 

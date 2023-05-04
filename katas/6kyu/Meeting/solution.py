@@ -30,4 +30,5 @@ def meeting(s):
 
     s = sorted(parse_string(s), key=lambda x: (x['last_name'], x['first_name']))
 
+    # pylint: disable=consider-using-f-string
     return ''.join('({}, {})'.format(x["last_name"].replace("'", ""), x["first_name"]) for x in s)

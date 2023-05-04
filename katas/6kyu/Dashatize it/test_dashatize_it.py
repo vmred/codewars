@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 dashatize = importlib.import_module('katas.6kyu.Dashatize it.solution').dashatize
 

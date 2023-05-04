@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 Cipher = importlib.import_module('katas.6kyu.Simple substitution cipher helper.solution').Cipher
 

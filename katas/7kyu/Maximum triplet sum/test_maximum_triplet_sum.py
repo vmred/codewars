@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 max_tri_sum = importlib.import_module('katas.7kyu.Maximum triplet sum.solution').max_tri_sum
 

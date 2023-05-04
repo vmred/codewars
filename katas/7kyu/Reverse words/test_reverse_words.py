@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 reverse_words = importlib.import_module('katas.7kyu.Reverse words.solution').reverse_words
 

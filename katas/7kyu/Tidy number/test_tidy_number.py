@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 tidyNumber = importlib.import_module('katas.7kyu.Tidy number.solution').tidyNumber
 

@@ -30,4 +30,4 @@
 def stock_list(b, c):
     if not b:
         return ''
-    return " - ".join("({} : {})".format(x, sum(int(item.split()[1]) for item in b if item[0] == x)) for x in c)
+    return " - ".join(f"({x} : {sum(int(item.split()[1]) for item in b if item[0] == x)})" for x in c)

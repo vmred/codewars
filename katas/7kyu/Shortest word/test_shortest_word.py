@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 find_short = importlib.import_module('katas.7kyu.Shortest word.solution').find_short
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 disarium_number = importlib.import_module('katas.7kyu.Disarium number.solution').disarium_number
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 max_gap = importlib.import_module('katas.7kyu.Maximum gap.solution').max_gap
 

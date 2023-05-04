@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 balanced_num = importlib.import_module('katas.7kyu.Balanced number.solution').balanced_num
 

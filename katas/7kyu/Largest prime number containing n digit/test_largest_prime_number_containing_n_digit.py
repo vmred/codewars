@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 largest = importlib.import_module('katas.7kyu.Largest prime number containing n digit.solution').largest
 

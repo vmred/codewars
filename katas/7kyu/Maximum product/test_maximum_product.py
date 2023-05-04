@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 adjacent_element_product = importlib.import_module('katas.7kyu.Maximum product.solution').adjacent_element_product
 

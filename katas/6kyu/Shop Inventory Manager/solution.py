@@ -17,21 +17,21 @@ items += [Item('Conjured Goblin Axe +1', 4, 16)]
 
 
 def update_quality():
-    for i in range(len(items)):
-        if 'Sulfuras' not in items[i].name:
-            items[i].sell_in -= 1
+    for _, v in enumerate(items):
+        if 'Sulfuras' not in v.name:
+            v.sell_in -= 1
 
-            if 'Backstage' in items[i].name:
-                if items[i].sell_in <= 0:
-                    items[i].quality = 0
-                elif items[i].sell_in <= 5:
-                    items[i].quality += 3
-                elif 5 < items[i].sell_in <= 10:
-                    items[i].quality += 2
+            if 'Backstage' in v.name:
+                if v.sell_in <= 0:
+                    v.quality = 0
+                elif v.sell_in <= 5:
+                    v.quality += 3
+                elif 5 < v.sell_in <= 10:
+                    v.quality += 2
                 else:
-                    items[i].quality += 1
+                    v.quality += 1
 
-            elif 'Aged Brie' in items[i].name:
-                items[i].quality += 1
+            elif 'Aged Brie' in v.name:
+                v.quality += 1
             else:
-                items[i].quality -= [1, 2]['Conjured' in items[i].name]
+                v.quality -= [1, 2]['Conjured' in v.name]

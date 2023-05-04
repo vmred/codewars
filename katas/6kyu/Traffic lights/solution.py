@@ -115,3 +115,5 @@ def traffic_lights(road, n):
 
         if start == n - 1:
             return r
+
+    return None

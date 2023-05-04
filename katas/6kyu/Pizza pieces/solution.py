@@ -18,5 +18,4 @@
 def max_pizza(cut):
     if cut < 0:
         return -1
-    else:
-        return (cut * cut + cut + 2) // 2
+    return (cut * cut + cut + 2) // 2

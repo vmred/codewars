@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 create_phone_number = importlib.import_module('katas.6kyu.Create phone number.solution').create_phone_number
 

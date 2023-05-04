@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 isValidWalk = importlib.import_module('katas.6kyu.Take a ten minute walk.solution').isValidWalk
 

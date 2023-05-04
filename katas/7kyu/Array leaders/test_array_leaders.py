@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 array_leaders = importlib.import_module('katas.7kyu.Array leaders.solution').array_leaders
 

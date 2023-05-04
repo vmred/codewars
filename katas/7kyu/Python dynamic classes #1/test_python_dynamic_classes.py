@@ -1,7 +1,7 @@
 import pytest
 
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 class_name_changer = importlib.import_module('katas.7kyu.Python dynamic classes #1.solution').class_name_changer
 MyClass = importlib.import_module('katas.7kyu.Python dynamic classes #1.solution').MyClass

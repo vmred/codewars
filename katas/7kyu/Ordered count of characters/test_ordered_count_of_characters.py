@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 ordered_count = importlib.import_module('katas.7kyu.Ordered count of characters.solution').ordered_count
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 whatpimeans = importlib.import_module('katas.6kyu.Getting started #lets piay.solution').whatpimeans
 

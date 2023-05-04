@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 validate_pin = importlib.import_module('katas.7kyu.Regex validate PIN code.solution').validate_pin
 

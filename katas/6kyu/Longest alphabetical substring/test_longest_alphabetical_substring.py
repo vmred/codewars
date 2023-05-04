@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 longest = importlib.import_module('katas.6kyu.Longest alphabetical substring.solution').longest
 

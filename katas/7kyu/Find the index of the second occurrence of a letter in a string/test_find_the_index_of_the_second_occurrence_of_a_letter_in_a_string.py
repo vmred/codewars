@@ -1,7 +1,7 @@
 import pytest
 
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 from asserts.testcase import TestCase
 

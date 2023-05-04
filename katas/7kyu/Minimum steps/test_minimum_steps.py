@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 minimum_steps = importlib.import_module('katas.7kyu.Minimum steps.solution').minimum_steps
 

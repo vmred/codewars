@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 bingo = importlib.import_module('katas.7kyu.Bingo ( Or Not ).solution').bingo
 

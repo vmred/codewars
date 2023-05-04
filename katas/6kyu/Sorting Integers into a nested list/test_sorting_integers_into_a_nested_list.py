@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 group_ints = importlib.import_module('katas.6kyu.Sorting Integers into a nested list.solution').group_ints
 

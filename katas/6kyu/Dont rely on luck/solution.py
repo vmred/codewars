@@ -7,7 +7,7 @@
 # Good luck!
 
 
-def randint(a=1, b=100):
+def randint(*args):  # pylint: disable=unused-argument
     return 1
 
 

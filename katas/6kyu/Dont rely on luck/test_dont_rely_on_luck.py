@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 randint = importlib.import_module('katas.6kyu.Dont rely on luck.solution').randint
 guess = importlib.import_module('katas.6kyu.Dont rely on luck.solution').guess

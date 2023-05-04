@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 min_sum = importlib.import_module('katas.7kyu.Minimize sum of array.solution').min_sum
 

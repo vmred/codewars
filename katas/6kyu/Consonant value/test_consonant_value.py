@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 solve = importlib.import_module('katas.6kyu.Consonant value.solution').solve
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 solution = importlib.import_module('katas.7kyu.Sum of two lowest positive integers.solution').sum_two_smallest_numbers
 

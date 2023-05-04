@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 namelist = importlib.import_module('katas.6kyu.Format a string of names.solution').namelist
 

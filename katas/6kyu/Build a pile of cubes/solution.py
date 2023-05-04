@@ -13,13 +13,12 @@
 def find_nb(m):
     if 1**3 == m:
         return 1
-    else:
-        n = 2
-        p = 1
-        while p < m:
-            p += n**3
-            if p == m:
-                return n
-            else:
-                n = n + 1
-        return -1
+
+    n = 2
+    p = 1
+    while p < m:
+        p += n**3
+        if p == m:
+            return n
+        n = n + 1
+    return -1

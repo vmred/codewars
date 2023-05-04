@@ -1,6 +1,7 @@
-import pytest
-from asserts.asserts import assert_true
 import importlib
+import pytest
+
+from asserts.asserts import assert_true
 from asserts.testcase import TestCase
 
 solution = importlib.import_module('katas.6kyu.Emotional sort.solution').sort_emotions

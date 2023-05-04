@@ -12,11 +12,11 @@ def find_polydivisible(base=10):
         previous.append(i)
     new = []
     digits = 2
-    while not previous == []:
+    while previous:
         numbers = numbers + previous
-        for i in range(0, len(previous)):
+        for i, v in enumerate(previous):
             for j in range(0, base):
-                number = previous[i] * base + j
+                number = v * base + j
                 if number % digits == 0:
                     new.append(number)
         previous = new

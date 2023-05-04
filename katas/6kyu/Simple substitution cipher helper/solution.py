@@ -15,7 +15,7 @@
 # cipher.decode('eirfg') # => 'aeiou'
 
 
-class Cipher(object):
+class Cipher:
     def __init__(self, m1, m2):
         self.decode_map = list(m1)
         self.encode_map = list(m2)

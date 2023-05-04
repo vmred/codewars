@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 max_number = importlib.import_module('katas.7kyu.From the largest.solution').max_number
 

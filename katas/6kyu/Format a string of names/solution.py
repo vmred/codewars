@@ -23,4 +23,4 @@ def namelist(names):
     if len(names) == 1:
         return names[0]['name']
 
-    return '{} & {}'.format(', '.join([i['name'] for i in names[:-1]]), names[-1]['name'])
+    return "{', '.join([i['name'] for i in names[:-1]])} & {names[-1]['name']}"

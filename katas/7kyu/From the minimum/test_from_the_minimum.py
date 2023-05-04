@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 min_value = importlib.import_module('katas.7kyu.From the minimum.solution').min_value
 

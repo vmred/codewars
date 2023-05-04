@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 strong_num = importlib.import_module('katas.7kyu.STRONG strong number.solution').strong_num
 

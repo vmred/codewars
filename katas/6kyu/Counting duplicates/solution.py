@@ -14,4 +14,4 @@
 
 
 def duplicate_count(text):
-    return len(set([i for i in text if text.lower().count(i) > 1]))
+    return len({i for i in text if text.lower().count(i) > 1})

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 List = importlib.import_module('katas.7kyu.Remove all the marked elements of a list.solution').List
 

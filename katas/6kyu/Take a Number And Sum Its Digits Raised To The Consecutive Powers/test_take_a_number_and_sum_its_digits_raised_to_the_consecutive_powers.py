@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 solution = importlib.import_module(
     'katas.6kyu.Take a Number And Sum Its Digits Raised To The Consecutive Powers.solution'
