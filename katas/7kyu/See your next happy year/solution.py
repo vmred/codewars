@@ -15,7 +15,7 @@
 
 def next_happy_year(year):
     def is_distinct(v):
-        return True if all(v.count(i) == 1 for i in v) else False
+        return all(v.count(i) == 1 for i in v)
 
     while True:
         year += 1

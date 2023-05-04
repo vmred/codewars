@@ -27,3 +27,5 @@ def minimum_steps(numbers, value):
 
         if s >= value:
             return i
+
+    return None

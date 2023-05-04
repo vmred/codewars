@@ -9,7 +9,7 @@
 # This list of tuples should be ordered with the same order that the digits have in digitsList
 
 
-class List(object):
+class List:
     def count_spec_digits(self, integers_list, digits_list):
         integers_list = ''.join(str(i) for i in integers_list)
         return [(i, integers_list.count(str(i))) for i in digits_list]

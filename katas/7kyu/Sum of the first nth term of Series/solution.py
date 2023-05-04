@@ -18,4 +18,4 @@ def series_sum(n):
     r = 0
     for i in range(0, n):
         r += 1 / (1 + 3 * i)
-    return '{:.2f}'.format(r)
+    return '{:.2f}'.format(r)  # pylint: disable=consider-using-f-string

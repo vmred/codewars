@@ -10,6 +10,6 @@
 # ball2.ball_type  #=> "super"
 
 
-class Ball(object):
+class Ball:
     def __init__(self, value='regular'):
         self.ball_type = value

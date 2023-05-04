@@ -10,4 +10,4 @@
 
 
 def divisors(integer):
-    return [x for x in range(2, integer) if not integer % x] or '{} is prime'.format(integer)
+    return [x for x in range(2, integer) if not integer % x] or f'{integer} is prime'

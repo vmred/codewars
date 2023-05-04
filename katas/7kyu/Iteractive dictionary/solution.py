@@ -19,4 +19,4 @@ class Dictionary:
         self.dictionary[word] = definition
 
     def look(self, k):
-        return self.dictionary.get(k, 'Can\'t find entry for %s' % k)
+        return self.dictionary.get(k, f'Can\'t find entry for {k}')

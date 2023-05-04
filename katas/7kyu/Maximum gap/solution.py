@@ -15,4 +15,4 @@
 
 def max_gap(numbers):
     numbers = sorted(numbers)
-    return max([numbers[i] - numbers[i - 1] for i in range(1, len(numbers))])
+    return max(numbers[i] - numbers[i - 1] for i in range(1, len(numbers)))
