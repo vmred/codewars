@@ -25,23 +25,23 @@ def prepare_for_kata(kyu, directory_name, test_func_name='f'):  # pylint: disabl
     with open(f'{kata_dir}/{test_name}.py', 'w+', encoding='utf-8') as f:
         f.write(
             f'''
-    import importlib
-    import pytest
-    from asserts.asserts import assert_true
-    from asserts.testcase import TestCase
+import importlib
+import pytest
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
     
-    solution = importlib.import_module('katas.{kyu}.{directory_name}.solution').{test_func_name}
+solution = importlib.import_module('katas.{kyu}.{directory_name}.solution').{test_func_name}
     
-    cases = [
-        TestCase()
-    ]
+cases = [
+    TestCase()
+]
     
-    class TestSolution:
+class TestSolution:
     
-        @pytest.mark.parametrize('test', cases, ids=[f'{{test.test_data}}' for test in cases])
-        def {test_name}(self, test):
-            assert_true(solution(test.test_data), test.test_output)
-    '''
+    @pytest.mark.parametrize('test', cases, ids=[f'{{test.test_data}}' for test in cases])
+    def {test_name}(self, test):
+        assert_true(solution(test.test_data), test.test_output)
+'''
         )
 
 
