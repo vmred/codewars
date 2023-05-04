@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 sort_array = importlib.import_module('katas.6kyu.Sort the odd.solution').sort_array
 

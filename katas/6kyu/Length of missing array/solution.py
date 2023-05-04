@@ -24,3 +24,5 @@ def get_length_of_missing_array(array_of_arrays):
     for i in range(array_of_lens[0], array_of_lens[-1] + 1):
         if i not in array_of_lens:
             return i
+
+    return None

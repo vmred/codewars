@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 find_outlier = importlib.import_module('katas.6kyu.Find the parity outlier.solution').find_outlier
 

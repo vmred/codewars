@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 men_from_boys = importlib.import_module('katas.7kyu.Sort out the men from boys.solution').men_from_boys
 

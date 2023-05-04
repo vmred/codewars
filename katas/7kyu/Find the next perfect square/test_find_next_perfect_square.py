@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 find_next_square = importlib.import_module('katas.7kyu.Find the next perfect square.solution').find_next_square
 

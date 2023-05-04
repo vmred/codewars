@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 is_pangram = importlib.import_module('katas.6kyu.Detect pangram.solution').is_pangram
 

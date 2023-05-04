@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 maskify = importlib.import_module('katas.7kyu.Credit card mask.solution').maskify
 

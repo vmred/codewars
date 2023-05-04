@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 two_sum = importlib.import_module('katas.6kyu.Two Sum.solution').two_sum
 

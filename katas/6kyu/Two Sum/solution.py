@@ -21,3 +21,5 @@ def two_sum(numbers, target):
             return [r[x], i]
 
         r[v] = i
+
+    return r

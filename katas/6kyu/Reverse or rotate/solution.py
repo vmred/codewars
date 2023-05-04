@@ -21,14 +21,14 @@
 # revrot("563000655734469485", 4) --> "0365065073456944"
 
 
-def revrot(strng, sz):
-    if sz <= 0 or not strng:
+def revrot(s, sz):
+    if sz <= 0 or not s:
         return ''
 
-    chunks = [strng[i : i + sz] for i in range(0, len(strng), sz) if len(strng[i : i + sz]) == sz]
+    chunks = [s[i : i + sz] for i in range(0, len(s), sz) if len(s[i : i + sz]) == sz]
 
-    for i in range(0, len(chunks)):
-        if not sum(int(x) ** 3 for x in chunks[i]) % 2:
+    for i, v in enumerate(chunks):
+        if not sum(int(x) ** 3 for x in v) % 2:
             chunks[i] = chunks[i][::-1]
         else:
             chunks[i] = chunks[i][1:] + chunks[i][:1]

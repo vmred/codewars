@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 f = importlib.import_module('katas.7kyu.GauB needs help! (Sums of a lot of numbers).solution').f
 

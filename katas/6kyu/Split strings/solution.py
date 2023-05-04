@@ -15,6 +15,6 @@ def solution(s):
         r.append(s[i - 1] + s[i])
 
     if x % 2:
-        r.append('{}_'.format(s[-1]))
+        r.append(f'{s[-1]}_')
 
     return r

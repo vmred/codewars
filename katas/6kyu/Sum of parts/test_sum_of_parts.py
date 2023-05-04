@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 parts_sums = importlib.import_module('katas.6kyu.Sum of parts.solution').parts_sums
 

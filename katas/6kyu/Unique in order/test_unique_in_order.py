@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 unique_in_order = importlib.import_module('katas.6kyu.Unique in order.solution').unique_in_order
 

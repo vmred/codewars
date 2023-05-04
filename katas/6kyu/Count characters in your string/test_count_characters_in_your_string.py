@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 count = importlib.import_module('katas.6kyu.Count characters in your string.solution').count
 

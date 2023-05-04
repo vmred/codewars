@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 nth_fib = importlib.import_module('katas.6kyu.Nth Fibonacci.solution').nth_fib
 

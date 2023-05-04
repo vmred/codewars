@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 is_valid_IP = importlib.import_module('katas.6kyu.IP validation.solution').is_valid_IP
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 digital_root = importlib.import_module('katas.6kyu.Digital root.solution').digital_root
 

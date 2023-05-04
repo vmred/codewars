@@ -11,5 +11,5 @@
 # wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 
 
-def wave(str):
-    return [str[0:i] + str[i].upper() + str[i + 1 :] for i in range(0, len(str)) if str[i] != ' ']
+def wave(s):
+    return [s[0:i] + s[i].upper() + s[i + 1 :] for i in range(0, len(s)) if s[i] != ' ']

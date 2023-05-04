@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 check_coupon = importlib.import_module('katas.7kyu.The coupon code.solution').check_coupon
 

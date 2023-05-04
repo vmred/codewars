@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 not_primes = importlib.import_module('katas.6kyu.Not prime numbers.solution').not_primes
 

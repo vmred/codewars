@@ -23,7 +23,7 @@
 # Fix the code so we can all go home early.
 
 
-class Dinglemouse(object):
+class Dinglemouse:
     def __init__(self):
         self.hello_message = {'base': 'Hello.'}
 

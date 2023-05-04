@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 disemvowel = importlib.import_module('katas.7kyu.Disemvowel trolls.solution').disemvowel
 

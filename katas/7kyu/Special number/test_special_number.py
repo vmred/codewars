@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 special_number = importlib.import_module('katas.7kyu.Special number.solution').special_number
 

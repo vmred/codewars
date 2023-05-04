@@ -12,3 +12,4 @@ def find_uniq(arr):
     for i in s:
         if arr.count(i) == 1:
             return i
+    return None

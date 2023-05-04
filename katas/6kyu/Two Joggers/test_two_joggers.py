@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 nbr_of_laps = importlib.import_module('katas.6kyu.Two Joggers.solution').nbr_of_laps
 

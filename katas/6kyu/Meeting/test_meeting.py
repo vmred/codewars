@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 meeting = importlib.import_module('katas.6kyu.Meeting.solution').meeting
 

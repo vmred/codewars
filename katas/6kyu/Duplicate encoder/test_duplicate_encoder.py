@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 duplicate_encode = importlib.import_module('katas.6kyu.Duplicate encoder.solution').duplicate_encode
 

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 next_num = importlib.import_module('katas.6kyu.Next polydivisible number.solution').next_num
 

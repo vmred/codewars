@@ -1,6 +1,6 @@
+import importlib
 import pytest
 from asserts.asserts import assert_true
-import importlib
 from asserts.testcase import TestCase
 
 solution = importlib.import_module('katas.6kyu.Remove the parentheses.solution').remove_parentheses

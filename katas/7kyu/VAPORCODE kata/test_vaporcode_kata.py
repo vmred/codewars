@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 vaporcode = importlib.import_module('katas.7kyu.VAPORCODE kata.solution').vaporcode
 

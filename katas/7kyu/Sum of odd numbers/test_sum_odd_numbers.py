@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 row_summ_odd_numbers = importlib.import_module('katas.7kyu.Sum of odd numbers.solution').row_summ_odd_numbers
 

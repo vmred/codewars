@@ -29,7 +29,7 @@ def validate(numbers):
 
     is_even = len(numbers) % 2
     start_range = 1 if is_even else 0
-    indexes = [i for i in range(start_range, len(numbers), 2)]
+    indexes = list(range(start_range, len(numbers), 2))
 
     for i in indexes:
         numbers[i] = numbers[i] * 2

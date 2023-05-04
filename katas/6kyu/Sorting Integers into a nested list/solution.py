@@ -38,7 +38,7 @@
 
 def group_ints(numbers, key=0):
     r, group_less, group_more = [], [], []
-    for i, v in enumerate(numbers):
+    for _, v in enumerate(numbers):
         if v < key:
             if group_more:
                 r.append(group_more)

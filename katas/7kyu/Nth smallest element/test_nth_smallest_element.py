@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 nth_smallest = importlib.import_module('katas.7kyu.Nth smallest element.solution').nth_smallest
 

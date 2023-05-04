@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 vowel_recognition = importlib.import_module('katas.6kyu.Vowel Recognition.solution').vowel_recognition
 

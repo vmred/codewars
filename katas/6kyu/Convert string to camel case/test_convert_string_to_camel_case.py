@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 to_camel_case = importlib.import_module('katas.6kyu.Convert string to camel case.solution').to_camel_case
 

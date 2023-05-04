@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 solution = importlib.import_module(
     'katas.7kyu.Currying functions multiply all elements in an array.solution'

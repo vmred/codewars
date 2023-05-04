@@ -15,26 +15,14 @@
 # 123.045.067.089
 
 
-def is_valid_IP(strng):
-    ip = strng.split('.')
+def is_valid_IP(s):
+    ip = s.split('.')
 
     if len(ip) != 4:
         return False
 
     for i in ip:
-        if ' ' in i:
-            return False
-
-        if i.isalpha():
-            return False
-
-        if not 0 < len(i) < 4:
-            return False
-
-        if not 0 < int(i) < 256:
-            return False
-
-        if i[0] == '0':
+        if ' ' in i or i.isalpha() or not 0 < len(i) < 4 or not 0 < int(i) < 256 or i[0] == '0':
             return False
 
     return True

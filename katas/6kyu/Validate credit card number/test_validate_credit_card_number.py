@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 validate = importlib.import_module('katas.6kyu.Validate credit card number.solution').validate
 

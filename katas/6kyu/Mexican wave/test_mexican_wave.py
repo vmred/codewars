@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 wave = importlib.import_module('katas.6kyu.Mexican wave.solution').wave
 

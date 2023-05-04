@@ -20,4 +20,4 @@ def narcissistic(value):
     power = len(str(value))
     numbers = list(map(int, str(value)))
 
-    return value == sum([i**power for i in numbers])
+    return value == sum(i**power for i in numbers)

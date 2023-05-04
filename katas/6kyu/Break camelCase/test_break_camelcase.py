@@ -1,11 +1,20 @@
-from asserts.asserts import assert_true
 import importlib
+import pytest
+
+from asserts.asserts import assert_true
+
+from asserts.testcase import TestCase
 
 solution = importlib.import_module('katas.6kyu.Break camelCase.solution').solution
 
+cases = [
+    TestCase("helloWorld", "hello World"),
+    TestCase("camelCase", "camel Case"),
+    TestCase('breakCamelCase', 'break Camel Case'),
+]
+
 
 class TestSolution:
-    def test_break_camelcase(self):
-        assert_true(solution("helloWorld"), "hello World")
-        assert_true(solution("camelCase"), "camel Case")
-        assert_true(solution("breakCamelCase"), "break Camel Case")
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_break_camelcase(self, test):
+        assert_true(solution(test.test_data), test.test_output)

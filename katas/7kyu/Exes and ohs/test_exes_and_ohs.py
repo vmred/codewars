@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 xo = importlib.import_module('katas.7kyu.Exes and ohs.solution').xo
 

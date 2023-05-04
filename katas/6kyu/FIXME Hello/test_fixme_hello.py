@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 Dinglemouse = importlib.import_module('katas.6kyu.FIXME Hello.solution').Dinglemouse
 

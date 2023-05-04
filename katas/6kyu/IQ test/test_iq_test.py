@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 iq_test = importlib.import_module('katas.6kyu.IQ test.solution').iq_test
 

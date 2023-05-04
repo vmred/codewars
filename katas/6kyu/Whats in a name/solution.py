@@ -36,11 +36,11 @@
 
 
 def name_in_str(s, name):
-    def find_betweens_value(prev, arr, next):
+    def find_betweens_value(prev, arr, next_el):
         r = 0
-        next = next[0] if len(next) == 1 else max(next)
+        next_el = next_el[0] if len(next_el) == 1 else max(next_el)
         for v in arr:
-            if prev < v <= next:
+            if prev < v <= next_el:
                 r = v
         return r
 
@@ -55,14 +55,12 @@ def name_in_str(s, name):
     r_i = []
 
     # trying to get array of ascending indexes
-    for i in range(0, len(indexes)):
-        if len(indexes[i]) == 1:
-            r_i.append(indexes[i][0])
+    for i, v in enumerate(indexes):
+        if len(v) == 1:
+            r_i.append(v[0])
 
         else:
-            r_i.append(
-                find_betweens_value(r_i[i - 1], indexes[i], indexes[i + 1] if i < len(indexes) - 1 else indexes[i])
-            )
+            r_i.append(find_betweens_value(r_i[i - 1], v, indexes[i + 1] if i < len(indexes) - 1 else v))
 
     # if array is ascending sorted, return true
     return r_i == sorted(r_i)

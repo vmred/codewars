@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 dont_give_me_five = importlib.import_module('katas.7kyu.Dont give me five!.solution').dont_give_me_five
 

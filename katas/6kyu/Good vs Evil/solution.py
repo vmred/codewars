@@ -67,5 +67,4 @@ def goodVsEvil(good, evil):
     if good_forces > evil_forces:
         return r[1]
 
-    else:
-        return r[2]
+    return r[2]

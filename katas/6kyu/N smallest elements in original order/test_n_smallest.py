@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 first_n_smallest = importlib.import_module('katas.6kyu.N smallest elements in original order.solution').first_n_smallest
 

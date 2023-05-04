@@ -22,25 +22,26 @@
 # Given a string strng resulting from the previous coding, decode it to get the corresponding decimal string.
 
 
-def code(strng):
-    nums = [int(i) for i in strng]
+def code(value):
+    nums = [int(i) for i in value]
+    # pylint: disable=consider-using-f-string
     return ''.join(['0' * (i.bit_length() - 1) + '1' + '{0:b}'.format(i) for i in nums])
 
 
-def decode(strng):
-    strng = list(strng)
+def decode(value):
+    value = list(value)
     r = []
 
     # getting stripped values of step a and b
-    while len(strng) > 0:
-        index_one = strng.index('1')
-        s = len(strng[: index_one + 1]) + 1
-        v = strng[: index_one + s]
+    while len(value) > 0:
+        index_one = value.index('1')
+        s = len(value[: index_one + 1]) + 1
+        v = value[: index_one + s]
 
         l_v = len(v)
         l_v = int(l_v / 2)
         r.append((''.join(v[:l_v]), ''.join(v[l_v:])))
 
-        strng = strng[index_one + s :]
+        value = value[index_one + s :]
 
     return ''.join([str(int(i[1], 2)) for i in r])

@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 sum_triangular_numbers = importlib.import_module('katas.7kyu.Sum of Triangular Numbers.solution').sum_triangular_numbers
 

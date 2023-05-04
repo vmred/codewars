@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 items = importlib.import_module('katas.6kyu.Shop Inventory Manager.solution').items
 update_quality = importlib.import_module('katas.6kyu.Shop Inventory Manager.solution').update_quality

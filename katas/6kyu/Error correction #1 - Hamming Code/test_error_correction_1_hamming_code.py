@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 encode = importlib.import_module('katas.6kyu.Error correction #1 - Hamming Code.solution').encode
 decode = importlib.import_module('katas.6kyu.Error correction #1 - Hamming Code.solution').decode

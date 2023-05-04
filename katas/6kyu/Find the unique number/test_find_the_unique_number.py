@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 find_uniq = importlib.import_module('katas.6kyu.Find the unique number.solution').find_uniq
 

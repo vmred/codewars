@@ -1,7 +1,7 @@
+import importlib
 import pytest
 
 from asserts.asserts import assert_true
-import importlib
 
 revrot = importlib.import_module('katas.6kyu.Reverse or rotate.solution').revrot
 

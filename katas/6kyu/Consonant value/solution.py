@@ -47,9 +47,10 @@ def solve(s):
     substrings = []
 
     sl = ''
-    for i in range(0, len(s)):
-        if s[i] not in exceptions:
-            sl += s[i]
+    # for i in range(0, len(s)):
+    for i, v in enumerate(s):
+        if v not in exceptions:
+            sl += v
         else:
             substrings.append(sl)
             sl = ''

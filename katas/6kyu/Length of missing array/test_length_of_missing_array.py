@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 solution = importlib.import_module('katas.6kyu.Length of missing array.solution').get_length_of_missing_array
 

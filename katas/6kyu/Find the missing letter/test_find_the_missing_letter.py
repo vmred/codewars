@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 find_missing_letter = importlib.import_module('katas.6kyu.Find the missing letter.solution').find_missing_letter
 

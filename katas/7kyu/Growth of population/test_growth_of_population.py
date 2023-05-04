@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 nb_year = importlib.import_module('katas.7kyu.Growth of population.solution').nb_year
 

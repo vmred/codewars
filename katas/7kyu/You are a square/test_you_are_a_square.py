@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 is_square = importlib.import_module('katas.7kyu.You are a square.solution').is_square
 

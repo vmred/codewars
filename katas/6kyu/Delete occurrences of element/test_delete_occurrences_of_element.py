@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 delete_nth = importlib.import_module('katas.6kyu.Delete occurrences of element.solution').delete_nth
 

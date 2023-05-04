@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 alphabet_position = importlib.import_module('katas.6kyu.Replace with alphabet position.solution').alphabet_position
 

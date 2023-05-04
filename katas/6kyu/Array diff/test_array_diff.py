@@ -1,10 +1,17 @@
-from asserts.asserts import assert_true
 import importlib
+import pytest
+from asserts.asserts import assert_true
+from asserts.testcase import TestCase
 
-array_diff = importlib.import_module('katas.6kyu.Array diff.solution').array_diff
+solution = importlib.import_module('katas.6kyu.Array diff.solution').array_diff
+
+cases = [
+    TestCase([[1, 2], [1]], [2]),
+    TestCase([[1, 2, 2], []], [1, 2, 2]),
+]
 
 
 class TestSolution:
-    def test_array_diff(self):
-        assert_true(array_diff([1, 2], [1]), [2])
-        assert_true(array_diff([1, 2, 2], []), [1, 2, 2])
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_array_diff(self, test):
+        assert_true(solution(*test.test_data), test.test_output)

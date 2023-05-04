@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 high = importlib.import_module('katas.6kyu.Highest scoring word.solution').high
 

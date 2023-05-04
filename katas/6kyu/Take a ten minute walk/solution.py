@@ -28,7 +28,6 @@ def isValidWalk(walk):
             if i == 'e':
                 west_east -= 1
 
-        return True if not north_south and not west_east else False
+        return not north_south and not west_east
 
-    else:
-        return False
+    return False

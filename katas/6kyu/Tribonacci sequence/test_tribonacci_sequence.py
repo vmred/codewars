@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 tribonacci = importlib.import_module('katas.6kyu.Tribonacci sequence.solution').tribonacci
 

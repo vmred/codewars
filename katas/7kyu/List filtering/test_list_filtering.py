@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 filter_list = importlib.import_module('katas.7kyu.List filtering.solution').filter_list
 

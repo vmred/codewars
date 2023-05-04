@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 is_nice = importlib.import_module('katas.7kyu.Nice array.solution').is_nice
 

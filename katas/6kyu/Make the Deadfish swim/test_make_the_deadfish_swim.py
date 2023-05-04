@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 parse = importlib.import_module('katas.6kyu.Make the Deadfish swim.solution').parse
 

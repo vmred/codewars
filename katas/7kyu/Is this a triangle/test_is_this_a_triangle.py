@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 is_triangle = importlib.import_module('katas.7kyu.Is this a triangle.solution').is_triangle
 

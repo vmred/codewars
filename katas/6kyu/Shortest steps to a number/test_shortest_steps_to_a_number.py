@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 shortest_steps_to_num = importlib.import_module('katas.6kyu.Shortest steps to a number.solution').shortest_steps_to_num
 

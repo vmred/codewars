@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 extra_perfect = importlib.import_module('katas.7kyu.Extra perfect numbers.solution').extra_perfect
 

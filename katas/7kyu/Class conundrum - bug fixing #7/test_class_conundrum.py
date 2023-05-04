@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 List = importlib.import_module('katas.7kyu.Class conundrum - bug fixing #7.solution').List
 

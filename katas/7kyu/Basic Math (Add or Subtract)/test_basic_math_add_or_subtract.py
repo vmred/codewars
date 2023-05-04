@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 calculate = importlib.import_module('katas.7kyu.Basic Math (Add or Subtract).solution').calculate
 

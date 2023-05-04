@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 product_array = importlib.import_module('katas.7kyu.Product array.solution').product_array
 

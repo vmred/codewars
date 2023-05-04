@@ -1,5 +1,5 @@
-from asserts.asserts import assert_true
 import importlib
+from asserts.asserts import assert_true
 
 openOrSenior = importlib.import_module('katas.7kyu.Categorize new member.solution').openOrSenior
 
