@@ -2,13 +2,13 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Bouncing Balls.solution').bouncingBall
 
 cases = [
-    TestCase([3, 0.66, 1.5], 3),
-    TestCase([30, 0.66, 1.5], 15),
+    Case([3, 0.66, 1.5], 3),
+    Case([30, 0.66, 1.5], 15),
 ]
 
 

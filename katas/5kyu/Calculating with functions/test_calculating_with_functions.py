@@ -3,7 +3,7 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 zero = importlib.import_module('katas.5kyu.Calculating with functions.solution').zero
 one = importlib.import_module('katas.5kyu.Calculating with functions.solution').one
@@ -21,10 +21,10 @@ divided_by = importlib.import_module('katas.5kyu.Calculating with functions.solu
 times = importlib.import_module('katas.5kyu.Calculating with functions.solution').times
 
 cases = [
-    TestCase('seven(times(five()))', 35),
-    TestCase('four(plus(nine()))', 13),
-    TestCase('eight(minus(three()))', 5),
-    TestCase('six(divided_by(two()))', 3),
+    Case('seven(times(five()))', 35),
+    Case('four(plus(nine()))', 13),
+    Case('eight(minus(three()))', 5),
+    Case('six(divided_by(two()))', 3),
 ]
 
 

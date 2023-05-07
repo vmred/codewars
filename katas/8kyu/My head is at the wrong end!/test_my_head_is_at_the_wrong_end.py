@@ -2,15 +2,15 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.My head is at the wrong end!.solution').fix_the_meerkat
 
 cases = [
-    TestCase(["tail", "body", "head"], ["head", "body", "tail"]),
-    TestCase(["bottom", "middle", "top"], ["top", "middle", "bottom"]),
-    TestCase(["lower legs", "torso", "upper legs"], ["upper legs", "torso", "lower legs"]),
-    TestCase(["ground", "rainbow", "sky"], ["sky", "rainbow", "ground"]),
+    Case(["tail", "body", "head"], ["head", "body", "tail"]),
+    Case(["bottom", "middle", "top"], ["top", "middle", "bottom"]),
+    Case(["lower legs", "torso", "upper legs"], ["upper legs", "torso", "lower legs"]),
+    Case(["ground", "rainbow", "sky"], ["sky", "rainbow", "ground"]),
 ]
 
 

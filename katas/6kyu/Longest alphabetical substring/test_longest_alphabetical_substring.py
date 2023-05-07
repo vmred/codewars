@@ -1,10 +1,15 @@
 import importlib
-from asserts.asserts import assert_true
+import pytest
 
-longest = importlib.import_module('katas.6kyu.Longest alphabetical substring.solution').longest
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.Longest alphabetical substring.solution').longest
+
+cases = [Case('nab', 'ab'), Case('abcdeapbcdef', 'abcde')]
 
 
 class TestSolution:
-    def test_longest_alphabetical_substring(self):
-        assert_true(longest('nab'), 'ab')
-        assert_true(longest('abcdeapbcdef'), 'abcde')
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_longest_alphabetical_substring(self, test):
+        assert_true(solution(test.test_data), test.test_output)

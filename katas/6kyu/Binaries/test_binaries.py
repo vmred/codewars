@@ -3,21 +3,21 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 code = importlib.import_module('katas.6kyu.Binaries.solution').code
 decode = importlib.import_module('katas.6kyu.Binaries.solution').decode
 
 cases_code = [
-    TestCase("62", "0011100110"),
-    TestCase("55337700", "001101001101011101110011110011111010"),
-    TestCase("69", "00111000011001"),
-    TestCase("07", "10001111"),
-    TestCase("1119441933000055", "1111110001100100110000110011000110010111011110101010001101001101"),
+    Case("62", "0011100110"),
+    Case("55337700", "001101001101011101110011110011111010"),
+    Case("69", "00111000011001"),
+    Case("07", "10001111"),
+    Case("1119441933000055", "1111110001100100110000110011000110010111011110101010001101001101"),
 ]
 
 cases_decode = [
-    TestCase("10001111", "07"),
+    Case("10001111", "07"),
 ]
 
 

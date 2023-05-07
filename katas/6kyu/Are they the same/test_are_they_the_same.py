@@ -3,13 +3,13 @@ import pytest
 
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Are they the same.solution').comp
 
 cases = [
-    TestCase([[121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 361, 25921, 361, 20736, 361]], True),
-    TestCase([[10, 99], [101, 9801]], False),
+    Case([[121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 361, 25921, 361, 20736, 361]], True),
+    Case([[10, 99], [101, 9801]], False),
 ]
 
 

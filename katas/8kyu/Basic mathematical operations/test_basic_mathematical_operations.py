@@ -3,15 +3,15 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.Basic mathematical operations.solution').basic_op
 
 cases = [
-    TestCase(['+', 4, 7], 11),
-    TestCase(['-', 15, 18], -3),
-    TestCase(['*', 5, 5], 25),
-    TestCase(['/', 49, 7], 7),
+    Case(['+', 4, 7], 11),
+    Case(['-', 15, 18], -3),
+    Case(['*', 5, 5], 25),
+    Case(['/', 49, 7], 7),
 ]
 
 

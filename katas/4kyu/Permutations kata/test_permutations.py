@@ -3,14 +3,14 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 permutations = importlib.import_module('katas.4kyu.Permutations kata.solution').permutations
 
 cases = [
-    TestCase('ab', ['ab', 'ba']),
-    TestCase('a', ['a']),
-    TestCase('aabb', ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']),
+    Case('ab', ['ab', 'ba']),
+    Case('a', ['a']),
+    Case('aabb', ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']),
 ]
 
 

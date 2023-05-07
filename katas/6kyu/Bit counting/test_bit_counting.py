@@ -3,14 +3,14 @@ import pytest
 
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Bit counting.solution').countBits
 
 cases = [
-    TestCase(10, 2),
-    TestCase(1, 1),
-    TestCase(0, 0),
+    Case(10, 2),
+    Case(1, 1),
+    Case(0, 0),
 ]
 
 

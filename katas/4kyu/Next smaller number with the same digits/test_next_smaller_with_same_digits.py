@@ -3,19 +3,19 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.4kyu.Next smaller number with the same digits.solution').next_smaller
 
 cases = [
-    TestCase(1027, -1),
-    TestCase(907, 790),
-    TestCase(531, 513),
-    TestCase(2071, 2017),
-    TestCase(414, 144),
-    TestCase(123456798, 123456789),
-    TestCase(123456789, -1),
-    TestCase(1234567908, 1234567890),
+    Case(1027, -1),
+    Case(907, 790),
+    Case(531, 513),
+    Case(2071, 2017),
+    Case(414, 144),
+    Case(123456798, 123456789),
+    Case(123456789, -1),
+    Case(1234567908, 1234567890),
 ]
 
 

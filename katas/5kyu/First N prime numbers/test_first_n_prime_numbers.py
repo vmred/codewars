@@ -2,13 +2,13 @@ import importlib
 import pytest
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 Primes = importlib.import_module('katas.5kyu.First N prime numbers.solution').Primes
 
 cases = [
-    TestCase(1, [2]),
-    # TestCase(20, [53, 59, 61, 67, 71]),
+    Case(1, [2]),
+    # Case(20, [53, 59, 61, 67, 71]),
 ]
 
 

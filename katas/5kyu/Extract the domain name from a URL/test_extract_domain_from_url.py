@@ -3,15 +3,15 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Extract the domain name from a URL.solution').domain_name
 
 cases = [
-    TestCase("http://google.com", "google"),
-    TestCase("http://google.co.jp", "google"),
-    TestCase("www.xakep.ru", "xakep"),
-    TestCase("https://youtube.com", "youtube"),
+    Case("http://google.com", "google"),
+    Case("http://google.co.jp", "google"),
+    Case("www.xakep.ru", "xakep"),
+    Case("https://youtube.com", "youtube"),
 ]
 
 

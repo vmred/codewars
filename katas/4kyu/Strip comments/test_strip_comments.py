@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.4kyu.Strip comments.solution').solution
 
 cases = [
-    TestCase(["apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]], "apples, pears\ngrapes\nbananas"),
+    Case(["apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]], "apples, pears\ngrapes\nbananas"),
 ]
 
 

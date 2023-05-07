@@ -3,17 +3,17 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.First non-repeating character.solution').first_non_repeating_letter
 
 cases = [
-    TestCase('a', 'a'),
-    TestCase('stress', 't'),
-    TestCase('moonmen', 'e'),
-    TestCase('', ''),
-    TestCase('hello world, eh?', 'w'),
-    TestCase('sTreSS', 'T'),
+    Case('a', 'a'),
+    Case('stress', 't'),
+    Case('moonmen', 'e'),
+    Case('', ''),
+    Case('hello world, eh?', 'w'),
+    Case('sTreSS', 'T'),
 ]
 
 

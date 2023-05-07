@@ -2,16 +2,16 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Character frequency.solution').letter_frequency
 
 cases = [
-    TestCase(
+    Case(
         'wklv lv d vhfuhw phvvdjh',
         [('v', 5), ('h', 4), ('d', 2), ('l', 2), ('w', 2), ('f', 1), ('j', 1), ('k', 1), ('p', 1), ('u', 1)],
     ),
-    TestCase(
+    Case(
         'As long as I\'m learning something, I figure I\'m OK - it\'s a decent day.',
         [
             ('i', 7),

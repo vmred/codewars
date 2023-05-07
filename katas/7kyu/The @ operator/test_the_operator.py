@@ -2,21 +2,21 @@ import importlib
 import pytest
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.7kyu.The @ operator.solution').evaluate
 
 cases = [
-    TestCase('0 @ 1', 0),
-    TestCase('0 @ 2', 0),
-    TestCase('1 @ 1', 4),
-    TestCase('3 @ 2', 13),
-    TestCase('6 @ 9', 66),
-    TestCase('4 @ -4', -9),
-    TestCase('1 @ 1 @ -4', -9),
-    TestCase('2 @ 2 @ 2', 40),
-    TestCase('0 @ 1 @ 2', 0),
-    TestCase('5 @ 0', None),
+    Case('0 @ 1', 0),
+    Case('0 @ 2', 0),
+    Case('1 @ 1', 4),
+    Case('3 @ 2', 13),
+    Case('6 @ 9', 66),
+    Case('4 @ -4', -9),
+    Case('1 @ 1 @ -4', -9),
+    Case('2 @ 2 @ 2', 40),
+    Case('0 @ 1 @ 2', 0),
+    Case('5 @ 0', None),
 ]
 
 

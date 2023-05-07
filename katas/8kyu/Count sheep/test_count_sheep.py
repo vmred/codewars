@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.Count sheep.solution').count_sheeps
 
 cases = [
-    TestCase(
+    Case(
         [
             True,
             True,

@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Moving zeros to the end.solution').move_zeros
 
 cases = [
-    TestCase([0, 1, None, 2, False, 1, 0], [1, None, 2, False, 1, 0, 0]),
+    Case([0, 1, None, 2, False, 1, 0], [1, None, 2, False, 1, 0, 0]),
 ]
 
 

@@ -2,15 +2,15 @@ import importlib
 import pytest
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Decode the morse code.solution').decodeMorse
 
 cases = [
-    TestCase('.... . -.--   .--- ..- -.. .', 'HEY JUDE'),
-    TestCase('...---...', 'SOS'),
-    TestCase('.   .', 'E E'),
-    TestCase('----- .---- ..--- ---.. ----.', '01289'),
+    Case('.... . -.--   .--- ..- -.. .', 'HEY JUDE'),
+    Case('...---...', 'SOS'),
+    Case('.   .', 'E E'),
+    Case('----- .---- ..--- ---.. ----.', '01289'),
 ]
 
 

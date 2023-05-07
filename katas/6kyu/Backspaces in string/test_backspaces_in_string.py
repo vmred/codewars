@@ -3,15 +3,15 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Backspaces in string.solution').clean_string
 
 cases = [
-    TestCase('abc#d##c', 'ac'),
-    TestCase('abc####d##c#', ''),
-    TestCase("", ''),
-    TestCase('w#h##E##b#9[z0,##', '9[z'),
+    Case('abc#d##c', 'ac'),
+    Case('abc####d##c#', ''),
+    Case("", ''),
+    Case('w#h##E##b#9[z0,##', '9[z'),
 ]
 
 

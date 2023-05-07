@@ -2,13 +2,13 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Buying a car.solution').nbMonths
 
 cases = [
-    TestCase([2000, 8000, 1000, 1.5], [6, 766]),
-    TestCase([12000, 8000, 1000, 1.5], [0, 4000]),
+    Case([2000, 8000, 1000, 1.5], [6, 766]),
+    Case([12000, 8000, 1000, 1.5], [0, 4000]),
 ]
 
 

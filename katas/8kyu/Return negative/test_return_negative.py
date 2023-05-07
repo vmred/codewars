@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.Return negative.solution').make_negative
 
 cases = [
-    TestCase(42, -42),
+    Case(42, -42),
 ]
 
 

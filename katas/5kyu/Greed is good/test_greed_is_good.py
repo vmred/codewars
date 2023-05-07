@@ -3,17 +3,17 @@ import pytest
 
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Greed is good.solution').score
 
 cases = [
-    TestCase([2, 3, 4, 6, 2], 0),
-    TestCase([4, 4, 4, 3, 3], 400),
-    TestCase([2, 4, 4, 5, 4], 450),
-    TestCase([1, 1, 1, 1], 1100),
-    TestCase([1, 1, 1, 1], 1100),
-    TestCase([1, 1, 1, 3, 3], 1000),
+    Case([2, 3, 4, 6, 2], 0),
+    Case([4, 4, 4, 3, 3], 400),
+    Case([2, 4, 4, 5, 4], 450),
+    Case([1, 1, 1, 1], 1100),
+    Case([1, 1, 1, 1], 1100),
+    Case([1, 1, 1, 3, 3], 1000),
 ]
 
 

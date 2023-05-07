@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 sol = importlib.import_module('katas.8kyu.Convert boolean values to strings \'Yes\' or \'No\'.solution').bool_to_word
 
 cases = [
-    TestCase(True, 'Yes'),
+    Case(True, 'Yes'),
 ]
 
 

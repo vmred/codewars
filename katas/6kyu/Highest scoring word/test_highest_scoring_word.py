@@ -1,9 +1,17 @@
 import importlib
-from asserts.asserts import assert_true
+import pytest
 
-high = importlib.import_module('katas.6kyu.Highest scoring word.solution').high
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.Highest scoring word.solution').high
+
+cases = [
+    Case('man i need a taxi up to ubud', 'taxi'),
+]
 
 
 class TestSolution:
-    def test_highest_scoring_word(self):
-        assert_true(high('man i need a taxi up to ubud'), 'taxi')
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_highest_scoring_word(self, test):
+        assert_true(solution(test.test_data), test.test_output)

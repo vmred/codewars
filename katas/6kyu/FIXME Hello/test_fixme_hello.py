@@ -1,19 +1,20 @@
 import importlib
+
+import pytest
+
 from asserts.asserts import assert_true
+from asserts.testcase import Case
 
 Dinglemouse = importlib.import_module('katas.6kyu.FIXME Hello.solution').Dinglemouse
 
+cases = [
+    Case(Dinglemouse().setName("Bob").setAge(27).setSex('M'), "Hello. My name is Bob. I am 27. I am male."),
+    Case(Dinglemouse().setName("Batman"), "Hello. My name is Batman."),
+    Case(Dinglemouse().setAge(27).setSex('M').setName("Bob"), "Hello. I am 27. I am male. My name is Bob."),
+]
+
 
 class TestSolution:
-    def test_fixme_hello(self):
-        dm = Dinglemouse().setName("Bob").setAge(27).setSex('M')
-        expected = "Hello. My name is Bob. I am 27. I am male."
-        assert_true(dm.hello(), expected)
-
-        dm = Dinglemouse().setName("Batman")
-        expected = "Hello. My name is Batman."
-        assert_true(dm.hello(), expected)
-
-        dm = Dinglemouse().setAge(27).setSex('M').setName("Bob")
-        expected = "Hello. I am 27. I am male. My name is Bob."
-        assert_true(dm.hello(), expected)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_fixme_hello(self, test):
+        assert_true(test.test_data.hello(), test.test_output)

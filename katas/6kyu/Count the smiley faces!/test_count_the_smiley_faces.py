@@ -1,13 +1,21 @@
 import importlib
 
-from asserts.asserts import assert_true
+import pytest
 
-count_smileys = importlib.import_module('katas.6kyu.Count the smiley faces!.solution').count_smileys
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.Count the smiley faces!.solution').count_smileys
+
+cases = [
+    Case([], 0),
+    Case([':D', ':~)', ';~D', ':)'], 4),
+    Case([':)', ':(', ':D', ':O', ':;'], 2),
+    Case([';]', ':[', ';*', ':$', ';-D'], 1),
+]
 
 
 class TestSolution:
-    def test_count_smiley_faces(self):
-        assert_true(count_smileys([]), 0)
-        assert_true(count_smileys([':D', ':~)', ';~D', ':)']), 4)
-        assert_true(count_smileys([':)', ':(', ':D', ':O', ':;']), 2)
-        assert_true(count_smileys([';]', ':[', ';*', ':$', ';-D']), 1)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_count_smiley_faces(self, test):
+        assert_true(solution(test.test_data), test.test_output)

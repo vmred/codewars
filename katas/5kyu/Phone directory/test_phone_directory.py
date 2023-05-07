@@ -3,7 +3,7 @@ import pytest
 
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Phone directory.solution').phone
 
@@ -22,18 +22,14 @@ dr = (
 )
 
 cases = [
-    TestCase([dr, "1-098-512-2222"], "Error => Too many people: 1-098-512-2222"),
-    TestCase([dr, "5-555-555-5555"], "Error => Not found: 5-555-555-5555"),
-    TestCase(
-        [dr, "1-498-512-2222"], "Phone => 1-498-512-2222, Name => Bernard Deltheil, Address => Mount Av. Eldorado"
-    ),
-    TestCase([dr, "48-421-674-8974"], "Phone => 48-421-674-8974, Name => Anastasia, Address => Via Quirinal Roma"),
-    TestCase(
-        [dr, "1-921-512-2222"], "Phone => 1-921-512-2222, Name => Wilfrid Stevens, Address => Wild Street AA-67209"
-    ),
-    TestCase([dr, "1-908-512-2222"], "Phone => 1-908-512-2222, Name => Peter O'Brien, Address => High Street CC-47209"),
-    TestCase([dr, "1-541-754-3010"], "Phone => 1-541-754-3010, Name => J Steeve, Address => 156 Alphand St."),
-    TestCase([dr, "1-121-504-8974"], "Phone => 1-121-504-8974, Name => Arthur Clarke, Address => San Antonio TT-45120"),
+    Case([dr, "1-098-512-2222"], "Error => Too many people: 1-098-512-2222"),
+    Case([dr, "5-555-555-5555"], "Error => Not found: 5-555-555-5555"),
+    Case([dr, "1-498-512-2222"], "Phone => 1-498-512-2222, Name => Bernard Deltheil, Address => Mount Av. Eldorado"),
+    Case([dr, "48-421-674-8974"], "Phone => 48-421-674-8974, Name => Anastasia, Address => Via Quirinal Roma"),
+    Case([dr, "1-921-512-2222"], "Phone => 1-921-512-2222, Name => Wilfrid Stevens, Address => Wild Street AA-67209"),
+    Case([dr, "1-908-512-2222"], "Phone => 1-908-512-2222, Name => Peter O'Brien, Address => High Street CC-47209"),
+    Case([dr, "1-541-754-3010"], "Phone => 1-541-754-3010, Name => J Steeve, Address => 156 Alphand St."),
+    Case([dr, "1-121-504-8974"], "Phone => 1-121-504-8974, Name => Arthur Clarke, Address => San Antonio TT-45120"),
 ]
 
 

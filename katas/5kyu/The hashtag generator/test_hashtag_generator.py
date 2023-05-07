@@ -3,17 +3,17 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.The hashtag generator.solution').generate_hashtag
 
 cases = [
-    TestCase('', False),
-    TestCase('Codewars', '#Codewars'),
-    TestCase('Codewars         ', '#Codewars'),
-    TestCase('CodeWars is nice', '#CodewarsIsNice'),
-    TestCase('c i n', '#CIN'),
-    TestCase(
+    Case('', False),
+    Case('Codewars', '#Codewars'),
+    Case('Codewars         ', '#Codewars'),
+    Case('CodeWars is nice', '#CodewarsIsNice'),
+    Case('c i n', '#CIN'),
+    Case(
         'Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'
         'oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong Cat',
         False,
