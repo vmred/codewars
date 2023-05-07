@@ -14,5 +14,5 @@ cases = [
 
 class TestSolution:
     @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
-    def test_consonant_value(self, test):
+    def test_create_phone_number(self, test):
         assert_true(solution(test.test_data), test.test_output)
