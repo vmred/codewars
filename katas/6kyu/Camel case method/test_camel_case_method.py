@@ -7,7 +7,7 @@ from asserts.testcase import Case
 solution = importlib.import_module('katas.6kyu.Camel case method.solution').camel_case
 
 cases = [
-    Case('test case', 'Case'),
+    Case('test case', 'TestCase'),
 ]
 
 
