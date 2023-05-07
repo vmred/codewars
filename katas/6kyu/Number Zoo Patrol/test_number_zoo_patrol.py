@@ -1,11 +1,15 @@
 import importlib
-from asserts.asserts import assert_true
+import pytest
 
-find_missing_number = importlib.import_module('katas.6kyu.Number Zoo Patrol.solution').find_missing_number
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.Number Zoo Patrol.solution').find_missing_number
+
+cases = [Case([2, 3, 4], 1), Case([1, 2, 3], 4), Case([1, 2, 4], 3)]
 
 
 class TestSolution:
-    def test_number_zoo_patrol(self):
-        assert_true(find_missing_number([2, 3, 4]), 1)
-        assert_true(find_missing_number([1, 2, 3]), 4)
-        assert_true(find_missing_number([1, 2, 4]), 3)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_number_zoo_patrol(self, test):
+        assert_true(solution(test.test_data), test.test_output)

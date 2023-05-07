@@ -1,9 +1,17 @@
 import importlib
-from asserts.asserts import assert_true
+import pytest
 
-dig_pow = importlib.import_module('katas.6kyu.Playing with digits.solution').dig_pow
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.Playing with digits.solution').dig_pow
+
+cases = [
+    Case([46288, 3], 51),
+]
 
 
 class TestSolution:
-    def test_playing_with_digits(self):
-        assert_true(dig_pow(46288, 3), 51)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_playing_with_digits(self, test):
+        assert_true(solution(*test.test_data), test.test_output)

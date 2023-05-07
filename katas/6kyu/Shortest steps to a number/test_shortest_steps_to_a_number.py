@@ -1,10 +1,15 @@
 import importlib
-from asserts.asserts import assert_true
+import pytest
 
-shortest_steps_to_num = importlib.import_module('katas.6kyu.Shortest steps to a number.solution').shortest_steps_to_num
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.Shortest steps to a number.solution').shortest_steps_to_num
+
+cases = [Case(16, 4), Case(71, 9)]
 
 
 class TestSolution:
-    def test_shortest_steps_to_a_number(self):
-        assert_true(shortest_steps_to_num(16), 4)
-        assert_true(shortest_steps_to_num(71), 9)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_shortest_steps_to_a_number(self, test):
+        assert_true(solution(test.test_data), test.test_output)
