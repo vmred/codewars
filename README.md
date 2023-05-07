@@ -18,6 +18,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 
 #### <a name="4kyu">4 kyu</a>
 * [Most frequently used words in a text](katas/4kyu/Most%20frequently%20used%20words%20in%20a%20text/solution.py) - [codewars](https://www.codewars.com/kata/51e056fe544cf36c410000fb)
+* [Calculate k-th digit of π (Pi)](katas/4kyu/Calculate%20kth%20digit%20of%20Pi[Calculate kth digit of Pi](katas%2F4kyu%2FCalculate%20kth%20digit%20of%20Pi)[Calculate kth digit of Pi](katas%2F4kyu%2FCalculate%20kth%20digit%20of%20Pi)[Calculate kth digit of Pi](katas%2F4kyu%2FCalculate%20kth%20digit%20of%20Pi)/solution.py) - [codewars](https://www.codewars.com/kata/6357205000fba205ed189a52)
 * [Sum Strings as Numbers](katas/4kyu/Sum%20Strings%20as%20Numbers/solution.py) - [codewars](https://www.codewars.com/kata/5324945e2ece5e1f32000370)
 * [Counting Change Combinations](katas/4kyu/Counting%20Change%20Combinations/solution.py) - [codewars](https://www.codewars.com/kata/541af676b589989aed0009e7)
 * [Sum of Intervals](katas/4kyu/Sum%20of%20Intervals/solution.py) - [codewars](https://www.codewars.com/kata/52b7ed099cdc285c300001cd)
