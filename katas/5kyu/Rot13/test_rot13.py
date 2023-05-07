@@ -3,14 +3,14 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Rot13.solution').rot13
 
 cases = [
-    TestCase("test", "grfg"),
-    TestCase("Test", "Grfg"),
-    TestCase('Pbqrjnef', 'Codewars'),
+    Case("test", "grfg"),
+    Case("Test", "Grfg"),
+    Case('Pbqrjnef', 'Codewars'),
 ]
 
 

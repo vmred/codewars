@@ -3,14 +3,14 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Number of trailing zeros of n factorial.solution').zeros
 
 cases = [
-    TestCase(0, 0),
-    TestCase(6, 1),
-    TestCase(30, 7),
+    Case(0, 0),
+    Case(6, 1),
+    Case(30, 7),
 ]
 
 

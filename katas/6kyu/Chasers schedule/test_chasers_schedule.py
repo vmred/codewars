@@ -2,11 +2,11 @@ import importlib
 import pytest
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Chasers schedule.solution').solution
 
-cases = [TestCase([2, 4], 10), TestCase([4, 3], 17), TestCase([810, 410], 435420)]
+cases = [Case([2, 4], 10), Case([4, 3], 17), Case([810, 410], 435420)]
 
 
 class TestSolution:

@@ -2,12 +2,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.com gov org first.solution').order_by_domain
 
 cases = [
-    TestCase(
+    Case(
         [
             "http://www.google.en/?x=jsdfkj",
             "http://www.google.de/?x=jsdfkj",

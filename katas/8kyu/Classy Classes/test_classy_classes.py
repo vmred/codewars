@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 Person = importlib.import_module('katas.8kyu.Classy Classes.solution').Person
 
 cases = [
-    TestCase(['Alex', 16], 'Alexs age is 16'),
+    Case(['Alex', 16], 'Alexs age is 16'),
 ]
 
 

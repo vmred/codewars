@@ -2,17 +2,17 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.String incrementer.solution').increment_string
 
 cases = [
-    TestCase("foo", "foo1"),
-    TestCase("foobar001", "foobar002"),
-    TestCase("foobar1", "foobar2"),
-    TestCase("", "1"),
-    TestCase("foobar99", "foobar100"),
-    TestCase("foobar00", "foobar01"),
+    Case("foo", "foo1"),
+    Case("foobar001", "foobar002"),
+    Case("foobar1", "foobar2"),
+    Case("", "1"),
+    Case("foobar99", "foobar100"),
+    Case("foobar00", "foobar01"),
 ]
 
 

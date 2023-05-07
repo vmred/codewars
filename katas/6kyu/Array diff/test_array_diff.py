@@ -1,13 +1,13 @@
 import importlib
 import pytest
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Array diff.solution').array_diff
 
 cases = [
-    TestCase([[1, 2], [1]], [2]),
-    TestCase([[1, 2, 2], []], [1, 2, 2]),
+    Case([[1, 2], [1]], [2]),
+    Case([[1, 2, 2], []], [1, 2, 2]),
 ]
 
 

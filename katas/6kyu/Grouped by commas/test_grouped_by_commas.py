@@ -1,10 +1,15 @@
 import importlib
-from asserts.asserts import assert_true
+import pytest
 
-group_by_commas = importlib.import_module('katas.6kyu.Grouped by commas.solution').group_by_commas
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.Grouped by commas.solution').group_by_commas
+
+cases = [Case(35235235, '35,235,235'), Case(1000000, '1,000,000')]
 
 
 class TestSolution:
-    def test_grouped_by_commas(self):
-        assert_true(group_by_commas(35235235), '35,235,235')
-        assert_true(group_by_commas(1000000), '1,000,000')
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_grouped_by_commas(self, test):
+        assert_true(solution(test.test_data), test.test_output)

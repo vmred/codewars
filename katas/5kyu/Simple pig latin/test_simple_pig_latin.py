@@ -3,14 +3,14 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Simple pig latin.solution').pig_it
 
 cases = [
-    TestCase('Pig latin is cool', 'igPay atinlay siay oolcay'),
-    TestCase('This is my string', 'hisTay siay ymay tringsay'),
-    TestCase('Quis custodiet ipsos custodes ?', 'uisQay ustodietcay psosiay ustodescay ?'),
+    Case('Pig latin is cool', 'igPay atinlay siay oolcay'),
+    Case('This is my string', 'hisTay siay ymay tringsay'),
+    Case('Quis custodiet ipsos custodes ?', 'uisQay ustodietcay psosiay ustodescay ?'),
 ]
 
 

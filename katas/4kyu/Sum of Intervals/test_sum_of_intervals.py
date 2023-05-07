@@ -1,16 +1,16 @@
 import importlib
 import pytest
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.4kyu.Sum of Intervals.solution').sum_of_intervals
 
 cases = [
-    TestCase([(1, 5)], 4),
-    TestCase([(1, 5), (6, 10)], 8),
-    TestCase([(1, 4), (7, 10), (3, 5)], 7),
-    TestCase([(-1_000_000_000, 1_000_000_000)], 2_000_000_000),
-    TestCase(
+    Case([(1, 5)], 4),
+    Case([(1, 5), (6, 10)], 8),
+    Case([(1, 4), (7, 10), (3, 5)], 7),
+    Case([(-1_000_000_000, 1_000_000_000)], 2_000_000_000),
+    Case(
         [
             (-172, -21),
             (-431, 130),

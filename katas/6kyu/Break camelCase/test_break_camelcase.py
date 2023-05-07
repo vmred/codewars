@@ -3,14 +3,14 @@ import pytest
 
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Break camelCase.solution').solution
 
 cases = [
-    TestCase("helloWorld", "hello World"),
-    TestCase("camelCase", "camel Case"),
-    TestCase('breakCamelCase', 'break Camel Case'),
+    Case("helloWorld", "hello World"),
+    Case("camelCase", "camel Case"),
+    Case('breakCamelCase', 'break Camel Case'),
 ]
 
 

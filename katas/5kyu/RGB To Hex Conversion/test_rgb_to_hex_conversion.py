@@ -3,16 +3,16 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.RGB To Hex Conversion.solution').rgb
 
 cases = [
-    TestCase([0, 0, 0], "000000"),
-    TestCase([1, 2, 3], "010203"),
-    TestCase([255, 255, 255], "FFFFFF"),
-    TestCase([254, 253, 252], "FEFDFC"),
-    TestCase([-20, 275, 125], "00FF7D"),
+    Case([0, 0, 0], "000000"),
+    Case([1, 2, 3], "010203"),
+    Case([255, 255, 255], "FFFFFF"),
+    Case([254, 253, 252], "FEFDFC"),
+    Case([-20, 275, 125], "00FF7D"),
 ]
 
 

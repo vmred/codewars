@@ -3,13 +3,13 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.Online RPG.solution').playerRankUp
 
 cases = [
-    TestCase(64, False),
-    TestCase(180, 'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.'),
+    Case(64, False),
+    Case(180, 'Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.'),
 ]
 
 

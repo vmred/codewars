@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.Find the nearest square number.solution').nearest_sq
 
 cases = [
-    TestCase(111, 121),
+    Case(111, 121),
 ]
 
 

@@ -1,15 +1,15 @@
 import importlib
 import pytest
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 
 solution = importlib.import_module('katas.6kyu.A Rule of Divisibility by 13.solution').thirt
 
 
 cases = [
-    TestCase(8529, 79),
-    TestCase(1234567, 87),
+    Case(8529, 79),
+    Case(1234567, 87),
 ]
 
 

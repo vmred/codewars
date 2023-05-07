@@ -3,11 +3,11 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.Grasshopper - summation.solution').summation
 
-cases = [TestCase(1, 1), TestCase(8, 36), TestCase(22, 253), TestCase(100, 5050), TestCase(213, 22791)]
+cases = [Case(1, 1), Case(8, 36), Case(22, 253), Case(100, 5050), Case(213, 22791)]
 
 
 class TestSolution:

@@ -3,11 +3,11 @@ import pytest
 
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 Cube = importlib.import_module('katas.8kyu.Playing with cubes II.solution').Cube
 
-cases = [TestCase(10, 10), TestCase('no args', 0)]
+cases = [Case(10, 10), Case('no args', 0)]
 
 
 class TestSolution:

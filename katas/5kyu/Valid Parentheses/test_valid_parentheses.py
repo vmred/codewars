@@ -3,16 +3,16 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Valid Parentheses.solution').valid_parentheses
 
 cases = [
-    TestCase("  (", False),
-    TestCase(")test", False),
-    TestCase("", True),
-    TestCase("hi())(", False),
-    TestCase("hi(hi)()", True),
+    Case("  (", False),
+    Case(")test", False),
+    Case("", True),
+    Case("hi())(", False),
+    Case("hi(hi)()", True),
 ]
 
 

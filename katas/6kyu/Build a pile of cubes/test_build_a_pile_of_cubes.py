@@ -2,13 +2,13 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Build a pile of cubes.solution').find_nb
 
 cases = [
-    TestCase(4183059834009, 2022),
-    TestCase(24723578342962, -1),
+    Case(4183059834009, 2022),
+    Case(24723578342962, -1),
 ]
 
 

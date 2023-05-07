@@ -3,13 +3,13 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Where my anagrams at.solution').anagrams
 
 cases = [
-    TestCase(['abba', ['aabb', 'abcd', 'bbaa', 'dada']], ['aabb', 'bbaa']),
-    TestCase(['racer', ['crazer', 'carer', 'racar', 'caers', 'racer']], ['carer', 'racer']),
+    Case(['abba', ['aabb', 'abcd', 'bbaa', 'dada']], ['aabb', 'bbaa']),
+    Case(['racer', ['crazer', 'carer', 'racar', 'caers', 'racer']], ['carer', 'racer']),
 ]
 
 

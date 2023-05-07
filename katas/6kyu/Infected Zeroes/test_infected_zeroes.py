@@ -2,14 +2,14 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Infected Zeroes.solution').infected_zeroes
 
 cases = [
-    TestCase([0], 0),
-    TestCase([1, 1, 0, 1, 1], 2),
-    TestCase([0, 1, 1, 1], 3),
+    Case([0], 0),
+    Case([1, 1, 0, 1, 1], 2),
+    Case([0, 1, 1, 1], 3),
 ]
 
 

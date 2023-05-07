@@ -3,12 +3,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.8kyu.Find the smallest integer in the array.solution').find_smallest_int
 
 cases = [
-    TestCase([0, 1 - 2**64, 2**64], 1 - 2**64),
+    Case([0, 1 - 2**64, 2**64], 1 - 2**64),
 ]
 
 

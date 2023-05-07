@@ -2,12 +2,12 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Find Cracker.solution').find_hack
 
 cases = [
-    TestCase(
+    Case(
         [
             ["name1", 150, ["B", "A", "A", "C", "A", "A"]],
             ["name2", 120, ["B", "A", "A", "A"]],

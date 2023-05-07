@@ -3,14 +3,14 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Square Matrix Multiplication.solution').matrix_mult
 
 cases = [
-    TestCase([[[1, 2], [3, 2]], [[3, 2], [1, 1]]], [[5, 4], [11, 8]]),
-    TestCase([[[9, 7], [0, 1]], [[1, 1], [4, 12]]], [[37, 93], [4, 12]]),
-    TestCase(
+    Case([[[1, 2], [3, 2]], [[3, 2], [1, 1]]], [[5, 4], [11, 8]]),
+    Case([[[9, 7], [0, 1]], [[1, 1], [4, 12]]], [[37, 93], [4, 12]]),
+    Case(
         [[[1, 2, 3], [3, 2, 1], [2, 1, 3]], [[4, 5, 6], [6, 5, 4], [4, 6, 5]]],
         [[28, 33, 29], [28, 31, 31], [26, 33, 31]],
     ),

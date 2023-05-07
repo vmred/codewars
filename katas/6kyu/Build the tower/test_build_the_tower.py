@@ -2,13 +2,13 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Build the tower.solution').tower_builder
 
 cases = [
-    TestCase(1, ['*']),
-    TestCase(3, ['  *  ', ' *** ', '*****']),
+    Case(1, ['*']),
+    Case(3, ['  *  ', ' *** ', '*****']),
 ]
 
 

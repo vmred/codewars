@@ -3,14 +3,14 @@ import pytest
 
 from asserts.asserts import assert_true
 
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.6kyu.Combinations xor sum.solution').transform
 
 cases = [
-    TestCase([[7, 4, 11, 6, 5], 3], 384),
-    TestCase([[12, 9, 16, 11, 10], 4], 7937),
-    TestCase([[9, 6, 13, 9, 7], 2], 375),
+    Case([[7, 4, 11, 6, 5], 3], 384),
+    Case([[12, 9, 16, 11, 10], 4], 7937),
+    Case([[9, 6, 13, 9, 7], 2], 375),
 ]
 
 

@@ -3,13 +3,13 @@ import importlib
 import pytest
 
 from asserts.asserts import assert_true
-from asserts.testcase import TestCase
+from asserts.testcase import Case
 
 solution = importlib.import_module('katas.5kyu.Directions reduction.solution').dirReduc
 
 cases = [
-    TestCase(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"], ['WEST']),
-    TestCase(["NORTH", "WEST", "SOUTH", "EAST"], ["NORTH", "WEST", "SOUTH", "EAST"]),
+    Case(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"], ['WEST']),
+    Case(["NORTH", "WEST", "SOUTH", "EAST"], ["NORTH", "WEST", "SOUTH", "EAST"]),
 ]
 
 
