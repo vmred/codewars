@@ -11,7 +11,10 @@ cases = [
     Case('codewars', ["Codewars", "cOdewars", "coDewars", "codEwars", "codeWars", "codewArs", "codewaRs", "codewarS"]),
     Case(' gap ', [" Gap ", " gAp ", " gaP "]),
     Case('', []),
-    Case('two words', ["Two words", "tWo words", "twO words", "two Words", "two wOrds", "two woRds", "two worDs", "two wordS"]),
+    Case(
+        'two words',
+        ["Two words", "tWo words", "twO words", "two Words", "two wOrds", "two woRds", "two worDs", "two wordS"],
+    ),
 ]
 
 
