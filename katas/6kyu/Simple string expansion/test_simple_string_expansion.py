@@ -4,10 +4,10 @@ import pytest
 from asserts.asserts import assert_true
 from asserts.testcase import Case
 
-solution = importlib.import_module('katas.6kyu.Simple string expansion.solution').solve
+solution = importlib.import_module('katas.6kyu.Simple string expansion.solution').string_expansion
 
 cases = [
-    Case(True, True),
+    Case('3abc', 'aaabbbccc'),
 ]
 
 

@@ -1,18 +1,22 @@
 import importlib
-from asserts.asserts import assert_true
+import pytest
 
-has_subpattern = importlib.import_module('katas.6kyu.String subpattern recognition I.solution').has_subpattern
+from asserts.asserts import assert_true
+from asserts.testcase import Case
+
+solution = importlib.import_module('katas.6kyu.String subpattern recognition I.solution').has_subpattern
+
+cases = [
+    Case('a', False),
+    Case('aaaa', True),
+    Case('abcd', False),
+    Case('abababab', True),
+    Case('123a123a123a', True),
+    Case('abcdabcabcd', False),
+]
 
 
 class TestSolution:
-    def test_string_subpattern_recognition_i(self):
-        assert_true(has_subpattern("a"), False)
-        assert_true(has_subpattern("aaaa"), True)
-        assert_true(has_subpattern("abcd"), False)
-        assert_true(has_subpattern("abababab"), True)
-        assert_true(has_subpattern("ababababa"), False)
-        assert_true(has_subpattern("123a123a123a"), True)
-        assert_true(has_subpattern("123A123a123a"), False)
-        assert_true(has_subpattern("abbaabbaabba"), True)
-        assert_true(has_subpattern("abbabbabba"), False)
-        assert_true(has_subpattern("abcdabcabcd"), False)
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_string_subpattern_recognition_i(self, test):
+        assert_true(solution(test.test_data), test.test_output)
