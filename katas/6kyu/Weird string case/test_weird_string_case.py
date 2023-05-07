@@ -1,12 +1,19 @@
 import importlib
+import pytest
 
 from asserts.asserts import assert_true
+from asserts.testcase import Case
 
-to_weird_case = importlib.import_module('katas.6kyu.Weird string case.solution').to_weird_case
+solution = importlib.import_module('katas.6kyu.Weird string case.solution').to_weird_case
+
+cases = [
+    Case('This', 'ThIs'),
+    Case('is', 'Is'),
+    Case('This is a test', 'ThIs Is A TeSt'),
+]
 
 
 class TestSolution:
-    def test_weird_string_case(self):
-        assert_true(to_weird_case('This'), 'ThIs')
-        assert_true(to_weird_case('is'), 'Is')
-        assert_true(to_weird_case('This is a test'), 'ThIs Is A TeSt')
+    @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
+    def test_weird_string_case(self, test):
+        assert_true(solution(test.test_data), test.test_output)
