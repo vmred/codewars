@@ -7,5 +7,6 @@
 # Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
 # No whitespaces / underscore
 
+
 def alphanumeric(password):
     return password.isalnum()
