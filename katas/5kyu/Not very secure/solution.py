@@ -9,4 +9,4 @@
 
 
 def alphanumeric(password):
-    return [all(x.isalnum() for x in password), False][not password]
+    return password.isalnum()
