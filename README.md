@@ -28,6 +28,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Explosive sum](katas/4kyu/Explosive%20sum/solution.py) - [codewars](https://www.codewars.com/kata/52ec24228a515e620b0005ef)
 
 #### <a name="5kyu">5 kyu</a>
+* [Pete, the baker](katas/5kyu/Pete,%20the%20baker/solution.py) - [codewars](https://www.codewars.com/kata/525c65e51bf619685c000059)
 * [Maximum subarray sum](katas/5kyu/Maximum%20subarray%20sum/solution.py) - [codewars](https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c)
 * [Where my anagrams at](katas/5kyu/Where%20my%20anagrams%20at/solution.py) - [codewars](https://www.codewars.com/kata/523a86aa4230ebb5420001e1)
 * [Weight for weight](katas/5kyu/Weight%20for%20weight/solution.py) - [codewars](https://www.codewars.com/kata/55c6126177c9441a570000cc)
