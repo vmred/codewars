@@ -79,7 +79,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Unique in order](katas/6kyu/Unique%20in%20order/solution.py) - [codewars](https://www.codewars.com/kata/54e6533c92449cc251001667)
 * [Two Sum](katas/6kyu/Two%20Sum/solution.py) - [codewars](https://www.codewars.com/kata/52c31f8e6605bcc646000082)
 * [Two Joggers](katas/6kyu/Two%20Joggers/solution.py) - [codewars](https://www.codewars.com/kata/5274d9d3ebc3030802000165)
-* [Triple trouble](katas/6kyu/Triple%20trouble/solution.py) - [codewars](https://www.codewars.com/kata/5704aea738428f4d30000914)
+* [Triple trouble](katas/6kyu/Triple%20trouble/solution.py) - [codewars](https://www.codewars.com/kata/55d5434f269c0c3f1b000058/solutions/python)
 * [Tribonacci sequence](katas/6kyu/Tribonacci%20sequence/solution.py) - [codewars](https://www.codewars.com/kata/556deca17c58da83c00002db)
 * [Traffic lights](katas/6kyu/Traffic%20lights/solution.py) - [codewars](https://www.codewars.com/kata/5d0ae91acac0a50232e8a547)
 * [Title Case](katas/6kyu/Title%20Case/solution.py) - [codewars](https://www.codewars.com/kata/5202ef17a402dd033c000009)
