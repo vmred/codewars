@@ -24,7 +24,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [The observed PIN](katas/4kyu/The%20observed%20PIN/solution.py) - [codewars](https://www.codewars.com/kata/5263c6999e0f40dee200059d)
 * [Strip comments](katas/4kyu/Strip%20comments/solution.py) - [codewars](https://www.codewars.com/kata/51c8e37cee245da6b40000bd)
 * [Snail](katas/4kyu/Snail/solution.py) - [codewars](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1)
-* [Permutations kata](katas/4kyu/Permutations%20kata/solution.py) - [codewars](https://www.codewars.com/collections/permutations)
+* [Permutations kata](katas/4kyu/Permutations%20kata/solution.py) - [codewars](https://www.codewars.com/kata/5254ca2719453dcc0b00027d)
 * [Next smaller number with the same digits](katas/4kyu/Next%20smaller%20number%20with%20the%20same%20digits/solution.py) - [codewars](https://www.codewars.com/kata/5659c6d896bc135c4c00021e)
 * [Next bigger number with the same digits](katas/4kyu/Next%20bigger%20number%20with%20the%20same%20digits/solution.py) - [codewars](https://www.codewars.com/kata/55983863da40caa2c900004e)
 * [Human readable duration format](katas/4kyu/Human%20readable%20duration%20format/solution.py) - [codewars](https://www.codewars.com/kata/52742f58faf5485cae000b9a)
