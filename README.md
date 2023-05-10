@@ -181,6 +181,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [A Rule of Divisibility by 13](katas/6kyu/A%20Rule%20of%20Divisibility%20by%2013/solution.py) - [codewars](https://www.codewars.com/kata/564057bc348c7200bd0000ff)
 
 #### <a name="7kyu">7 kyu</a>
+* [Building Spheres](katas/7kyu/Building%20Spheres/solution.py) - [codewars](https://www.codewars.com/kata/55c1d030da313ed05100005d/train/python)
 * [You are a square](katas/7kyu/You%20are%20a%20square/solution.py) - [codewars](https://www.codewars.com/kata/54c27a33fb7da0db0100040e)
 * [What time is it](katas/7kyu/What%20time%20is%20it/solution.py) - [codewars](https://www.codewars.com/kata/596218bb6878a33ca20000aa)
 * [Vowels count](katas/7kyu/Vowels%20count/solution.py) - [codewars](https://www.codewars.com/kata/54ff3102c1bad923760001f3)
