@@ -264,7 +264,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Build the square](katas/7kyu/Build%20the%20square/solution.py) - [codewars](https://www.codewars.com/kata/59a96d71dbe3b06c0200009c)
 * [Bingo ( Or Not )](katas/7kyu/Bingo%20(%20Or%20Not%20)/solution.py) - [codewars](https://www.codewars.com/kata/5a1ee4dfffe75f0fcb000145)
 * [Binary addition](katas/7kyu/Binary%20addition/solution.py) - [codewars](https://www.codewars.com/kata/551f37452ff852b7bd000139)
-* [Beginner series #3 - Sum of numbers](katas/7kyu/Beginner%20series%20#3%20-%20Sum%20of%20numbers/solution.py) - [codewars](https://www.codewars.com/kata/55f2b110f61eb01779000053)
+* [Beginner series #3 - Sum of numbers](katas/7kyu/Beginner%20series%20%233%20-%20Sum%20of%20numbers/solution) - [codewars](https://www.codewars.com/kata/55f2b110f61eb01779000053)
 * [Basic subclasses - Adam and Eve](katas/7kyu/Basic%20subclasses%20-%20Adam%20and%20Eve/solution.py) - [codewars](https://www.codewars.com/kata/547274e24481cfc469000416)
 * [Basic Math (Add or Subtract)](katas/7kyu/Basic%20Math%20(Add%20or%20Subtract)/solution.py) - [codewars](https://www.codewars.com/kata/5809b62808ad92e31b000031)
 * [Array leaders](katas/7kyu/Array%20leaders/solution.py) - [codewars](https://www.codewars.com/kata/5a651865fd56cb55760000e0)
