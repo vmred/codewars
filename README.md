@@ -214,7 +214,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Remove all the marked elements of a list](katas/7kyu/Remove%20all%20the%20marked%20elements%20of%20a%20list/solution.py) - [codewars](https://www.codewars.com/kata/563089b9b7be03472d00002b)
 * [Regular ball super ball](katas/7kyu/Regular%20ball%20super%20ball/solution.py) - [codewars](https://www.codewars.com/kata/53f0f358b9cb376eca001079)
 * [Regex validate PIN code](katas/7kyu/Regex%20validate%20PIN%20code/solution.py) - [codewars](https://www.codewars.com/kata/55f8a9c06c018a0d6e000132)
-* [Python dynamic classes #1](katas/7kyu/Python%20dynamic%20classes%20#1/solution.py) - [codewars](https://www.codewars.com/kata/55ddb0ea5a133623b6000043)
+* [Python dynamic classes #1](katas/7kyu/Python%20dynamic%20classes%20%231/solution.py) - [codewars](https://www.codewars.com/kata/55ddb0ea5a133623b6000043)
 * [Product array](katas/7kyu/Product%20array/solution.py) - [codewars](https://www.codewars.com/kata/5a905c2157c562994900009d)
 * [Printer errors](katas/7kyu/Printer%20errors/solution.py) - [codewars](https://www.codewars.com/kata/56541980fa08ab47a0000040)
 * [Person class bug](katas/7kyu/Person%20class%20bug/solution.py) - [codewars](https://www.codewars.com/kata/513f887e484edf3eb3000001)
