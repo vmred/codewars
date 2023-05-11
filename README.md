@@ -204,7 +204,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Special number](katas/7kyu/Special%20number/solution.py) - [codewars](https://www.codewars.com/kata/5a55f04be6be383a50000187)
 * [Sort out the men from boys](katas/7kyu/Sort%20out%20the%20men%20from%20boys/solution.py) - [codewars](https://www.codewars.com/kata/5af15a37de4c7f223e00012d)
 * [Small enough](katas/7kyu/Small%20enough/solution.py) - [codewars](https://www.codewars.com/kata/57cc981a58da9e302a000214)
-* [Simple Fun #152 - Invite More Women](katas/7kyu/Simple%20Fun%20#152%20-%20Invite%20More%20Women/solution.py) - [codewars](https://www.codewars.com/kata/58acfe4ae0201e1708000075)
+* [Simple Fun #152 - Invite More Women](katas/7kyu/Simple%20Fun%20%23152%20-%20Invite%20More%20Women/solution.py) - [codewars](https://www.codewars.com/kata/58acfe4ae0201e1708000075)
 * [Shortest word](katas/7kyu/Shortest%20word/solution.py) - [codewars](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9)
 * [See your next happy year](katas/7kyu/See%20your%20next%20happy%20year/solution.py) - [codewars](https://www.codewars.com/kata/5ae7e3f068e6445bc8000046)
 * [Row weights](katas/7kyu/Row%20weights/solution.py) - [codewars](https://www.codewars.com/kata/5abd66a5ccfd1130b30000a9)
