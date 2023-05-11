@@ -13,9 +13,9 @@
 
 
 class Node:
-    def __init__(self, data, next_value=None):
+    def __init__(self, data, next_v=None):
         self.data = data
-        self.next_value = next_value
+        self.next = next_v
 
 
 def length(head):
@@ -23,5 +23,5 @@ def length(head):
 
     while head:
         count += 1
-        head = head.next_value
+        head = head.next
     return count

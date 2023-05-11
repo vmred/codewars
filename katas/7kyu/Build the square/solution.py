@@ -8,5 +8,5 @@
 # +++
 
 
-def generateShape(v):
+def generate_shape(v):
     return '\n'.join(['+' * v] * v)
