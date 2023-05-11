@@ -250,7 +250,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Find the next perfect square](katas/7kyu/Find%20the%20next%20perfect%20square/solution.py) - [codewars](https://www.codewars.com/kata/56269eb78ad2e4ced1000013)
 * [Find the index of the second occurrence of a letter in a string](katas/7kyu/Find%20the%20index%20of%20the%20second%20occurrence%20of%20a%20letter%20in%20a%20string/solution.py) - [codewars](https://www.codewars.com/kata/63f96036b15a210058300ca9)
 * [Find the divisors!](katas/7kyu/Find%20the%20divisors!/solution.py) - [codewars](https://www.codewars.com/kata/544aed4c4a30184e960010f4)
-* [Factorial](katas/7kyu/Factorial/solution.py) - [codewars](https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc)
+* [Factorial](katas/7kyu/Factorial%20kata/solution.py) - [codewars](https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc)
 * [Extra perfect numbers](katas/7kyu/Extra%20perfect%20numbers/solution.py) - [codewars](https://www.codewars.com/kata/5a662a02e626c54e87000123)
 * [Exes and ohs](katas/7kyu/Exes%20and%20ohs/solution.py) - [codewars](https://www.codewars.com/kata/55908aad6620c066bc00002a)
 * [Don't give me five!](katas/7kyu/Dont%20give%20me%20five!/solution.py) - [codewars](https://www.codewars.com/kata/5813d19765d81c592200001a)
