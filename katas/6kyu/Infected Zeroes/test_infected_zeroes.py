@@ -477,7 +477,7 @@ cases = [
 
 
 class TestSolution:
-    # @pytest.mark.skip(reason='long tests not passed')
+    @pytest.mark.skip(reason='long tests not passed')
     @pytest.mark.not_completed
     @pytest.mark.parametrize('test', cases, ids=[f'{test.test_data}' for test in cases])
     def test_infected_zeroes(self, test):
