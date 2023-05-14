@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-pylint **/*.py
+pylint **/*.py "$@"
