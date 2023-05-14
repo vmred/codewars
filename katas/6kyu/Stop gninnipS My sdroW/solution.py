@@ -8,5 +8,6 @@
 # spinWords( "This is a test") => returns "This is a test"
 # spinWords( "This is another test" )=> returns "This is rehtona test"
 
+
 def spin_words(sentence):
     return ' '.join(x[::-1] if len(x) > 4 else x for x in sentence.split())
