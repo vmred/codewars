@@ -20,7 +20,7 @@
 
 def perimeter(n):
     a, b, p = 0, 1, 1
-    for i in range(n):
+    for _ in range(n):
         a, b = b, a + b
         p += b
 
