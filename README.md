@@ -31,6 +31,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Explosive sum](katas/4kyu/Explosive%20sum/solution.py) - [codewars](https://www.codewars.com/kata/52ec24228a515e620b0005ef)
 
 #### <a name="5kyu">5 kyu</a>
+* [Perimeter of squares in a rectangle](katas/5kyu/Perimeter%20of%20squares%20in%20a%20rectangle/solution.py) - [codewars](https://www.codewars.com/kata/559a28007caad2ac4e000083/train/python)
 * [Not very secure](katas/5kyu/Not%20very%20secure/solution.py) - [codewars](https://www.codewars.com/kata/526dbd6c8c0eb53254000110/train/python)
 * [Scramblies](katas/5kyu/Scramblies/solution.py) - [codewars](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/python)
 * [Product of consecutive Fib numbers](katas/5kyu/Product%20of%20consecutive%20Fib%20numbers/solution.py) - [codewars](https://www.codewars.com/kata/5541f58a944b85ce6d00006a)
