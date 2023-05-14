@@ -65,6 +65,7 @@ My completed python katas on [codewars.com](https://www.codewars.com/).
 * [Calculating with functions](katas/5kyu/Calculating%20with%20functions/solution.py) - [codewars](https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39)
 
 #### <a name="6kyu">6 kyu</a>
+* [Stop gninnipS My sdroW!](katas/6kyu/Stop%20gninnipS%20My%20sdroW/solution.py) - [codewars](https://www.codewars.com/kata/5264d2b162488dc400000001/solutions/python)
 * [Your orders please](katas/6kyu/Your%20orders%20please/solution.py) - [codewars](https://www.codewars.com/kata/55c45be3b2079eccff00010f)
 * [Write Number in Expanded Form](katas/6kyu/Write%20Number%20in%20Expanded%20Form/solution.py) - [codewars](https://www.codewars.com/kata/5842df8ccbd22792a4000245)
 * [Word a10n (abbreviation)](katas/6kyu/Word%20a10n%20(abbreviation)/solution.py) - [codewars](https://www.codewars.com/kata/5375f921003bf62192000746)
