@@ -21,7 +21,7 @@ jobs:
         run: ./utils/linters/check.sh
 
       - name: 'Check pylint'
-        run: ./utils/linters/pylint.sh -j 20
+        run: ./utils/linters/pylint.sh -j 5
         shell: zsh {0}
 
       - name: 'Run tests'
